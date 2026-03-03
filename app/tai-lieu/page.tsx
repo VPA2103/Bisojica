@@ -29,10 +29,6 @@ export default function PdfDownloadSection() {
       href: "/files/pdf/ho-so-nang-luc-biso-jica.pdf",
     },
     {
-      title: "Hồ sơ năng lực công ty Bisojica",
-      href: "/files/pdf/ho-so-nang-luc-congty-bisojica.pdf",
-    },
-    {
       title: "Hướng dẫn sử dụng enzyme Khánh Hoàng",
       href: "/files/pdf/huong-dan-su-dung-san-pham-enzyme-khanh-hoang.pdf",
     },
