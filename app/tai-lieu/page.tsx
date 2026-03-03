@@ -21,10 +21,6 @@ export default function PdfDownloadSection() {
       href: "/files/pdf/cai-tao-dat.pdf",
     },
     {
-      title: "Combo đậu trái",
-      href: "/files/pdf/combo-dau-trai.pdf",
-    },
-    {
       title: "Hồ sơ năng lực Bisojica",
       href: "/files/pdf/ho-so-nang-luc-biso-jica.pdf",
     },
