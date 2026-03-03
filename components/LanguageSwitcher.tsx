@@ -1,0 +1,75 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+declare global {
+  interface Window {
+    google: any;
+    googleTranslateElementInit: () => void;
+  }
+}
+
+export default function LanguageSwitcher() {
+  const [active, setActive] = useState("vi");
+
+  useEffect(() => {
+    if (document.getElementById("google-translate-script")) return;
+
+    const script = document.createElement("script");
+    script.id = "google-translate-script";
+    script.src =
+      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "vi",
+          includedLanguages: "vi,en",
+          autoDisplay: false,
+        },
+        "google_translate_element"
+      );
+    };
+
+    document.body.appendChild(script);
+  }, []);
+
+  const changeLanguage = (lang: string) => {
+    const select = document.querySelector(
+      ".goog-te-combo"
+    ) as HTMLSelectElement;
+
+    if (!select) return;
+
+    select.value = lang;
+    select.dispatchEvent(new Event("change"));
+    setActive(lang);
+  };
+
+  return (
+    <>
+      <div id="google_translate_element" style={{ display: "none" }} />
+
+      <div className="flex gap-2 items-center">
+        <button
+          onClick={() => changeLanguage("vi")}
+          className={`text-2xl transition ${
+            active === "vi" ? "scale-110" : "opacity-60"
+          }`}
+        >
+          🇻🇳
+        </button>
+
+        <button
+          onClick={() => changeLanguage("en")}
+          className={`text-2xl transition ${
+            active === "en" ? "scale-110" : "opacity-60"
+          }`}
+        >
+          🇺🇸
+        </button>
+      </div>
+    </>
+  );
+}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import logo from "@/public/logo.png";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,6 +60,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <LanguageSwitcher />
 
         {/* Mobile Toggle */}
         <button
