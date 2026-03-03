@@ -6,15 +6,14 @@ import React, { useState } from "react";
 import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperType } from "swiper";
-
-
-
+import ProductList from "./ProductList";
 
 interface Props {
     product: Product;
 }
 
 const ProductDetail: React.FC<Props> = ({ product }) => {
+   
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
     const [isZoomed, setIsZoomed] = useState(false);
     return (
@@ -182,6 +181,7 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                         )}
                     </div>
                 </div>
+                <ProductList />
             </div>
         </section>
     );
