@@ -45,7 +45,7 @@ const Navbar = () => {
             { label: "Trang chủ", href: "/" },
             { label: "Giới thiệu", href: "/about" },
             { label: "Sản phẩm", href: "/products" },
-            { label: "Đội ngũ", href: "/leadership" },
+            { label: "Tài liệu", href: "/tai-lieu" },
             { label: "Thành tựu", href: "/achievement" },
             { label: "Liên hệ", href: "/contact" },
 

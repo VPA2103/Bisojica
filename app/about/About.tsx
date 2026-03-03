@@ -11,21 +11,29 @@ export default function AboutGallery() {
   const images = [ab1, ab2, ab3, ab4, ab5, ab6];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 gap-6">
-        {images.map((img, index) => (
-          <div
-            key={index}
-            className="relative overflow-hidden rounded-2xl shadow-md"
-          >
-            <Image
-              src={img}
-              alt={`about-image-${index + 1}`}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        ))}
+    <>
+      <div className="text-center py-6">
+        <h1 className="text-3xl font-bold text-black">
+          Tác dụng của enzyme
+        </h1>
       </div>
-    </div>
+      <div className="w-full max-w-4xl mx-auto px-4 py-10">
+
+        <div className="grid grid-cols-1 gap-6">
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden rounded-2xl shadow-md"
+            >
+              <Image
+                src={img}
+                alt={`about-image-${index + 1}`}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 }

@@ -2,17 +2,23 @@
 import { useState } from "react";
 
 const footerLinks = {
-  "Sản Phẩm": ["Tính Năng", "Bảng Giá", "Cập Nhật", "Lộ Trình"],
-  "Công Ty": ["Về Chúng Tôi", "Blog", "Tuyển Dụng", "Báo Chí"],
-  "Hỗ Trợ": ["Tài Liệu", "API", "Cộng Đồng", "Liên Hệ"],
-  "Pháp Lý": ["Quyền Riêng Tư", "Điều Khoản", "Cookie", "Bảo Mật"],
+  "Sản Phẩm": [
+    { label: "Sản phẩm", href: "/products" },
+    { label: "Bảng Giá", href: "/tai-lieu" },
+  ],
+  "Công Ty": [
+    { label: "Về Chúng Tôi", href: "/achievement" },
+  ],
+  "Hỗ Trợ": [
+    { label: "Tài Liệu", href: "/tai-lieu" },
+    { label: "Cộng Đồng", href: "/contact" },
+    { label: "Liên Hệ", href: "/contact" },
+  ],
 };
 
 const socials = [
-  { label: "TW", href: "#" },
-  { label: "IG", href: "#" },
-  { label: "GH", href: "#" },
-  { label: "LI", href: "#" },
+  { label: "ZL", href: "/contact" },
+
 ];
 
 export default function Footer() {
@@ -148,9 +154,9 @@ export default function Footer() {
                 </h4>
                 <ul className="space-y-3">
                   {links.map((link) => (
-                    <li key={link}>
+                    <li key={link.href}>
                       <a
-                        href="#"
+                        href={link.href}
                         className="text-sm transition-all duration-200 hover:translate-x-1 inline-block group"
                         style={{ color: "#ffffff50" }}
                         onMouseEnter={(e) =>
@@ -160,10 +166,13 @@ export default function Footer() {
                           ((e.target as HTMLElement).style.color = "#ffffff50")
                         }
                       >
-                        <span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: "#ffd700" }}>
+                        <span
+                          className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
+                          style={{ color: "#ffd700" }}
+                        >
                           ›
                         </span>
-                        {link}
+                        {link.label}
                       </a>
                     </li>
                   ))}
