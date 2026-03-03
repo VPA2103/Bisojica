@@ -13,7 +13,7 @@ interface Props {
 }
 
 const ProductDetail: React.FC<Props> = ({ product }) => {
-   
+
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
     const [isZoomed, setIsZoomed] = useState(false);
     return (
@@ -141,6 +141,15 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                                     </li>
                                 ))}
                             </ul>
+                            <div className="text-black">
+                                <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium py-2 rounded-md transition">
+                                    <a href="/tai-lieu">
+                                        <p>Xem giá chi tiết</p>
+                                    </a>
+                                </button>
+
+                            </div>
+
                         </div>
 
                         {/* Usage */}
