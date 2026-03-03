@@ -11,6 +11,7 @@ export const products = [
       "Tăng sức đề kháng",
       "Giải độc đất và hoạt hóa vi sinh vật có lợi cho đất",
     ],
+    featured: true,
     images:[
       "/images/products/DAICHI NO TOMO.jpg",
       "/images/products/DAICHI NO TOMO-mini.jpg"
@@ -128,6 +129,7 @@ export const products = [
   {
     name: "MITAKA 1200",
     slug: "mitaka-1200",
+    featured: true,
     mainApplication: "Enzyme bảo quản trái cây sau thu hoạch",
     features: [
       "Rửa trôi nấm bệnh trên bề mặt trái",
@@ -174,6 +176,7 @@ export const products = [
   {
     name: "BK PARTNER",
     slug: "bk-partner",
+    featured: true,
     category: "cong-nghiep",
     mainApplication: "Enzyme xử lý nước thải",
     features: [

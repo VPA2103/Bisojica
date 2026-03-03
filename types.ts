@@ -8,6 +8,7 @@ export type Product = {
   slug: string,
   mainApplication: string;
   features: string[];
+  featured?: boolean;
   images: string[];
   cach_su_dung: {
     huong_dan_chung: string;

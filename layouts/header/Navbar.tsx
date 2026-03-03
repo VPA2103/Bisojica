@@ -12,8 +12,6 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 shadow-lg"
       style={{ background: "linear-gradient(135deg, #20412e 0%, #2a5a3f 60%, #20412e 100%)" }}
     >
-
-
       {/* Main nav bar */}
       <nav
         className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto"
@@ -60,18 +58,6 @@ const Navbar = () => {
               <span className="text-[#b2c693]/30 text-xs select-none">·</span>
             </li>
           ))}
-          {/* <li className="ml-3">
-            <Link
-              href="/contact"
-              className="biso-body font-semibold text-sm tracking-wide text-[#20412e] px-5 py-2 rounded-md no-underline transition-all duration-200 hover:-translate-y-px hover:brightness-110 active:scale-95"
-              style={{
-                background: "linear-gradient(135deg, #ffd05c 0%, #f3901e 100%)",
-                boxShadow: "0 2px 14px rgba(255,208,92,0.35)",
-              }}
-            >
-              Liên hệ ngay
-            </Link>
-          </li> */}
         </ul>
 
         {/* Mobile Toggle */}
@@ -113,19 +99,6 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            {/* <li className="mt-4">
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="biso-body inline-block font-semibold text-sm tracking-wide text-[#20412e] px-5 py-2 rounded-md no-underline"
-                style={{
-                  background: "linear-gradient(135deg, #ffd05c 0%, #f3901e 100%)",
-                  boxShadow: "0 2px 14px rgba(255,208,92,0.3)",
-                }}
-              >
-                Liên hệ ngay
-              </Link>
-            </li> */}
           </ul>
         </div>
       )}
