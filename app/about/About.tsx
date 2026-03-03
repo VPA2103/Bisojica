@@ -2,9 +2,10 @@
 import { useState } from "react";
 
 const companyImages = [
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
-  "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop",
-  "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=250&fit=crop",
+  "/logo.png",
+  "/images/products/NIOI - ZERO.jpg",
+  "/images/products/MITAKA 3000.jpg",
+
 ];
 
 const highlights = [
@@ -68,9 +69,9 @@ export default function BisoJicaInfo() {
                 src={src}
                 alt={`Company image ${i + 1}`}
                 className="w-full h-full object-cover img-hover"
-                onError={(e) => {
-                  e.target.src = `https://placehold.co/400x250/4a7c59/ffffff?text=BISO+JICA`;
-                }}
+                // onError={(e) => {
+                //   e.target.src = `https://placehold.co/400x250/4a7c59/ffffff?text=BISO+JICA`;
+                // }}
               />
             </div>
           ))}

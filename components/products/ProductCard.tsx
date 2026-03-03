@@ -1,4 +1,5 @@
 import { Product } from "@/types";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -7,35 +8,38 @@ interface Props {
 
 const ProductCard: React.FC<Props> = ({ product }) => {
   return (
-    <div className="group relative flex flex-col bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-      {/* Accent bar */}
-      <div className="h-1 w-full bg-gradient-to-r from-emerald-400 to-teal-500" />
+    <div className="bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col">
+      {/* Ảnh sản phẩm */}
+      {product.images && product.images.length > 0 && (
+        <img
+          src={product.images[0]}
+          alt={product.name}
+          className="w-full h-48 object-cover rounded-md mb-4"
+        />
+      )}
 
-      <div className="flex flex-col flex-1 p-5 sm:p-6">
-        {/* Header */}
-        <div className="mb-3">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 leading-tight group-hover:text-teal-600 transition-colors duration-200">
-            {product.name}
-          </h2>
-        </div>
+      {/* Tên & ứng dụng chính */}
+      <h2 className="text-lg font-semibold text-gray-900 mb-1">
+        {product.name}
+      </h2>
 
-        {/* Main application badge */}
-        <div className="inline-flex items-center gap-1.5 mb-4 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-100 w-fit">
-          <span className="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0" />
-          <p className="text-xs sm:text-sm font-medium text-teal-700 line-clamp-1">
-            {product.mainApplication}
-          </p>
-        </div>
+      <p className="text-sm text-gray-500 mb-3">
+        {product.mainApplication}
+      </p>
 
-        
-      </div>
+      {/* Danh sách tính năng */}
+      <ul className="text-sm text-gray-700 list-disc list-inside space-y-1 flex-1">
+        {product.features.map((feature, idx) => (
+          <li key={idx}>{feature}</li>
+        ))}
+      </ul>
 
-      {/* Footer CTA */}
-      <div className="px-5 pb-5 sm:px-6 sm:pb-6 pt-0">
-        <button className="w-full mt-4 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 active:scale-95 transition-all duration-150 shadow-sm">
+      {/* Nút chi tiết */}
+      <Link href={`/products/${product.slug}`} className="mt-4">
+        <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium py-2 rounded-md transition">
           Xem chi tiết
         </button>
-      </div>
+      </Link>
     </div>
   );
 };

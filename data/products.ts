@@ -1,6 +1,9 @@
+export type Category = "nong-nghiep" | "cong-nghiep" | "thuy-san";
 export const products = [
   {
     name: "DAICHI NO TOMO",
+    slug: "daichi-no-tomo",
+    category: "nong-nghiep",
     mainApplication: "Enzyme cải tạo đất trồng",
     features: [
       "Trị nấm bệnh, tuyến trùng",
@@ -32,6 +35,8 @@ export const products = [
   },
   {
     name: "DAICHI NO TOMO 500",
+    slug: "daichi-no-tomo-500",
+    category: "nong-nghiep",
     mainApplication: "Enzyme dinh dưỡng hữu cơ",
     features: [
       "Trị thối rễ, phục hồi bộ rễ",
@@ -59,6 +64,8 @@ export const products = [
   },
   {
     name: "SP 10-15-20",
+    slug: "sp-10-15-20",
+    category: "nong-nghiep",
     mainApplication: "Enzyme hữu cơ",
     features: [
       "Tăng năng suất thu hoạch",
@@ -90,6 +97,8 @@ export const products = [
   },
   {
     name: "MITAKA 1000",
+    slug: "mitaka-1000",
+    category: "nong-nghiep",
     mainApplication: "Enzyme trị bệnh",
     features: [
       "Bổ sung vitamin khoáng chất",
@@ -118,6 +127,7 @@ export const products = [
   },
   {
     name: "MITAKA 1200",
+    slug: "mitaka-1200",
     mainApplication: "Enzyme bảo quản trái cây sau thu hoạch",
     features: [
       "Rửa trôi nấm bệnh trên bề mặt trái",
@@ -128,12 +138,15 @@ export const products = [
       "An toàn cho người sử dụng",
     ],
     images:[
+      "/images/products/MITAKA 1200-mini.jpg",
       "/images/products/MITAKA 1200.jpg",
-      "/images/products/MITAKA 1200-mini.jpg"
-    ]
+    ],
+    cach_su_dung: null
   },
   {
     name: "MITAKA 3000",
+    slug: "mitaka-3000",
+    category: "nong-nghiep",
     mainApplication: "Enzyme phân hóa mầm hoa",
     features: [
       "Tăng năng suất thu hoạch",
@@ -160,6 +173,8 @@ export const products = [
   },
   {
     name: "BK PARTNER",
+    slug: "bk-partner",
+    category: "cong-nghiep",
     mainApplication: "Enzyme xử lý nước thải",
     features: [
       "Cải thiện nước, giảm BOD, COD và chỉ số ô nhiễm",
@@ -186,6 +201,8 @@ export const products = [
   },
   {
     name: "BK OILBUSTER",
+    slug: "bk-oilbuster",
+    category: "cong-nghiep",
     mainApplication: "Enzyme xử lý chất béo/dầu",
     features: [
       "Loại bỏ chất béo, dầu mỡ và BOD trong nước thải",
@@ -212,6 +229,8 @@ export const products = [
   },
   {
     name: "NIOI - ZERO",
+    slug: "nioi-zero",
+    category: "cong-nghiep",
     mainApplication: "Enzyme khử mùi làm sạch không khí",
     features: [
       "Cải thiện chất lượng không khí",
@@ -235,32 +254,5 @@ export const products = [
       "ghi_chu": null
     }
   },
-  // {
-  //   name: "BF - NATURAL",
-  //   mainApplication: "Enzyme chăn nuôi thủy sản",
-  //   features: [
-  //     "Giúp phân giải protein, carbohydrate và chất béo thành các phân tử nhỏ dễ hấp thụ",
-  //     "Tăng khả năng hấp thu dinh dưỡng, ổn định đường tiêu hóa",
-  //     "Tăng sức đề kháng",
-  //   ],
-  //   images:[
-  //     "/images/products/SP 10-15-20.jpg",
-  //     "/images/products/SP 10-15-20-mini.jpg"
-  //   ]
-  // },
-  // {
-  //   name: "LAKE POWER",
-  //   mainApplication: "Enzyme cho ao/hồ nuôi",
-  //   features: [
-  //     "Cải thiện nước, hạn chế bọt",
-  //     "Giảm N, P – ngăn phú dưỡng, kiểm soát tảo",
-  //     "Tăng đề kháng, nâng năng suất",
-  //     "Phân hủy bùn, giảm lắng đáy",
-  //     "Hạn chế mùi hôi, khí độc (H₂S, CH₄S)",
-  //   ],
-  //   images:[
-  //     "/images/products/SP 10-15-20.jpg",
-  //     "/images/products/SP 10-15-20-mini.jpg"
-  //   ]
-  // },
+ 
 ];

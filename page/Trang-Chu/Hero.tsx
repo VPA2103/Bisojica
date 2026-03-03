@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import AOS from "aos";
+import { Link } from "lucide-react";
 
 const stats = [
     { num: "15+", label: "Năm kinh nghiệm" },
@@ -13,14 +14,13 @@ const stats = [
 const Hero: React.FC = () => {
     useEffect(() => {
         AOS.init({
-          duration: 1000, // thời gian animation (ms)
-          once: true,     // chỉ chạy 1 lần
+          duration: 1000, 
+          once: true,    
           easing: "ease-in-out",
         });
       }, []);
     return (
         <section id="hero" className="relative bg-white overflow-hidden">
-            {/* Background Pattern */}
             {/* Background */}
             <div className="absolute inset-0">
                 <Image
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
                 {/* Content */}
                 <div className="flex-1 text-center md:text-left">
                     {/* Badge */}
-                    <span className="inline-flex items-center  text-green-900 text-sm font-medium px-3 py-1 rounded-full mb-4">
+                    <span className="inline-flex items-center  text-green-900 text-sm font-medium px-3 py-1 rounded-full mb-4" data-aos="fade-up">
                         <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
                         Công nghệ enzyme Nhật Bản
                     </span>
@@ -57,22 +57,22 @@ const Hero: React.FC = () => {
                     </p>
 
                     {/* Description */}
-                    <p className="text-black mb-8 max-w-xl  mx-auto md:mx-0">
+                    <p className="text-black mb-8 max-w-xl  mx-auto md:mx-0" data-aos="fade-up">
                         Doanh nghiệp tiên phong tại Việt Nam trong nghiên cứu và phân phối enzyme
                         sinh học hữu cơ Nhật Bản — ứng dụng toàn diện cho Nông nghiệp, Công nghiệp
                         và Thủy sản.
                     </p>
 
                     {/* Buttons */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start" data-aos="fade-up">
                         <a
-                            href="#contact"
+                            href="/contact"
                             className="inline-block px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition"
                         >
                             Nhận tư vấn miễn phí
                         </a>
                         <a
-                            href="#products"
+                            href="/products"
                             className="inline-block px-6 py-3 border border-green-600 text-green-800 font-semibold rounded-lg hover:bg-green-50 transition"
                         >
                             Khám phá sản phẩm
