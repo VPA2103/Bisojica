@@ -141,21 +141,16 @@ export default function Sections() {
   return (
     <div
       style={{
-        fontFamily: "'Be Vietnam Pro', 'Nunito', sans-serif",
-        background: "#F0F7F2",
         minHeight: "100vh",
-        padding: "0",
+        padding: 0,
       }}
     >
-      <link
-        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-      />
+
 
       {/* ── SECTION 1: Core Values ── */}
       <section
         style={{
-          background: "linear-gradient(145deg, #0A2615 0%, #0D3B1E 60%, #0F4A24 100%)",
+          background: "linear-gradient(145deg, #e9e2c8 0%, #f3edd7 100%)",
           padding: "80px 24px 90px",
           position: "relative",
           overflow: "hidden",
@@ -181,22 +176,21 @@ export default function Sections() {
               background: "rgba(74,222,128,0.12)", border: "1px solid rgba(74,222,128,0.25)",
               borderRadius: 100, padding: "8px 20px",
             }}>
-              <span style={{ fontSize: 14, color: "#86EFAC", letterSpacing: "0.08em", fontWeight: 600 }}>
+              <span style={{ fontSize: 18, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 600 }}>
                 TẦM NHÌN
               </span>
             </div>
           </div>
 
           <h2 style={{
-            textAlign: "center", color: "#FFFFFF",
+            textAlign: "center", color: "var(--text-color)",
             fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800,
             lineHeight: 1.25, marginBottom: 16, letterSpacing: "-0.02em",
           }}>
-            Dẫn đầu Thế Giới về{" "}
-            <span style={{ color: "#4ADE80" }}>Enzyme Hữu Cơ được nhập trực tiếp từ </span> Nhật Bản
+            Dẫn đầu Thế Giới về Enzyme Hữu Cơ được nhập trực tiếp từ Nhật Bản
           </h2>
           <p style={{
-            textAlign: "center", color: "rgba(255,255,255,0.55)",
+            textAlign: "center", color: "var(--text-color)",
             fontSize: 16, maxWidth: 520, margin: "0 auto 60px", lineHeight: 1.7,
           }}>
             Thúc đẩy nền kinh tế xanh bền vững — vì một tương lai tốt đẹp hơn cho hệ sinh thái và con người.
@@ -211,8 +205,8 @@ export default function Sections() {
               <div
                 key={i}
                 style={{
-                  background: "rgba(255,255,255,0.04)",
-                  border: "1px solid rgba(255,255,255,0.08)",
+                  background: "rgba(32,65,46,0.05)",
+                  border: "1px solid rgba(32,65,46,0.1)",
                   borderRadius: 20, padding: "32px 28px",
                   transition: "all 0.25s ease",
                   cursor: "default",
@@ -222,7 +216,7 @@ export default function Sections() {
                   (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)";
                 }}
                 onMouseLeave={e => {
-                  (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.04)";
+                  (e.currentTarget as HTMLDivElement).style.background = "rgba(32,65,46,0.05)";
                   (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
                 }}
               >
@@ -236,12 +230,12 @@ export default function Sections() {
                   {v.icon}
                 </div>
                 <h3 style={{
-                  color: "#FFFFFF", fontWeight: 700,
+                  color: "var(--text-color)", fontWeight: 700,
                   fontSize: 17, marginBottom: 10, letterSpacing: "-0.01em",
                 }}>
                   {v.title}
                 </h3>
-                <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, lineHeight: 1.65, margin: 0 }}>
+                <p style={{ color: "var(--text-color)", fontSize: 14, lineHeight: 1.65, margin: 0 }}>
                   {v.desc}
                 </p>
               </div>
@@ -251,7 +245,7 @@ export default function Sections() {
       </section>
 
       {/* ── SECTION 2: Fields ── */}
-      <section style={{ padding: "80px 24px 100px", background: "#F0F7F2" }}>
+      <section style={{ padding: "80px 24px 100px" }}>
         <div style={{ maxWidth: 960, margin: "0 auto" }}>
           {/* Header */}
           <div style={{ textAlign: "center", marginBottom: 56 }}>
@@ -260,7 +254,7 @@ export default function Sections() {
               background: "rgba(22,163,74,0.1)", border: "1px solid rgba(22,163,74,0.2)",
               borderRadius: 100, padding: "8px 20px", marginBottom: 20,
             }}>
-              <span style={{ fontSize: 14, color: "#16A34A", letterSpacing: "0.08em", fontWeight: 600 }}>
+              <span style={{ fontSize: 14, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 600 }}>
                 LĨNH VỰC HOẠT ĐỘNG
               </span>
             </div>
@@ -271,7 +265,7 @@ export default function Sections() {
               3 Mảng Ứng Dụng Chính
             </h2>
             <p style={{
-              color: "#5A7A62", fontSize: 16, maxWidth: 480,
+              color: "var(--text-color)", fontSize: 16, maxWidth: 480,
               margin: "0 auto", lineHeight: 1.7,
             }}>
               Giải pháp enzyme sinh học toàn diện, từ ruộng đồng đến nhà máy và ao nuôi.
@@ -279,11 +273,13 @@ export default function Sections() {
           </div>
 
           {/* Fields grid */}
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: 24,
-          }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: 24,
+            }}
+          >
             {fields.map((f, i) => (
               <div
                 key={i}
@@ -291,23 +287,32 @@ export default function Sections() {
                 onMouseLeave={() => setHoveredField(null)}
                 style={{
                   background: "#FFFFFF",
-                  border: `1.5px solid ${hoveredField === i ? f.color : "rgba(0,0,0,0.07)"}`,
+                  border: `1.5px solid ${hoveredField === i ? f.color : "rgba(0,0,0,0.07)"
+                    }`,
                   borderRadius: 24,
                   overflow: "hidden",
                   transition: "all 0.3s ease",
-                  transform: hoveredField === i ? "translateY(-8px)" : "translateY(0)",
-                  boxShadow: hoveredField === i
-                    ? `0 24px 48px ${f.color}22`
-                    : "0 2px 16px rgba(0,0,0,0.06)",
+                  transform:
+                    hoveredField === i ? "translateY(-8px)" : "translateY(0)",
+                  boxShadow:
+                    hoveredField === i
+                      ? `0 24px 48px ${f.color}22`
+                      : "0 2px 16px rgba(0,0,0,0.06)",
                   cursor: "default",
+
+                  display: "flex",          // ⭐ QUAN TRỌNG
+                  flexDirection: "column",  // ⭐ QUAN TRỌNG
+                  height: "100%",           // ⭐ QUAN TRỌNG
                 }}
               >
                 {/* Image Block */}
-                <div style={{
-                  position: "relative",
-                  height: 200,
-                  overflow: "hidden",
-                }}>
+                <div
+                  style={{
+                    position: "relative",
+                    height: 200,
+                    overflow: "hidden",
+                  }}
+                >
                   <img
                     src={f.image}
                     alt={f.imageAlt}
@@ -316,73 +321,100 @@ export default function Sections() {
                       height: "100%",
                       objectFit: "cover",
                       transition: "transform 0.5s ease",
-                      transform: hoveredField === i ? "scale(1.06)" : "scale(1)",
+                      transform:
+                        hoveredField === i ? "scale(1.06)" : "scale(1)",
                       display: "block",
                     }}
                   />
-                  {/* Gradient overlay */}
-                  <div style={{
-                    position: "absolute",
-                    inset: 0,
-                    background: f.gradientOverlay,
-                  }} />
 
-                  {/* Label badge on image */}
-                  <div style={{
-                    position: "absolute",
-                    bottom: 16,
-                    left: 20,
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 10,
-                  }}>
-                    <div style={{
-                      width: 40, height: 40, borderRadius: 11,
-                      background: "rgba(255,255,255,0.15)",
-                      backdropFilter: "blur(8px)",
-                      border: "1px solid rgba(255,255,255,0.25)",
-                      display: "flex", alignItems: "center", justifyContent: "center",
-                      color: "#FFFFFF",
-                      flexShrink: 0,
-                    }}>
+                  <div
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      background: f.gradientOverlay,
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: 16,
+                      left: 20,
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 10,
+                    }}
+                  >
+                    <div
+                      style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: 11,
+                        background: "rgba(255,255,255,0.15)",
+                        backdropFilter: "blur(8px)",
+                        border: "1px solid rgba(255,255,255,0.25)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                      }}
+                    >
                       {f.icon}
                     </div>
-                    <h3 style={{
-                      color: "#FFFFFF",
-                      fontWeight: 800,
-                      fontSize: 20,
-                      margin: 0,
-                      letterSpacing: "-0.02em",
-                      textShadow: "0 1px 4px rgba(0,0,0,0.3)",
-                    }}>
+
+                    <h3
+                      style={{
+                        color: "var(--background)",
+                        fontWeight: 800,
+                        fontSize: 20,
+                        margin: 0,
+                        letterSpacing: "-0.02em",
+                        textShadow: "0 1px 4px rgba(0,0,0,0.3)",
+                      }}
+                    >
                       {f.label}
                     </h3>
                   </div>
-
-                  {/* Color accent top-right strip */}
-                  <div style={{
-                    position: "absolute",
-                    top: 0, right: 0,
-                    width: 4, height: "100%",
-                    background: f.color,
-                    opacity: hoveredField === i ? 1 : 0,
-                    transition: "opacity 0.3s ease",
-                  }} />
                 </div>
 
                 {/* Content Block */}
-                <div style={{ padding: "24px 26px 26px" }}>
+                <div
+                  style={{
+                    padding: "24px 26px 26px",
+                    display: "flex",         // ⭐
+                    flexDirection: "column", // ⭐
+                    flexGrow: 1,             // ⭐
+                  }}
+                >
                   {/* Items */}
-                  <div style={{ display: "flex", flexDirection: "column", gap: 11, marginBottom: 22 }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 11,
+                      marginBottom: 22,
+                    }}
+                  >
                     {f.items.map((item, j) => (
-                      <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                      <div
+                        key={j}
+                        style={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                          gap: 10,
+                        }}
+                      >
                         <div style={{ marginTop: 2, flexShrink: 0 }}>
                           <CheckIcon />
                         </div>
-                        <span style={{
-                          color: "#3D5940", fontSize: 14.5,
-                          lineHeight: 1.55, fontWeight: 450,
-                        }}>
+                        <span
+                          style={{
+                            color: "#3D5940",
+                            fontSize: 14.5,
+                            lineHeight: 1.55,
+                            fontWeight: 450,
+                          }}
+                        >
                           {item}
                         </span>
                       </div>
@@ -390,33 +422,50 @@ export default function Sections() {
                   </div>
 
                   {/* Divider */}
-                  <div style={{
-                    height: 1,
-                    background: "rgba(0,0,0,0.06)",
-                    marginBottom: 18,
-                  }} />
+                  <div
+                    style={{
+                      height: 1,
+                      background: "rgba(0,0,0,0.06)",
+                      marginBottom: 18,
+                    }}
+                  />
 
                   {/* CTA */}
-                  <a href="/products">
-                    <button style={{
-                      background: "none", border: "none", padding: 0,
-                      color: f.color, fontWeight: 700, fontSize: 14,
-                      cursor: "pointer", display: "flex", alignItems: "center", gap: 7,
-                      fontFamily: "inherit",
-                      letterSpacing: "0.01em",
-                      transition: "gap 0.2s ease",
-                    }}>
-                      Xem giải pháp
-                      <span style={{
-                        display: "inline-flex",
-                        alignItems: "center",
-                        transition: "transform 0.25s ease",
-                        transform: hoveredField === i ? "translateX(5px)" : "translateX(0)",
-                      }}>
-                        <ArrowRightIcon />
-                      </span>
-                    </button>
-                  </a>
+                  <div style={{ marginTop: "auto" }}> {/* ⭐ QUAN TRỌNG */}
+                    <a href="/products">
+                      <button
+                        style={{
+                          background: "none",
+                          border: "none",
+                          padding: 0,
+                          color: f.color,
+                          fontWeight: 700,
+                          fontSize: 14,
+                          cursor: "pointer",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 7,
+                          fontFamily: "inherit",
+                          letterSpacing: "0.01em",
+                        }}
+                      >
+                        Xem giải pháp
+                        <span
+                          style={{
+                            display: "inline-flex",
+                            alignItems: "center",
+                            transition: "transform 0.25s ease",
+                            transform:
+                              hoveredField === i
+                                ? "translateX(5px)"
+                                : "translateX(0)",
+                          }}
+                        >
+                          <ArrowRightIcon />
+                        </span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

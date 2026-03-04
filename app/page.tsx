@@ -3,6 +3,7 @@ import Hero from "@/page/Trang-Chu/Hero";
 import Image from "next/image";
 import LeadershipTeam from "./leadership/Leadership";
 import ProductsHightlight from "@/components/main/ProductsHightlight";
+import BisoYaiPromoBanner from "./phat-trien-nhan-tai/BisoYaiPromoBanner";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Sections />
       <ProductsHightlight/>
+      <BisoYaiPromoBanner/>
       <LeadershipTeam/>
     </>
   );

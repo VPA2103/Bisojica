@@ -11,12 +11,11 @@ const Navbar = () => {
   const [isOtherOpen, setIsOtherOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 shadow-lg"
-      style={{ background: "linear-gradient(135deg, #20412e 0%, #2a5a3f 60%, #20412e 100%)" }}
+    <header className="sticky top-0 z-50 shadow-lg bg-[var(--background)]"
     >
       {/* Main nav bar */}
       <nav
-        className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto"
+        className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto "
       >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 no-underline">
@@ -26,13 +25,13 @@ const Navbar = () => {
           <div className="leading-tight">
             <div
               className="biso-font font-bold text-xl tracking-widest"
-              style={{ color: "#ffd05c" }}
+              style={{ color: "var(--text-color)" }}
             >
               BISOJICA
             </div>
             <div
               className="biso-body text-[0.6rem] tracking-[0.3em] uppercase"
-              style={{ color: "#b2c693" }}
+              style={{ color: "var(--text-color)" }}
             >
               Japan – Vietnam
             </div>
@@ -52,7 +51,7 @@ const Navbar = () => {
             <li key={item.href} className="flex items-center gap-2">
               <Link
                 href={item.href}
-                className="biso-body relative nav-link-underline text-[#d6e1c5] hover:text-[#fdfff0] font-medium text-sm tracking-wide px-2 pb-1 transition-colors duration-200 no-underline"
+                className="biso-body relative nav-link-underline text-[var(--text-color)]  font-medium text-sm tracking-wide px-2 pb-1 transition-colors duration-200 no-underline"
               >
                 {item.label}
               </Link>
@@ -60,10 +59,10 @@ const Navbar = () => {
             </li>
           ))}
           <li className="relative group pb-1.5">
-            <span className="biso-body relative nav-link-underline text-[#d6e1c5] hover:text-[#fdfff0] font-medium text-sm tracking-wide px-2 pb-1 transition-colors  duration-200 no-underline">Phát triển Nhân tài ▼</span>
+            <span className="biso-body relative nav-link-underline text-[var(--text-color)] font-medium text-sm tracking-wide px-2 pb-1 transition-colors  duration-200 no-underline">Phát triển Nhân tài ▼</span>
 
             <ul className="absolute left-0 mt-3 min-w-[180px] 
-               bg-[#1f3a2a] 
+               bg-[var(--background)] 
                rounded-lg shadow-xl 
                border border-[#b2c693]/20
                py-2
@@ -73,6 +72,19 @@ const Navbar = () => {
                group-hover:opacity-100
                group-hover:visible
                group-hover:translate-y-0">
+              <li>
+                <Link
+                  href="/phat-trien-nhan-tai"
+                  className="block px-4 py-2 
+                 biso-body 
+                 nav-link-underline
+                 hover:bg-white
+                 text-sm tracking-wide
+                 transition-colors duration-200"
+                >
+                  Phát triển nhân tài
+                </Link>
+              </li>
 
               <li>
                 <Link
@@ -80,8 +92,7 @@ const Navbar = () => {
                   className="block px-4 py-2 
                  biso-body 
                  nav-link-underline
-                 text-[#d6e1c5] 
-                 hover:text-[#fdfff0]
+                 hover:bg-white
                  text-sm tracking-wide
                  transition-colors duration-200"
                 >
@@ -95,8 +106,7 @@ const Navbar = () => {
                   className="block px-4 py-2 
                  biso-body 
                  nav-link-underline
-                 text-[#d6e1c5] 
-                 hover:text-[#fdfff0]
+                 hover:bg-white
                  text-sm tracking-wide
                  transition-colors duration-200"
                 >
@@ -109,9 +119,8 @@ const Navbar = () => {
                   className="block px-4 py-2 
                  biso-body 
                  nav-link-underline
-                 text-[#d6e1c5] 
-                 hover:text-[#fdfff0]
                  text-sm tracking-wide
+                 hover:bg-white
                  transition-colors duration-200"
                 >
                   Tài liệu
@@ -126,7 +135,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-[#ffd05c] bg-transparent border-none cursor-pointer p-1 rounded-md hover:bg-[#b2c693]/10 transition-colors"
+          className="md:hidden text-[bg-[var(--background)]] bg-transparent border-none cursor-pointer p-1 rounded-md hover:bg-[#b2c693]/10 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -140,10 +149,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          className="mobile-animate md:hidden px-6 pb-6 pt-3"
-          style={{ background: "#162e1f", borderTop: "1px solid rgba(178,198,147,0.15)" }}
+          className="mobile-animate md:hidden px-6 pb-6 pt-3 "
+          style={{ background: "bg-[var(--background)]", borderTop: "1px solid rgba(178,198,147,0.15)" }}
         >
-          <ul className="flex flex-col list-none m-0 p-0">
+          <ul className="flex flex-col list-none m-0 p-0 ">
             {[
               { label: "Trang chủ", href: "/" },
               { label: "Giới thiệu", href: "/about" },
@@ -152,11 +161,11 @@ const Navbar = () => {
               { label: "Liên hệ", href: "/contact" },
 
             ].map((item) => (
-              <li key={item.href} className="border-b border-[#b2c693]/10">
+              <li key={item.href} className="border-b border-[#b2c693]/10 ">
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="biso-body block py-3 text-[#d6e1c5] font-medium text-sm tracking-wide no-underline hover:text-[#ffd05c] hover:pl-2 transition-all duration-200"
+                  className="biso-body block py-3 text-[text-[var(--text-color)]] font-medium text-sm tracking-wide no-underline hover:text-[#ffd05c] hover:pl-2 transition-all duration-200"
                 >
                   {item.label}
                 </Link>
@@ -165,7 +174,7 @@ const Navbar = () => {
             <li className="border-b border-[#b2c693]/10">
               <button
                 onClick={() => setIsOtherOpen(!isOtherOpen)}
-                className="w-full flex justify-between items-center py-3 text-[#d6e1c5] font-medium text-sm tracking-wide"
+                className="w-full flex justify-between items-center py-3  font-medium text-sm tracking-wide"
               >
                 Khác
                 <span
@@ -180,12 +189,24 @@ const Navbar = () => {
                 <ul className="pl-4 pb-2 space-y-1">
                   <li>
                     <Link
+                      href="/phat-trien-nhan-tai"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsOtherOpen(false);
+                      }}
+                      className="block py-2 text-sm text-[var(--text-color)] transition"
+                    >
+                      Phát triển nhân tài
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/tuyen-dung"
                       onClick={() => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-[#d6e1c5] text-sm hover:text-[#ffd05c] transition"
+                      className="block py-2 text-sm text-[var(--text-color)] transition"
                     >
                       Tuyển dụng
                     </Link>
@@ -198,7 +219,7 @@ const Navbar = () => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-[#d6e1c5] text-sm hover:text-[#ffd05c] transition"
+                      className="block py-2 text-[var(--text-color)] text-sm hover:text-[#ffd05c] transition"
                     >
                       Tin tức
                     </Link>
@@ -210,7 +231,7 @@ const Navbar = () => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-[#d6e1c5] text-sm hover:text-[#ffd05c] transition"
+                      className="block py-2 text-[var(--text-color)] text-sm hover:text-[#ffd05c] transition"
                     >
                       Tài liệu
                     </Link>

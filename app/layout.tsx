@@ -5,6 +5,7 @@ import Header from "@/layouts/header/Header";
 import "aos/dist/aos.css";
 import AosProvider from "@/components/AosProvider";
 import Footer from "@/layouts/footer/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,13 +29,14 @@ export default function RootLayout({
 }>) {
   
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <Header />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AosProvider />
         {children}
+        <ScrollToTop />
       </body>
       <Footer/>
     </html>

@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         });
       }, []);
     return (
-        <section id="hero" className="relative bg-white overflow-hidden">
+        <section id="hero" className="relative var(--text-color) overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0">
                 {/* <Image

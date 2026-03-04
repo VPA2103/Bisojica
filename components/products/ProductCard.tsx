@@ -20,7 +20,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
       )}
 
       {/* Tên */}
-      <h2 className="text-lg font-semibold text-gray-900 mb-1">
+      <h2 className="text-lg font-semibold text-[var(--text-color] mb-1">
         {product.name}
       </h2>
 
@@ -29,7 +29,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
       </p>
 
       {/* Tính năng */}
-      <ul className="text-sm text-gray-700 list-disc list-inside space-y-1">
+      <ul className="text-sm text-[var(--text-color] list-disc list-inside space-y-1">
         {product.features.map((feature, idx) => (
           <li key={idx}>{feature}</li>
         ))}
@@ -38,7 +38,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
       {/* Nút luôn nằm đáy */}
       <Link
         href={`/products/${product.slug}`}
-        className="mt-auto w-full text-center bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium py-2 rounded-md transition"
+        className="mt-auto w-full text-center bg-[var(--text-color)] hover:bg-emerald-600 text-white text-sm font-medium py-2 rounded-md transition"
       >
         Xem chi tiết
       </Link>
