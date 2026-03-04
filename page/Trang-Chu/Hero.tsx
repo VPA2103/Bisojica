@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
                 /> */}
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-white to-white/30"></div>
+                <div className="absolute inset-0 bg-linear-to-r from-white/40 via-white to-white/30"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center md:items-center gap-8">

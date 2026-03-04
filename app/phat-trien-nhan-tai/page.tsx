@@ -178,7 +178,10 @@ const PhatTrienNhanTai: React.FC = () => {
                         </p>
                         <div
                             className="mt-8 p-8 rounded-2xl shadow-sm border"
-                            style={{ backgroundColor: '#f3edd7', borderColor: '#20412e', borderOpacity: 0.15 }}
+                            style={{
+                                backgroundColor: '#f3edd7',
+                                borderColor: 'rgba(32, 65, 46, 0.15)'
+                            }}
                         >
                             <p className="italic" style={{ color: '#20412e', opacity: 0.85 }}>
                                 "BISO tin rằng: Nếu sinh viên ngành Nông nghiệp được tiếp cận công nghệ enzyme và mô hình
@@ -320,7 +323,10 @@ const PhatTrienNhanTai: React.FC = () => {
                                 <div
                                     key={item}
                                     className="p-6 rounded-xl text-center border-2 transition-all hover:shadow-md cursor-default"
-                                    style={{ borderColor: '#20412e', borderOpacity: 0.2, backgroundColor: 'transparent' }}
+                                    style={{
+                                        borderColor: 'rgba(32, 65, 46, 0.2)',
+                                        backgroundColor: 'transparent'
+                                    }}
                                     onMouseEnter={(e) => {
                                         (e.currentTarget as HTMLDivElement).style.backgroundColor = '#20412e';
                                         (e.currentTarget as HTMLDivElement).querySelector('p')!.style.color = '#f3edd7';

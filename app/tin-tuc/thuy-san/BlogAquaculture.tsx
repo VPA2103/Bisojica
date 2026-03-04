@@ -132,7 +132,7 @@ export default function BlogAquaculture() {
             >
               <div className="flex items-start gap-6">
                 <span
-                  className="text-6xl font-black flex-shrink-0 leading-none"
+                  className="text-6xl font-black shrink-0 leading-none"
                   style={{ color: "rgba(32,65,46,0.15)" }}
                 >
                   {b.num}

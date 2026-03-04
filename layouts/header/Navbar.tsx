@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isOtherOpen, setIsOtherOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 shadow-lg bg-[var(--background)]"
+    <header className="sticky top-0 z-50 shadow-lg bg-background"
     >
       {/* Main nav bar */}
       <nav
@@ -51,7 +51,7 @@ const Navbar = () => {
             <li key={item.href} className="flex items-center gap-2">
               <Link
                 href={item.href}
-                className="biso-body relative nav-link-underline text-[var(--text-color)]  font-medium text-sm tracking-wide px-2 pb-1 transition-colors duration-200 no-underline"
+                className="biso-body relative nav-link-underline text-(--text-color)  font-medium text-sm tracking-wide px-2 pb-1 transition-colors duration-200 no-underline"
               >
                 {item.label}
               </Link>
@@ -59,10 +59,10 @@ const Navbar = () => {
             </li>
           ))}
           <li className="relative group pb-1.5">
-            <span className="biso-body relative nav-link-underline text-[var(--text-color)] font-medium text-sm tracking-wide px-2 pb-1 transition-colors  duration-200 no-underline">Phát triển Nhân tài ▼</span>
+            <span className="biso-body relative nav-link-underline text-(--text-color) font-medium text-sm tracking-wide px-2 pb-1 transition-colors  duration-200 no-underline">Phát triển Nhân tài ▼</span>
 
             <ul className="absolute left-0 mt-3 min-w-[180px] 
-               bg-[var(--background)] 
+               bg-background 
                rounded-lg shadow-xl 
                border border-[#b2c693]/20
                py-2
@@ -165,7 +165,7 @@ const Navbar = () => {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="biso-body block py-3 text-[text-[var(--text-color)]] font-medium text-sm tracking-wide no-underline hover:text-[#ffd05c] hover:pl-2 transition-all duration-200"
+                  className="biso-body block py-3 text-[text-(--text-color)] font-medium text-sm tracking-wide no-underline hover:text-[#ffd05c] hover:pl-2 transition-all duration-200"
                 >
                   {item.label}
                 </Link>
@@ -194,7 +194,7 @@ const Navbar = () => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-sm text-[var(--text-color)] transition"
+                      className="block py-2 text-sm text-(--text-color) transition"
                     >
                       Phát triển nhân tài
                     </Link>
@@ -206,7 +206,7 @@ const Navbar = () => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-sm text-[var(--text-color)] transition"
+                      className="block py-2 text-sm text-(--text-color) transition"
                     >
                       Tuyển dụng
                     </Link>
@@ -219,7 +219,7 @@ const Navbar = () => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-[var(--text-color)] text-sm hover:text-[#ffd05c] transition"
+                      className="block py-2 text-(--text-color) text-sm hover:text-[#ffd05c] transition"
                     >
                       Tin tức
                     </Link>
@@ -231,7 +231,7 @@ const Navbar = () => {
                         setIsOpen(false);
                         setIsOtherOpen(false);
                       }}
-                      className="block py-2 text-[var(--text-color)] text-sm hover:text-[#ffd05c] transition"
+                      className="block py-2 text-(--text-color) text-sm hover:text-[#ffd05c] transition"
                     >
                       Tài liệu
                     </Link>

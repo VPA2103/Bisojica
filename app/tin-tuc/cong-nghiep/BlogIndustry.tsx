@@ -131,7 +131,7 @@ export default function BlogIndustry() {
               }}
             >
               <div
-                className="flex-shrink-0 w-14 h-14 flex items-center justify-center text-2xl"
+                className="shrink-0 w-14 h-14 flex items-center justify-center text-2xl"
                 style={{ border: "2px solid #20412e" }}
               >
                 {s.icon}

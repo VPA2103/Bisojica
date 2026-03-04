@@ -175,7 +175,7 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
             {/* Index + Title */}
             <div className="flex gap-5 items-start mb-5">
               <span
-                className="text-5xl font-black leading-none flex-shrink-0 mt-1 transition-all duration-300"
+                className="text-5xl font-black leading-none shrink-0 mt-1 transition-all duration-300"
                 style={{
                   color: hovered ? "rgba(32,65,46,0.2)" : "rgba(32,65,46,0.1)",
                   fontVariantNumeric: "tabular-nums",

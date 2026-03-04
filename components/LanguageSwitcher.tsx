@@ -54,7 +54,7 @@ export default function LanguageSwitcher() {
       <div className="flex gap-2 items-center">
         <button
           onClick={() => changeLanguage("vi")}
-          className={`text-2xl transition text-[var(--text-color)] ${
+          className={`text-2xl transition text-(--text-color) ${
             active === "vi" ? "scale-110" : "opacity-60"
           }`}
         >
@@ -63,7 +63,7 @@ export default function LanguageSwitcher() {
 
         <button
           onClick={() => changeLanguage("en")}
-          className={`text-2xl transition text-[var(--text-color)] ${
+          className={`text-2xl transition text-(--text-color) ${
             active === "en" ? "scale-110" : "opacity-60"
           }`}
         >
