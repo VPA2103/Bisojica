@@ -432,7 +432,7 @@ export default function Sections() {
 
                   {/* CTA */}
                   <div style={{ marginTop: "auto" }}> {/* ⭐ QUAN TRỌNG */}
-                    <a href="/products">
+                    <a href="/tin-tuc">
                       <button
                         style={{
                           background: "none",
