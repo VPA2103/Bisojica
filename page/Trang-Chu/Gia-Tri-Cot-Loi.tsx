@@ -163,7 +163,7 @@ export default function Sections() {
       >
         <div style={{
           position: "absolute", inset: 0, opacity: 0.04,
-          backgroundImage: "radial-gradient(circle at 20% 50%, #4ADE80 0%, transparent 50%), radial-gradient(circle at 80% 20%, #86EFAC 0%, transparent 40%)",
+          backgroundImage: "radial-gradient(circle at 20% 50%, #4ADE80 0%, transparent 100%), radial-gradient(circle at 80% 20%, #86EFAC 0%, transparent 40%)",
         }} />
         <div style={{
           position: "absolute", top: -60, right: -60, width: 280, height: 280,
@@ -192,8 +192,8 @@ export default function Sections() {
             fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800,
             lineHeight: 1.25, marginBottom: 16, letterSpacing: "-0.02em",
           }}>
-            Dẫn đầu Đông Nam Á về{" "}
-            <span style={{ color: "#4ADE80" }}>Enzyme Hữu Cơ</span>
+            Dẫn đầu Thế Giới về{" "}
+            <span style={{ color: "#4ADE80" }}>Enzyme Hữu Cơ được nhập trực tiếp từ </span> Nhật Bản
           </h2>
           <p style={{
             textAlign: "center", color: "rgba(255,255,255,0.55)",

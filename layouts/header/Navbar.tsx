@@ -8,6 +8,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOtherOpen, setIsOtherOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 shadow-lg"
@@ -44,7 +45,6 @@ const Navbar = () => {
             { label: "Trang chủ", href: "/" },
             { label: "Giới thiệu", href: "/about" },
             { label: "Sản phẩm", href: "/products" },
-            { label: "Tài liệu", href: "/tai-lieu" },
             { label: "Thành tựu", href: "/achievement" },
             { label: "Liên hệ", href: "/contact" },
 
@@ -59,7 +59,69 @@ const Navbar = () => {
               <span className="text-[#b2c693]/30 text-xs select-none">·</span>
             </li>
           ))}
+          <li className="relative group pb-1.5">
+            <span className="biso-body relative nav-link-underline text-[#d6e1c5] hover:text-[#fdfff0] font-medium text-sm tracking-wide px-2 pb-1 transition-colors  duration-200 no-underline">Phát triển Nhân tài ▼</span>
+
+            <ul className="absolute left-0 mt-3 min-w-[180px] 
+               bg-[#1f3a2a] 
+               rounded-lg shadow-xl 
+               border border-[#b2c693]/20
+               py-2
+               opacity-0 invisible
+               translate-y-2
+               transition-all duration-300
+               group-hover:opacity-100
+               group-hover:visible
+               group-hover:translate-y-0">
+
+              <li>
+                <Link
+                  href="/tuyen-dung"
+                  className="block px-4 py-2 
+                 biso-body 
+                 nav-link-underline
+                 text-[#d6e1c5] 
+                 hover:text-[#fdfff0]
+                 text-sm tracking-wide
+                 transition-colors duration-200"
+                >
+                  Tuyển dụng
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/tin-tuc"
+                  className="block px-4 py-2 
+                 biso-body 
+                 nav-link-underline
+                 text-[#d6e1c5] 
+                 hover:text-[#fdfff0]
+                 text-sm tracking-wide
+                 transition-colors duration-200"
+                >
+                  Tin tức
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tai-lieu"
+                  className="block px-4 py-2 
+                 biso-body 
+                 nav-link-underline
+                 text-[#d6e1c5] 
+                 hover:text-[#fdfff0]
+                 text-sm tracking-wide
+                 transition-colors duration-200"
+                >
+                  Tài liệu
+                </Link>
+              </li>
+
+            </ul>
+          </li>
         </ul>
+
         <LanguageSwitcher />
 
         {/* Mobile Toggle */}
@@ -86,7 +148,6 @@ const Navbar = () => {
               { label: "Trang chủ", href: "/" },
               { label: "Giới thiệu", href: "/about" },
               { label: "Sản phẩm", href: "/products" },
-              { label: "Tài liệu", href: "/tai-lieu" },
               { label: "Thành tựu", href: "/achievement" },
               { label: "Liên hệ", href: "/contact" },
 
@@ -101,6 +162,63 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <li className="border-b border-[#b2c693]/10">
+              <button
+                onClick={() => setIsOtherOpen(!isOtherOpen)}
+                className="w-full flex justify-between items-center py-3 text-[#d6e1c5] font-medium text-sm tracking-wide"
+              >
+                Khác
+                <span
+                  className={`transition-transform duration-300 ${isOtherOpen ? "rotate-180" : ""
+                    }`}
+                >
+                  ▼
+                </span>
+              </button>
+
+              {isOtherOpen && (
+                <ul className="pl-4 pb-2 space-y-1">
+                  <li>
+                    <Link
+                      href="/tuyen-dung"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsOtherOpen(false);
+                      }}
+                      className="block py-2 text-[#d6e1c5] text-sm hover:text-[#ffd05c] transition"
+                    >
+                      Tuyển dụng
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href="/tin-tuc"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsOtherOpen(false);
+                      }}
+                      className="block py-2 text-[#d6e1c5] text-sm hover:text-[#ffd05c] transition"
+                    >
+                      Tin tức
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/tai-lieu"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setIsOtherOpen(false);
+                      }}
+                      className="block py-2 text-[#d6e1c5] text-sm hover:text-[#ffd05c] transition"
+                    >
+                      Tài liệu
+                    </Link>
+                  </li>
+
+                </ul>
+              )}
+            </li>
           </ul>
         </div>
       )}

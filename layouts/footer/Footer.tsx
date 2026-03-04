@@ -89,11 +89,12 @@ export default function Footer() {
               className="text-sm leading-relaxed mb-8 max-w-xs"
               style={{ color: "#ffffff60", letterSpacing: "0.02em", lineHeight: "1.8" }}
             >
-              Chúng tôi xây dựng những trải nghiệm kỹ thuật số đặc biệt — nơi sự sáng tạo gặp gỡ công nghệ.
+              Chúng tôi không chỉ tạo ra sản phẩm.<br/>
+              Chúng tôi xây dựng một thế hệ nông nghiệp mới
             </p>
 
             {/* Newsletter */}
-            <div>
+            {/* <div>
               <p
                 className="text-xs uppercase tracking-widest mb-3"
                 style={{ color: "#ffd70080", letterSpacing: "4px" }}
@@ -135,7 +136,7 @@ export default function Footer() {
                   </button>
                 </div>
               )}
-            </div>
+            </div> */}
           </div>
 
           {/* Links columns */}

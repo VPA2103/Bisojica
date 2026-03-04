@@ -23,16 +23,16 @@ const Hero: React.FC = () => {
         <section id="hero" className="relative bg-white overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0">
-                <Image
+                {/* <Image
                     src="/images/canh-dong-lua-vang-dep-nhat_115735930.jpg"
                     alt="hero background"
                     fill
                     priority
                     className="object-cover"
-                />
+                /> */}
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-white/80 to-white/30"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-white/40 via-white to-white/30"></div>
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex flex-col md:flex-row items-center md:items-center gap-8">
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 {/* Stats */}
-                <div className="flex flex-1 justify-center md:justify-end gap-10 mt-10 md:mt-0 text-center md:text-left">
+                <div className="flex flex-1 justify-center md:justify-end gap-10 mt-10 md:mt-0 text-center md:text-left" data-aos="fade-up">
                     {stats.map((stat, idx) => (
                         <div key={idx}>
                             <div className="text-3xl sm:text-4xl font-bold text-gray-900">{stat.num}</div>
