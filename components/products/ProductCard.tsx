@@ -10,7 +10,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
   return (
     <Link
       href={`/products/${product.slug}`}
-      className="block bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
+      className=" bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
     >
       {/* Ảnh */}
       {product.images && product.images.length > 0 && (
