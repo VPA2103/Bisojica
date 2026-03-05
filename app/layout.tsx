@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BISO JICA",
+  title: "BISO JICA VN",
   description: "Công nghệ enzyme Nhật Bản",
 };
 
