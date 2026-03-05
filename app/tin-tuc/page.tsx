@@ -57,7 +57,7 @@ export default function NewsListBlog() {
 
   return (
     <section
-      style={{ background: "#f3edd7", color: "#20412e", fontFamily: "'Lato', 'Times New Roman', serif" }}
+      style={{ background: "#ffffff", color: "#20412e", fontFamily: "'Lato', 'Times New Roman', serif" }}
       className="relative min-h-screen px-6 py-20 overflow-hidden"
     >
       {/* Subtle corner accents */}

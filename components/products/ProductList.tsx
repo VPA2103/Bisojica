@@ -4,7 +4,7 @@ import ProductCard from "./ProductCard";
 
 export default function ProductList() {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 bg-amber-50">
+    <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 ">
       {/* Section header */}
       <div className="mb-8 sm:mb-10">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
@@ -13,11 +13,11 @@ export default function ProductList() {
         <p className="mt-1.5 text-sm sm:text-base text-gray-500">
           {products.length} sản phẩm có sẵn
         </p>
-        <div className="mt-4 h-px bg-gradient-to-r from-emerald-200 via-teal-100 to-transparent" />
+        <div className="mt-4 h-px bg-linear-to-r from-emerald-200 via-teal-100 to-transparent" />
       </div>
 
       {/* Responsive grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

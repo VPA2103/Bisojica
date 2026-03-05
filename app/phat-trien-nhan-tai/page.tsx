@@ -22,7 +22,7 @@ const PhatTrienNhanTai: React.FC = () => {
     return (
         <div
             className="min-h-screen font-sans"
-            style={{ backgroundColor: '#f3edd7', color: '#20412e' }}
+            style={{ backgroundColor: '#ffffff', color: '#20412e' }}
         >
             {/* ── HERO ── */}
             <section
@@ -89,7 +89,7 @@ const PhatTrienNhanTai: React.FC = () => {
             </section>
 
             {/* ── VIDEO SECTION ── */}
-            <section id="video-section" className="py-20 px-6" style={{ backgroundColor: '#f3edd7' }}>
+            <section id="video-section" className="py-20 px-6" style={{ backgroundColor: '#ffffff' }}>
                 <div className="max-w-4xl mx-auto text-center">
                     <span
                         className="inline-block text-xs font-bold tracking-widest uppercase mb-4 px-3 py-1 rounded-full"
@@ -166,7 +166,7 @@ const PhatTrienNhanTai: React.FC = () => {
             )}
 
             {/* ── VÌ SAO BISO ── */}
-            <section className="py-20 px-6" style={{ backgroundColor: '#eae4cc' }}>
+            <section className="py-20 px-6" style={{ backgroundColor: '#ffffff' }}>
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-bold mb-8" style={{ color: '#20412e' }}>
                         Vì sao BISO tạo ra chương trình này?
@@ -179,7 +179,7 @@ const PhatTrienNhanTai: React.FC = () => {
                         <div
                             className="mt-8 p-8 rounded-2xl shadow-sm border"
                             style={{
-                                backgroundColor: '#f3edd7',
+                                backgroundColor: '#ffffff',
                                 borderColor: 'rgba(32, 65, 46, 0.15)'
                             }}
                         >
@@ -194,7 +194,7 @@ const PhatTrienNhanTai: React.FC = () => {
             </section>
 
             {/* ── TRẢI NGHIỆM ── */}
-            <section className="py-20 px-6" style={{ backgroundColor: '#f3edd7' }}>
+            <section className="py-20 px-6" style={{ backgroundColor: '#ffffff' }}>
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-center mb-4" style={{ color: '#20412e' }}>
                         Bạn sẽ trải nghiệm điều gì?
@@ -203,7 +203,7 @@ const PhatTrienNhanTai: React.FC = () => {
                         Đây không phải thực tập "ngồi văn phòng". Đây là thực tập thực chiến.
                     </p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             { Icon: Sprout, title: 'Tham quan vùng trồng', desc: 'Trực tiếp quan sát các vùng trồng đang ứng dụng công nghệ enzyme của BISO.' },
                             { Icon: Leaf, title: 'Quan sát thực tế', desc: 'Đánh giá sự khác biệt rõ rệt của đất, hệ rễ và cây trồng.' },
@@ -214,7 +214,7 @@ const PhatTrienNhanTai: React.FC = () => {
                             <div
                                 key={title}
                                 className="p-6 rounded-xl border transition-shadow hover:shadow-md"
-                                style={{ backgroundColor: '#eae4cc', borderColor: 'transparent' }}
+                                style={{ backgroundColor: '#ffffff', borderColor: 'transparent' }}
                             >
                                 <Icon className="w-10 h-10 mb-4" style={{ color: '#20412e' }} />
                                 <h3 className="text-xl font-bold mb-2" style={{ color: '#20412e' }}>{title}</h3>
@@ -282,7 +282,7 @@ const PhatTrienNhanTai: React.FC = () => {
             </section>
 
             {/* ── TÌM KIẾM & CƠ HỘI ── */}
-            <section className="py-20 px-6" style={{ backgroundColor: '#f3edd7' }}>
+            <section className="py-20 px-6" style={{ backgroundColor: '#ffffff' }}>
                 <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
                     <div>
                         <h2 className="text-3xl font-bold mb-8 flex items-center gap-3" style={{ color: '#20412e' }}>
@@ -299,7 +299,7 @@ const PhatTrienNhanTai: React.FC = () => {
                                 <li
                                     key={item}
                                     className="flex items-center gap-3 p-4 rounded-lg"
-                                    style={{ backgroundColor: '#eae4cc' }}
+                                    style={{ backgroundColor: '#ffffff' }}
                                 >
                                     <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: '#20412e' }} />
                                     <span style={{ color: '#20412e' }}>{item}</span>
@@ -345,10 +345,10 @@ const PhatTrienNhanTai: React.FC = () => {
             </section>
 
             {/* ── ĐĂNG KÝ ── */}
-            <section id="dang-ky-ngay" className="py-20 px-6" style={{ backgroundColor: '#eae4cc' }}>
+            <section id="dang-ky-ngay" className="py-20 px-6" style={{ backgroundColor: '#ffffff' }}>
                 <div
                     className="max-w-3xl mx-auto p-8 md:p-12 rounded-2xl shadow-xl border"
-                    style={{ backgroundColor: '#f3edd7', borderColor: 'rgba(32,65,46,0.12)' }}
+                    style={{ backgroundColor: '#ffffff', borderColor: 'rgba(32,65,46,0.12)' }}
                 >
                     <div className="text-center mb-10">
                         <h2 className="text-3xl font-bold mb-4" style={{ color: '#20412e' }}>
@@ -359,7 +359,7 @@ const PhatTrienNhanTai: React.FC = () => {
 
                     <div
                         className="p-6 rounded-lg mb-8 border"
-                        style={{ backgroundColor: '#eae4cc', borderColor: 'rgba(32,65,46,0.15)' }}
+                        style={{ backgroundColor: '#ffffff', borderColor: 'rgba(32,65,46,0.15)' }}
                     >
                         <h3 className="font-bold mb-2" style={{ color: '#20412e' }}>Hồ sơ bao gồm:</h3>
                         <ul className="list-disc list-inside space-y-2 mb-4" style={{ color: '#20412e', opacity: 0.85 }}>

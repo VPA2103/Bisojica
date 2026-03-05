@@ -27,14 +27,6 @@ const ProductCard: React.FC<Props> = ({ product }) => {
       <p className="text-sm text-gray-500 mb-3">
         {product.mainApplication}
       </p>
-
-      {/* Tính năng */}
-      <ul className="text-sm text-(--text-color) list-disc list-inside space-y-1">
-        {product.features.map((feature, idx) => (
-          <li key={idx}>{feature}</li>
-        ))}
-      </ul>
-
       {/* Nút luôn nằm đáy */}
       <Link
         href={`/products/${product.slug}`}

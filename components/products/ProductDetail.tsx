@@ -72,9 +72,9 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                             </button>
 
                             {/* Image Counter Badge */}
-                            <div className="absolute top-3 right-3 z-10 bg-black/50 text-white text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm">
+                            {/* <div className="absolute top-3 right-3 z-10 bg-black/50 text-white text-xs font-medium px-2.5 py-1 rounded-full backdrop-blur-sm">
                                 1 / {product.images.length}
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Thumbnail Swiper */}
@@ -90,11 +90,11 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                                     640: { slidesPerView: 5 },
                                     1024: { slidesPerView: 6 },
                                 }}
-                                className="!px-1"
+                                className="px-1"
                             >
                                 {product.images.map((img: string, index: number) => (
                                     <SwiperSlide key={index}>
-                                        <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden cursor-pointer border-2 border-transparent [.swiper-slide-thumb-active_&]:border-indigo-500 transition-all duration-200 hover:opacity-80">
+                                        <div className="relative aspect-square bg-gray-50 rounded-xl overflow-hidden cursor-pointer border-2 border-transparent in-[.swiper-slide-thumb-active]:border-indigo-500 transition-all duration-200 hover:opacity-80">
                                             <Image
                                                 src={img}
                                                 alt={`Thumbnail ${index + 1}`}
@@ -119,7 +119,7 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
 
                         {/* Main Application */}
                         <p className="text-lg text-gray-700 mb-6">
-                            <span className="font-semibold text-green-700">
+                            <span className="font-semibold text-green-800">
                                 Ứng dụng chính:
                             </span>{" "}
                             {product.mainApplication}
@@ -141,14 +141,14 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                                     </li>
                                 ))}
                             </ul>
-                            <div className="text-black">
+                            {/* <div className="text-black">
                                 <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-medium py-2 rounded-md transition">
                                     <a href="/tai-lieu">
                                         <p>Xem giá chi tiết</p>
                                     </a>
                                 </button>
 
-                            </div>
+                            </div> */}
 
                         </div>
 

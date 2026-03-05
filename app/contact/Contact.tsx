@@ -8,7 +8,7 @@ const ContactSection = () => {
     <section
       className="min-h-screen flex items-center justify-center py-20 px-4"
       style={{
-        background: "linear-gradient(160deg, #ffd05c 0%, #f0ebe3 50%, #e8e0d4 100%)",
+        background: "linear-gradient(160deg, #fdfff0 0%, #f0ebe3 50%, #e8e0d4 100%)",
         fontFamily: "'Noto Serif JP', 'Georgia', serif",
       }}
     >

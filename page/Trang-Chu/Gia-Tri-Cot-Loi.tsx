@@ -146,96 +146,135 @@ export default function Sections() {
       }}
     >
 
-
       {/* ── SECTION 1: Core Values ── */}
       <section
         style={{
-          background: "linear-gradient(145deg, #e9e2c8 0%, #f3edd7 100%)",
+          background: "#ffffff",
           padding: "80px 24px 90px",
           position: "relative",
-          overflow: "hidden",
         }}
       >
-        <div style={{
-          position: "absolute", inset: 0, opacity: 0.04,
-          backgroundImage: "radial-gradient(circle at 20% 50%, #4ADE80 0%, transparent 100%), radial-gradient(circle at 80% 20%, #86EFAC 0%, transparent 40%)",
-        }} />
-        <div style={{
-          position: "absolute", top: -60, right: -60, width: 280, height: 280,
-          borderRadius: "50%", border: "1px solid rgba(74,222,128,0.08)",
-        }} />
-        <div style={{
-          position: "absolute", top: -20, right: -20, width: 180, height: 180,
-          borderRadius: "50%", border: "1px solid rgba(74,222,128,0.12)",
-        }} />
-
         <div style={{ maxWidth: 960, margin: "0 auto", position: "relative" }}>
+
           <div style={{ display: "flex", justifyContent: "center", marginBottom: 36 }}>
-            <div style={{
-              display: "inline-flex", alignItems: "center", gap: 8,
-              background: "rgba(74,222,128,0.12)", border: "1px solid rgba(74,222,128,0.25)",
-              borderRadius: 100, padding: "8px 20px",
-            }}>
-              <span style={{ fontSize: 18, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 600 }}>
+            <div
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                background: "rgba(74,222,128,0.12)",
+                border: "1px solid rgba(74,222,128,0.25)",
+                borderRadius: 100,
+                padding: "8px 20px",
+              }}
+            >
+              <span
+                style={{
+                  fontSize: 18,
+                  color: "var(--text-color)",
+                  letterSpacing: "0.08em",
+                  fontWeight: 600,
+                }}
+              >
                 TẦM NHÌN
               </span>
             </div>
           </div>
 
-          <h2 style={{
-            textAlign: "center", color: "var(--text-color)",
-            fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800,
-            lineHeight: 1.25, marginBottom: 16, letterSpacing: "-0.02em",
-          }}>
+          <h2
+            style={{
+              textAlign: "center",
+              color: "var(--text-color)",
+              fontSize: "clamp(26px, 4vw, 40px)",
+              fontWeight: 800,
+              lineHeight: 1.25,
+              marginBottom: 16,
+              letterSpacing: "-0.02em",
+            }}
+          >
             Dẫn đầu Thế Giới về Enzyme Hữu Cơ được nhập trực tiếp từ Nhật Bản
           </h2>
-          <p style={{
-            textAlign: "center", color: "var(--text-color)",
-            fontSize: 16, maxWidth: 520, margin: "0 auto 60px", lineHeight: 1.7,
-          }}>
+
+          <p
+            style={{
+              textAlign: "center",
+              color: "var(--text-color)",
+              fontSize: 16,
+              maxWidth: 520,
+              margin: "0 auto 60px",
+              lineHeight: 1.7,
+            }}
+          >
             Thúc đẩy nền kinh tế xanh bền vững — vì một tương lai tốt đẹp hơn cho hệ sinh thái và con người.
           </p>
 
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: 20,
-          }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              gap: 20,
+            }}
+          >
             {coreValues.map((v, i) => (
               <div
                 key={i}
                 style={{
                   background: "rgba(32,65,46,0.05)",
                   border: "1px solid rgba(32,65,46,0.1)",
-                  borderRadius: 20, padding: "32px 28px",
+                  borderRadius: 20,
+                  padding: "32px 28px",
                   transition: "all 0.25s ease",
                   cursor: "default",
                 }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLDivElement).style.background = "rgba(255,255,255,0.07)";
-                  (e.currentTarget as HTMLDivElement).style.transform = "translateY(-4px)";
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLDivElement).style.background = "#f9fafb";
+                  (e.currentTarget as HTMLDivElement).style.transform =
+                    "translateY(-4px)";
                 }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLDivElement).style.background = "rgba(32,65,46,0.05)";
-                  (e.currentTarget as HTMLDivElement).style.transform = "translateY(0)";
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLDivElement).style.background =
+                    "rgba(32,65,46,0.05)";
+                  (e.currentTarget as HTMLDivElement).style.transform =
+                    "translateY(0)";
                 }}
               >
-                <div style={{
-                  width: 52, height: 52, borderRadius: 14,
-                  background: `${v.accent}22`,
-                  border: `1px solid ${v.accent}44`,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  color: v.accent, marginBottom: 20,
-                }}>
+                <div
+                  style={{
+                    width: 52,
+                    height: 52,
+                    borderRadius: 14,
+                    background: `${v.accent}22`,
+                    border: `1px solid ${v.accent}44`,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: v.accent,
+                    marginBottom: 20,
+                  }}
+                >
                   {v.icon}
                 </div>
-                <h3 style={{
-                  color: "var(--text-color)", fontWeight: 700,
-                  fontSize: 17, marginBottom: 10, letterSpacing: "-0.01em",
-                }}>
+
+                <h3
+                  style={{
+                    color: "var(--text-color)",
+                    fontWeight: 700,
+                    fontSize: 17,
+                    marginBottom: 10,
+                    letterSpacing: "-0.01em",
+                  }}
+                >
                   {v.title}
                 </h3>
-                <p style={{ color: "var(--text-color)", fontSize: 14, lineHeight: 1.65, margin: 0 }}>
+
+                <p
+                  style={{
+                    color: "var(--text-color)",
+                    fontSize: 14,
+                    lineHeight: 1.65,
+                    margin: 0,
+                  }}
+                >
                   {v.desc}
                 </p>
               </div>
@@ -280,6 +319,7 @@ export default function Sections() {
               gap: 24,
             }}
           >
+
             {fields.map((f, i) => (
               <div
                 key={i}
@@ -469,6 +509,7 @@ export default function Sections() {
                 </div>
               </div>
             ))}
+
           </div>
         </div>
       </section>

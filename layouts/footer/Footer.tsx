@@ -75,13 +75,13 @@ export default function Footer() {
                   letterSpacing: "-2px",
                 }}
               >
-                BISO
+                BISO {" "}
               </span>
               <span
                 className="text-4xl font-thin tracking-widest"
                 style={{ color: "#ffffff80", letterSpacing: "6px" }}
               >
-                JICA
+                -JICA
               </span>
             </div>
 

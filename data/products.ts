@@ -66,6 +66,7 @@ export const products = [
   {
     name: "SP 10-15-20",
     slug: "sp-10-15-20",
+    featured: true,
     category: "nong-nghiep",
     mainApplication: "Enzyme hữu cơ",
     features: [
