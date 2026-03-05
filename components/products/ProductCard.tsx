@@ -8,8 +8,10 @@ interface Props {
 
 const ProductCard: React.FC<Props> = ({ product }) => {
   return (
-    <div className="bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col">
-
+    <Link
+      href={`/products/${product.slug}`}
+      className="block bg-white rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
+    >
       {/* Ảnh */}
       {product.images && product.images.length > 0 && (
         <img
@@ -27,14 +29,12 @@ const ProductCard: React.FC<Props> = ({ product }) => {
       <p className="text-sm text-gray-500 mb-3">
         {product.mainApplication}
       </p>
-      {/* Nút luôn nằm đáy */}
-      <Link
-        href={`/products/${product.slug}`}
-        className="mt-auto w-full text-center bg-(--text-color) hover:bg-emerald-600 text-white text-sm font-medium py-2 rounded-md transition"
-      >
+
+      {/* Nút giả */}
+      <div className="mt-auto w-full text-center bg-(--text-color) hover:bg-green-500 text-white text-sm font-medium py-2 rounded-md">
         Xem chi tiết
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 };
 
