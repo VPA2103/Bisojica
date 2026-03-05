@@ -35,7 +35,7 @@ export default function BlogAgri() {
     <article
       ref={ref}
       className="relative min-h-screen overflow-hidden"
-      style={{ background: "#f3edd7", color: "#20412e", fontFamily: "'Lato', serif" }}
+      style={{ background: "#ffffff", color: "#20412e", fontFamily: "'Lato', serif" }}
     >
       <div
         className="absolute inset-0 opacity-40 pointer-events-none"

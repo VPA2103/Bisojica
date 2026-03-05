@@ -39,8 +39,8 @@ export default function BlogIndustry() {
   return (
     <article
       ref={ref}
-      className="relative min-h-screen overflow-hidden"
-      style={{ background: "#f3edd7", color: "#20412e", fontFamily: "'Lato', serif" }}
+      className="relative min-h-screen bg-white overflow-hidden"
+      style={{ color: "#20412e", fontFamily: "'Lato', serif" }}
     >
       <div
         className="absolute inset-0 opacity-30 pointer-events-none"
@@ -49,7 +49,7 @@ export default function BlogIndustry() {
         }}
       />
 
-      <div className="relative max-w-4xl mx-auto px-6 py-20">
+      <div className="relative max-w-4xl mx-auto px-6 py-20 ">
         {/* Badge */}
         <div
           className={`inline-flex items-center gap-3 mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}
@@ -110,7 +110,7 @@ export default function BlogIndustry() {
             <div
               key={i}
               className="p-5"
-              style={{ borderTop: "3px solid #20412e", background: "rgba(32,65,46,0.06)" }}
+              style={{ borderTop: "3px solid #20412e", background: "#ffffff" }}
             >
               <div className="text-2xl font-black mb-1" style={{ color: "#20412e" }}>{s.val}</div>
               <div className="text-xs uppercase tracking-wider" style={{ color: "#3a6e4a" }}>{s.label}</div>
@@ -158,13 +158,13 @@ export default function BlogIndustry() {
         {/* Footer callout */}
         <div
           className={`mt-16 p-8 transition-all duration-700 delay-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-          style={{ background: "#20412e", color: "#f3edd7" }}
+          style={{ background: "#ffffff", color: "#20412e" }}
         >
           <div className="flex items-start gap-4">
             <span className="text-3xl">🌿</span>
             <div>
               <h3 className="text-xl font-bold mb-2">Xu hướng tất yếu</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "rgba(243,237,215,0.8)" }}>
+              <p className="text-sm leading-relaxed" style={{ color: "#20412e" }}>
                 Đây là xu hướng tất yếu trong chuyển đổi xanh và phát triển bền vững của doanh nghiệp Việt Nam
                 trong thời đại mới.
               </p>
