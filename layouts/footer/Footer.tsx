@@ -1,176 +1,112 @@
-"use client"
-import { useState } from "react";
+"use client";
+
+import Image from "next/image";
 
 const footerLinks = {
   "Sản Phẩm": [
     { label: "Sản phẩm", href: "/products" },
-    { label: "Bảng Giá", href: "/tai-lieu" },
+    { label: "Bảng giá", href: "/bang-gia" },
   ],
   "Công Ty": [
-    { label: "Về Chúng Tôi", href: "/achievement" },
+    { label: "Về chúng tôi", href: "/ve-chung-toi" },
   ],
   "Hỗ Trợ": [
-    { label: "Tài Liệu", href: "/tai-lieu" },
-    { label: "Cộng Đồng", href: "/contact" },
-    { label: "Liên Hệ", href: "/contact" },
+    { label: "Tài liệu", href: "/tai-lieu" },
+    { label: "Cộng đồng", href: "/contact" },
   ],
 };
 
 const socials = [
   { label: "ZL", href: "/contact" },
-
 ];
 
 export default function Footer() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = () => {
-    if (email) {
-      setSubscribed(true);
-      setEmail("");
-    }
-  };
-
   return (
-    <footer
-      className="relative overflow-hidden"
-      style={{
-        background: "linear-gradient(135deg, #20412e 0%, #20412e 50%, #20412e 100%)",
-        fontFamily: "'Georgia', 'Times New Roman', serif",
-      }}
-    >
-      {/* Decorative grid lines */}
+    <footer className="bg-[#20412E] text-white relative overflow-hidden">
+
+      {/* Background grid */}
       <div
         className="absolute inset-0 opacity-5"
         style={{
           backgroundImage: `
-            linear-gradient(rgba(255,220,100,0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,220,100,0.3) 1px, transparent 1px)
-          `,
+          linear-gradient(rgba(255,220,100,0.3) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,220,100,0.3) 1px, transparent 1px)
+        `,
           backgroundSize: "60px 60px",
         }}
       />
 
-      {/* Diagonal accent */}
-      <div
-        className="absolute top-0 right-0 w-64 h-64 opacity-10"
-        style={{
-          background:
-            "conic-gradient(from 45deg, transparent 0deg, #ffd700 90deg, transparent 180deg)",
-        }}
-      />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 pt-20 pb-10">
-        {/* Top section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-16">
-          {/* Brand column */}
-          <div className="lg:col-span-4">
-            <div className="mb-6">
-              <span
-                className="text-4xl font-black tracking-tighter"
-                style={{
-                  color: "#ffd700",
-                  fontFamily: "'Georgia', serif",
-                  letterSpacing: "-2px",
-                }}
-              >
-                BISO {" "}
-              </span>
-              <span
-                className="text-4xl font-thin tracking-widest"
-                style={{ color: "#ffffff80", letterSpacing: "6px" }}
-              >
-                -JICA
-              </span>
+        {/* MAIN GRID */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+
+          {/* CONTACT */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6 text-[#ffd700] tracking-widest uppercase">
+              Thông Tin Liên Hệ
+            </h3>
+
+            <div className="space-y-3 text-white/70 text-sm">
+              <p>
+                <span className="font-medium text-white">Địa chỉ: </span>
+                1145 Nguyễn Thị Định, P. Cát Lái, TP. Thủ Đức
+              </p>
+
+              <p>
+                <span className="font-medium text-white">Điện thoại: </span>
+                092 8899 939
+              </p>
+
+              <p>
+                <span className="font-medium text-white">Email: </span>
+                bisojica@gmail.com
+              </p>
             </div>
 
-            <p
-              className="text-sm leading-relaxed mb-8 max-w-xs"
-              style={{ color: "#ffffff60", letterSpacing: "0.02em", lineHeight: "1.8" }}
-            >
-              Chúng tôi không chỉ tạo ra sản phẩm.<br/>
-              Chúng tôi xây dựng một thế hệ nông nghiệp mới
-            </p>
+            {/* QR */}
+            <div className="flex gap-6 mt-6">
+              <div className="text-center">
+                <Image
+                  src="/images/contact/qr.png"
+                  alt="QR liên hệ"
+                  width={100}
+                  height={100}
+                  className="rounded-md"
+                />
+                <p className="text-xs mt-2 text-white/60">Quét để liên hệ</p>
+              </div>
 
-            {/* Newsletter */}
-            {/* <div>
-              <p
-                className="text-xs uppercase tracking-widest mb-3"
-                style={{ color: "#ffd70080", letterSpacing: "4px" }}
-              >
-                Bản Tin
-              </p>
-              {subscribed ? (
-                <p className="text-sm" style={{ color: "#ffd700" }}>
-                  ✦ Đã đăng ký thành công!
-                </p>
-              ) : (
-                <div className="flex gap-0">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="email@của bạn"
-                    className="flex-1 bg-transparent text-sm px-4 py-3 outline-none placeholder-white/20"
-                    style={{
-                      border: "1px solid rgba(255,215,0,0.2)",
-                      borderRight: "none",
-                      color: "#fff",
-                      fontFamily: "inherit",
-                    }}
-                    onKeyDown={(e) => e.key === "Enter" && handleSubscribe()}
-                  />
-                  <button
-                    onClick={handleSubscribe}
-                    className="px-5 py-3 text-xs uppercase tracking-widest transition-all duration-300 hover:opacity-80"
-                    style={{
-                      background: "#ffd700",
-                      color: "#0a0a0f",
-                      fontFamily: "inherit",
-                      fontWeight: "bold",
-                      letterSpacing: "2px",
-                    }}
-                  >
-                    →
-                  </button>
-                </div>
-              )}
-            </div> */}
+              <div className="text-center">
+                <Image
+                  src="/images/contact/qrzl.png"
+                  alt="QR thông tin"
+                  width={100}
+                  height={100}
+                  className="rounded-md"
+                />
+                <p className="text-xs mt-2 text-white/60">Quét để xem</p>
+              </div>
+            </div>
           </div>
 
-          {/* Links columns */}
-          <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {Object.entries(footerLinks).map(([category, links]) => (
-              <div key={category}>
-                <h4
-                  className="text-xs uppercase mb-6"
-                  style={{
-                    color: "#ffd700",
-                    letterSpacing: "4px",
-                    fontFamily: "'Georgia', serif",
-                  }}
-                >
-                  {category}
+          {/* LINKS */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-10 lg:col-span-2">
+
+            {Object.entries(footerLinks).map(([title, links]) => (
+              <div key={title}>
+                <h4 className="text-sm text-[#ffd700] mb-6 tracking-widest uppercase">
+                  {title}
                 </h4>
+
                 <ul className="space-y-3">
                   {links.map((link) => (
                     <li key={link.href}>
                       <a
                         href={link.href}
-                        className="text-sm transition-all duration-200 hover:translate-x-1 inline-block group"
-                        style={{ color: "#ffffff50" }}
-                        onMouseEnter={(e) =>
-                          ((e.target as HTMLElement).style.color = "#ffffff")
-                        }
-                        onMouseLeave={(e) =>
-                          ((e.target as HTMLElement).style.color = "#ffffff50")
-                        }
+                        className="text-sm text-white/60 hover:text-white transition flex items-center gap-2"
                       >
-                        <span
-                          className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity"
-                          style={{ color: "#ffd700" }}
-                        >
+                        <span className="text-[#ffd700] opacity-0 group-hover:opacity-100">
                           ›
                         </span>
                         {link.label}
@@ -180,75 +116,42 @@ export default function Footer() {
                 </ul>
               </div>
             ))}
+
           </div>
+
         </div>
 
         {/* Divider */}
-        <div
-          className="w-full h-px mb-10"
-          style={{
-            background:
-              "linear-gradient(90deg, transparent, rgba(255,215,0,0.3), transparent)",
-          }}
-        />
+        <div className="my-12 h-px bg-linear-to-r from-transparent via-yellow-400/30 to-transparent" />
 
-        {/* Bottom bar */}
+        {/* BOTTOM BAR */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Copyright */}
-          <p
-            className="text-xs"
-            style={{ color: "#ffffff30", letterSpacing: "2px" }}
-          >
+
+          <p className="text-xs text-white/40 tracking-widest">
             © 2026 BISO JICA
           </p>
 
-          {/* Location badge */}
-          <div
-            className="flex items-center gap-2 px-4 py-2"
-            style={{
-              border: "1px solid rgba(255,215,0,0.15)",
-              background: "rgba(255,215,0,0.03)",
-            }}
-          >
-            <span style={{ color: "#ffd70060", fontSize: "10px" }}>◉</span>
-            <span
-              className="text-xs uppercase tracking-widest"
-              style={{ color: "#ffffff30", letterSpacing: "3px" }}
-            >
+          {/* Location */}
+          <div className="flex items-center gap-2 border border-yellow-400/20 px-4 py-2 bg-yellow-400/5 mb-6">
+            <span className="text-yellow-400 text-xs">◉</span>
+            <span className="text-xs tracking-widest text-white/40 uppercase ">
               Hồ Chí Minh, Việt Nam
             </span>
           </div>
 
-          {/* Socials */}
-          <div className="flex gap-3">
+          {/* Social */}
+          {/* <div className="flex gap-3">
             {socials.map(({ label, href }) => (
               <a
                 key={label}
                 href={href}
-                className="w-9 h-9 flex items-center justify-center text-xs transition-all duration-300"
-                style={{
-                  border: "1px solid rgba(255,215,0,0.2)",
-                  color: "#ffffff40",
-                  letterSpacing: "1px",
-                  fontWeight: "bold",
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.background = "#ffd700";
-                  el.style.color = "#0a0a0f";
-                  el.style.borderColor = "#ffd700";
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.background = "transparent";
-                  el.style.color = "#ffffff40";
-                  el.style.borderColor = "rgba(255,215,0,0.2)";
-                }}
+                className="w-9 h-9 flex items-center justify-center border border-yellow-400/20 text-white/50 hover:bg-yellow-400 hover:text-black transition mb-6"
               >
                 {label}
               </a>
             ))}
-          </div>
+          </div> */}
+
         </div>
       </div>
     </footer>

@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import AosProvider from "@/components/AosProvider";
 import Footer from "@/layouts/footer/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
+import QuickContact from "@/components/QuickContact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  
+
   return (
     <html lang="en" className="scroll-smooth">
       <Header />
@@ -36,9 +37,10 @@ export default function RootLayout({
       >
         <AosProvider />
         {children}
-        <ScrollToTop />
+        <QuickContact />
       </body>
-      <Footer/>
+      <Footer />
+      <ScrollToTop />
     </html>
   );
 }

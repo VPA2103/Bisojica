@@ -1,10 +1,10 @@
-import ContactForm from "./Contact";
+import ContactSection from "./Contact";
 
 export default function Page(){
 
     return(
         <>
-            <ContactForm/>
+            <ContactSection/>
         </>
     )
 }

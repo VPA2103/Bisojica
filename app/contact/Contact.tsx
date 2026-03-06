@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
-import qr2 from "@/public/images/contact/qr.jpg"; // ảnh Zalo OA
-import qr1 from "@/public/images/contact/qrzl.jpg"; // ảnh Danh thiếp Zalo
+import qr2 from "@/public/images/contact/qr.png"; // ảnh Zalo OA
+import qr1 from "@/public/images/contact/qrzl.png"; // ảnh Danh thiếp Zalo
 
 const ContactSection = () => {
   return (

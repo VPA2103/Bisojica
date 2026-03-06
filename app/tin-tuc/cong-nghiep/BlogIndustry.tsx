@@ -49,13 +49,13 @@ export default function BlogIndustry() {
         }}
       />
 
-      <div className="relative max-w-4xl mx-auto px-6 py-20 ">
+      <div className="relative max-w-5xl mx-auto px-6 py-20 ">
         {/* Badge */}
         <div
           className={`inline-flex items-center gap-3 mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}
         >
           <div className="w-10 h-0.5" style={{ background: "#20412e" }} />
-          <span className="text-xs tracking-[0.4em] uppercase font-semibold" style={{ color: "#20412e" }}>
+          <span className="text-xl tracking-[0.4em] uppercase font-semibold" style={{ color: "#20412e" }}>
             Công Nghiệp &amp; Môi Trường
           </span>
         </div>
@@ -69,7 +69,7 @@ export default function BlogIndustry() {
               Trong Công Nghiệp
             </span>
           </h1>
-          <p className="max-w-xl leading-relaxed text-base" style={{ color: "#20412e" }}>
+          <p className="max-w-4xl leading-relaxed text-2xl" style={{ color: "#20412e" }}>
             Ô nhiễm môi trường công nghiệp đang trở thành vấn đề cấp bách. Từ nước thải, khí thải đến mùi hôi,
             doanh nghiệp cần những giải pháp vừa hiệu quả vừa thân thiện môi trường.
           </p>
@@ -91,8 +91,8 @@ export default function BlogIndustry() {
             style={{ background: "linear-gradient(to top, rgba(32,65,46,0.35) 0%, transparent 55%)" }}
           />
           <span
-            className="absolute bottom-5 left-6 text-xs tracking-widest uppercase"
-            style={{ color: "#f3edd7", opacity: 0.9 }}
+            className="absolute bottom-5 left-6 text-xl tracking-widest uppercase"
+            style={{ color: "#ffffff", opacity: 0.9 }}
           >
             Xử lý môi trường công nghiệp bền vững
           </span>
@@ -112,8 +112,8 @@ export default function BlogIndustry() {
               className="p-5"
               style={{ borderTop: "3px solid #20412e", background: "#ffffff" }}
             >
-              <div className="text-2xl font-black mb-1" style={{ color: "#20412e" }}>{s.val}</div>
-              <div className="text-xs uppercase tracking-wider" style={{ color: "#3a6e4a" }}>{s.label}</div>
+              <div className="text-4xl font-black mb-1" style={{ color: "#20412e" }}>{s.val}</div>
+              <div className="text-xl uppercase tracking-wider" style={{ color: "#3a6e4a" }}>{s.label}</div>
             </div>
           ))}
         </div>
@@ -137,13 +137,13 @@ export default function BlogIndustry() {
                 {s.icon}
               </div>
               <div className="flex-1">
-                <h2 className="text-xl font-bold mb-3" style={{ color: "#20412e" }}>{s.title}</h2>
-                <p className="text-sm leading-relaxed mb-4" style={{ color: "#20412e" }}>{s.body}</p>
+                <h2 className="text-3xl font-bold mb-3" style={{ color: "#20412e" }}>{s.title}</h2>
+                <p className="text-xl leading-relaxed mb-4" style={{ color: "#20412e" }}>{s.body}</p>
                 <div className="flex flex-wrap gap-2">
                   {s.tags.map((t, j) => (
                     <span
                       key={j}
-                      className="text-xs px-3 py-1 font-semibold tracking-wide"
+                      className="text-xl px-3 py-1 font-semibold tracking-wide"
                       style={{ background: "rgba(32,65,46,0.1)", color: "#20412e" }}
                     >
                       {t}
@@ -163,8 +163,8 @@ export default function BlogIndustry() {
           <div className="flex items-start gap-4">
             <span className="text-3xl">🌿</span>
             <div>
-              <h3 className="text-xl font-bold mb-2">Xu hướng tất yếu</h3>
-              <p className="text-sm leading-relaxed" style={{ color: "#20412e" }}>
+              <h3 className="text-4xl font-bold mb-2">Xu hướng tất yếu</h3>
+              <p className="text-2xl leading-relaxed" style={{ color: "#20412e" }}>
                 Đây là xu hướng tất yếu trong chuyển đổi xanh và phát triển bền vững của doanh nghiệp Việt Nam
                 trong thời đại mới.
               </p>

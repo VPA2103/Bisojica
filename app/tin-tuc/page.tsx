@@ -83,7 +83,7 @@ export default function NewsListBlog() {
             className={`flex items-center gap-4 mb-8 transition-all duration-700 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           >
             <div className="w-8 h-px" style={{ background: "#20412e" }} />
-            <span className="text-xs tracking-[0.45em] uppercase font-semibold" style={{ color: "#20412e" }}>
+            <span className="text-xl tracking-[0.45em] uppercase font-semibold" style={{ color: "#20412e" }}>
               Tin Tức &amp; Chuyên Đề
             </span>
             <div className="flex-1 h-px" style={{ background: "rgba(32,65,46,0.18)" }} />
@@ -104,7 +104,7 @@ export default function NewsListBlog() {
           </div>
 
           <p
-            className={`text-base leading-relaxed max-w-xl mb-16 transition-all duration-700 delay-200 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+            className={` leading-relaxed max-w-2xl text-xl mb-16 transition-all duration-700 delay-200 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
             style={{ color: "rgba(32,65,46,0.7)" }}
           >
             Khám phá ứng dụng công nghệ enzyme sinh học trong nông nghiệp, công nghiệp và nuôi trồng thủy sản —
@@ -162,12 +162,12 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
             {/* Meta row */}
             <div className="flex items-center gap-4 mb-5">
               <span
-                className="text-xs tracking-widest uppercase font-bold px-3 py-1"
+                className="text-xl tracking-widest uppercase font-bold px-3 py-1"
                 style={{ background: "rgba(32,65,46,0.1)", color: "#20412e" }}
               >
                 {article.category}
               </span>
-              <span className="text-xs" style={{ color: "rgba(32,65,46,0.5)" }}>
+              <span className="text-xl" style={{ color: "rgba(32,65,46,0.5)" }}>
                 {article.readTime}
               </span>
             </div>
@@ -193,7 +193,7 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
             </div>
 
             <p
-              className="text-sm leading-relaxed mb-6 max-w-lg"
+              className="text-xl leading-relaxed mb-6 max-w-xl"
               style={{ color: "rgba(32,65,46,0.65)" }}
             >
               {article.excerpt}
@@ -202,7 +202,7 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
             {/* CTA */}
             <div className="flex items-center gap-3">
               <span
-                className="text-xs font-bold tracking-[0.2em] uppercase transition-all duration-300"
+                className="text-xl font-bold tracking-[0.2em] uppercase transition-all duration-300"
                 style={{ color: "#20412e" }}
               >
                 Đọc bài viết
@@ -236,7 +236,7 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
             />
             {/* Tag overlay */}
             <div
-              className="absolute bottom-3 left-3 text-xs px-3 py-1 font-semibold tracking-wide"
+              className="absolute bottom-3 left-3 text-xl px-3 py-1 font-semibold tracking-wide"
               style={{ background: "#f3edd7", color: "#20412e" }}
             >
               {article.tag}

@@ -150,8 +150,9 @@ export default function Sections() {
       <section
         style={{
           background: "#ffffff",
-          padding: "80px 24px 90px",
+          padding: "40px 24px 20px",
           position: "relative",
+          fontFamily: " Arial, sans-serif",
         }}
       >
         <div style={{ maxWidth: 960, margin: "0 auto", position: "relative" }}>
@@ -186,7 +187,7 @@ export default function Sections() {
               textAlign: "center",
               color: "var(--text-color)",
               fontSize: "clamp(26px, 4vw, 40px)",
-              fontWeight: 800,
+              fontWeight: 700,
               lineHeight: 1.25,
               marginBottom: 16,
               letterSpacing: "-0.02em",
@@ -199,10 +200,12 @@ export default function Sections() {
             style={{
               textAlign: "center",
               color: "var(--text-color)",
-              fontSize: 16,
-              maxWidth: 520,
+              fontSize: 30,
+              fontWeight: 700,
+              maxWidth: 800,
               margin: "0 auto 60px",
               lineHeight: 1.7,
+              
             }}
           >
             Thúc đẩy nền kinh tế xanh bền vững — vì một tương lai tốt đẹp hơn cho hệ sinh thái và con người.
@@ -212,7 +215,7 @@ export default function Sections() {
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: 20,
+              gap: 10,
             }}
           >
             {coreValues.map((v, i) => (
@@ -259,7 +262,7 @@ export default function Sections() {
                   style={{
                     color: "var(--text-color)",
                     fontWeight: 700,
-                    fontSize: 17,
+                    fontSize: 19,
                     marginBottom: 10,
                     letterSpacing: "-0.01em",
                   }}
@@ -270,7 +273,7 @@ export default function Sections() {
                 <p
                   style={{
                     color: "var(--text-color)",
-                    fontSize: 14,
+                    fontSize: 16,
                     lineHeight: 1.65,
                     margin: 0,
                   }}
@@ -284,7 +287,7 @@ export default function Sections() {
       </section>
 
       {/* ── SECTION 2: Fields ── */}
-      <section style={{ padding: "80px 24px 100px" }}>
+      <section style={{ padding: "40px 24px 50px" }}>
         <div style={{ maxWidth: 960, margin: "0 auto" }}>
           {/* Header */}
           <div style={{ textAlign: "center", marginBottom: 56 }}>
@@ -297,16 +300,18 @@ export default function Sections() {
                 LĨNH VỰC HOẠT ĐỘNG
               </span>
             </div>
-            <h2 style={{
-              color: "#0A2615", fontSize: "clamp(24px, 4vw, 38px)",
-              fontWeight: 800, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 14,
+            <p style={{
+              color: "var(--text-color)", fontSize: 40,
+              fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 14,
             }}>
               3 Mảng Ứng Dụng Chính
-            </h2>
+            </p>
             <p style={{
-              color: "var(--text-color)", fontSize: 16, maxWidth: 480,
-              margin: "0 auto", lineHeight: 1.7,
-            }}>
+              color: "var(--text-color)", fontSize: 30, maxWidth: 700,
+              margin: "0 auto", lineHeight: 1.7, fontWeight:700
+            }}
+            className=""
+            >
               Giải pháp enzyme sinh học toàn diện, từ ruộng đồng đến nhà máy và ao nuôi.
             </p>
           </div>
@@ -405,8 +410,8 @@ export default function Sections() {
                     <h3
                       style={{
                         color: "var(--background)",
-                        fontWeight: 800,
-                        fontSize: 20,
+                        fontWeight: 700,
+                        fontSize: 30,
                         margin: 0,
                         letterSpacing: "-0.02em",
                         textShadow: "0 1px 4px rgba(0,0,0,0.3)",

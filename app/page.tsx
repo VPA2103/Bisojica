@@ -12,7 +12,6 @@ export default function Home() {
       <Sections />
       <ProductsHightlight/>
       <BisoYaiPromoBanner/>
-      <LeadershipTeam/>
     </>
   );
 }

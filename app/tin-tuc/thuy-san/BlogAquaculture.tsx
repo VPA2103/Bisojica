@@ -53,7 +53,7 @@ export default function BlogAquaculture() {
       <div className="relative max-w-4xl mx-auto px-6 py-20">
         {/* Badge */}
         <div
-          className={`inline-flex items-center gap-2 mb-8 px-4 py-2 text-xs font-semibold tracking-widest uppercase transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+          className={`inline-flex items-center gap-2 mb-8 px-4 py-2 text-xl font-semibold tracking-widest uppercase transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           style={{
             background: "rgba(32,65,46,0.08)",
             border: "1px solid rgba(32,65,46,0.3)",
@@ -73,7 +73,7 @@ export default function BlogAquaculture() {
             <br />
             <span className="text-3xl md:text-4xl font-light" style={{ color: "#20412e" }}>Cho Thủy Sản</span>
           </h1>
-          <p className="text-base leading-relaxed max-w-xl" style={{ color: "#20412e" }}>
+          <p className="text-2xl leading-relaxed max-w-4xl" style={{ color: "#20412e" }}>
             Ngành thủy sản Việt Nam đóng vai trò quan trọng trong xuất khẩu, nhưng cũng đối mặt với nhiều thách
             thức như ô nhiễm ao nuôi, khí độc và dịch bệnh.
           </p>
@@ -95,8 +95,8 @@ export default function BlogAquaculture() {
             style={{ background: "linear-gradient(to top, rgba(32,65,46,0.4) 0%, transparent 55%)" }}
           />
           <span
-            className="absolute bottom-5 left-6 text-xs tracking-widest uppercase"
-            style={{ color: "#f3edd7", opacity: 0.9 }}
+            className="absolute bottom-5 left-6 text-xl tracking-widest uppercase"
+            style={{ color: "#ffffff", opacity: 0.9 }}
           >
             Nuôi trồng thủy sản bền vững
           </span>
@@ -110,7 +110,7 @@ export default function BlogAquaculture() {
             <button
               key={i}
               onClick={() => setActiveCard(i)}
-              className="flex-1 py-3 text-xs font-bold tracking-widest uppercase transition-all duration-300"
+              className="flex-1 py-3 text-xl font-bold tracking-widest uppercase transition-all duration-300"
               style={{
                 background: activeCard === i ? "rgba(32,65,46,0.15)" : "rgba(32,65,46,0.04)",
                 border: `1px solid ${activeCard === i ? "#20412e" : "rgba(32,65,46,0.2)"}`,
@@ -138,17 +138,17 @@ export default function BlogAquaculture() {
                   {b.num}
                 </span>
                 <div className="flex-1">
-                  <h2 className="text-2xl font-bold mb-6" style={{ color: "#20412e" }}>{b.title}</h2>
+                  <h2 className="text-4xl font-bold mb-6" style={{ color: "#20412e" }}>{b.title}</h2>
                   <ul className="space-y-3 mb-6">
                     {b.items.map((item, j) => (
                       <li key={j} className="flex items-center gap-3">
                         <span style={{ color: "#20412e" }}>◈</span>
-                        <span className="text-sm" style={{ color: "#20412e" }}>{item}</span>
+                        <span className="text-2xl" style={{ color: "#20412e" }}>{item}</span>
                       </li>
                     ))}
                   </ul>
                   <div
-                    className="p-4 text-sm italic"
+                    className="p-4 text-2xl italic"
                     style={{ background: "rgba(32,65,46,0.08)", borderLeft: "3px solid #20412e", color: "#20412e" }}
                   >
                     {b.note}
@@ -174,10 +174,10 @@ export default function BlogAquaculture() {
                 cursor: "pointer",
               }}
             >
-              <div className="text-xs font-bold tracking-widest mb-2 uppercase" style={{ color: "#20412e" }}>
+              <div className="text-xl font-bold tracking-widest mb-2 uppercase" style={{ color: "#20412e" }}>
                 {b.num}
               </div>
-              <div className="text-sm font-semibold" style={{ color: "#20412e" }}>{b.title}</div>
+              <div className="text-xl font-semibold" style={{ color: "#20412e" }}>{b.title}</div>
             </button>
           ))}
         </div>
@@ -188,8 +188,8 @@ export default function BlogAquaculture() {
         >
           <div className="h-px flex-1" style={{ background: "rgba(32,65,46,0.3)" }} />
           <div className="text-center">
-            <p className="text-xs tracking-[0.4em] uppercase mb-1" style={{ color: "#3a6e4a" }}>Hướng tới</p>
-            <p className="text-sm font-bold" style={{ color: "#20412e" }}>
+            <p className="text-2xl tracking-[0.4em] uppercase mb-1" style={{ color: "#3a6e4a" }}>Hướng tới</p>
+            <p className="text-2xl font-bold" style={{ color: "#3a6e4a" }}>
               Nuôi Trồng Bền Vững ✦ Tiêu Chuẩn Xuất Khẩu Quốc Tế
             </p>
           </div>

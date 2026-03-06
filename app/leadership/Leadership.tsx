@@ -249,7 +249,7 @@ export default function LeadershipTeam() {
       `}</style>
       <div style={{
         minHeight: "100vh",
-        background: "linear-gradient(135deg, #f5f7f2 0%, #eef2e8 50%, #f5f7f2 100%)",
+        background: "#ffffff",
         padding: "60px 20px",
         fontFamily: "'Source Sans 3', sans-serif",
       }}>
@@ -271,9 +271,9 @@ export default function LeadershipTeam() {
               }} />
               <h1 style={{
                 margin: 0,
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Arial', Georgia, serif",
                 fontSize: "clamp(24px, 5vw, 42px)",
-                fontWeight: 900,
+                fontWeight: 700,
                 color: "#1e4620",
                 letterSpacing: "-0.5px",
               }}>

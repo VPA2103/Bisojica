@@ -13,11 +13,11 @@ const ProductFeature: React.FC<Props> = ({ product }) => {
       className="group flex bg-white  overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex-col"
     >
       {/* Ảnh */}
-      <div className="relative w-full h-56 overflow-hidden">
+      <div className="relative w-full h-56 overflow-hidden bg-gray-100 flex items-center justify-center">
         <img
           src={product.images?.[0]}
           alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110"
         />
       </div>
 

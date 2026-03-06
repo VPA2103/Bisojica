@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 declare global {
@@ -60,7 +61,7 @@ export default function LanguageSwitcher() {
               : "opacity-50 hover:scale-105"
           }`}
         >
-          🇻🇳
+          <Image src='/images/vn.png' alt="vn"width={30} height={50}/>
         </button>
 
         <button
@@ -71,7 +72,7 @@ export default function LanguageSwitcher() {
               : "opacity-50 hover:scale-105"
           }`}
         >
-          🇬🇧
+          <Image src='/images/en.png' alt="en"width={30} height={50}/>
         </button>
       </div>
     </>

@@ -25,9 +25,18 @@ export default function PdfDownloadSection() {
       href: "/files/pdf/ho-so-nang-luc-biso-jica.pdf",
     },
     {
+      title: "Hồ sơ năng lực công ty Bisojica",
+      href: "https://drive.google.com/file/d/1Pi4a0zNJJANWOlbnc3YJK3wi1ax9D2wj/view?usp=drive_link",
+    },
+    {
       title: "Hướng dẫn sử dụng enzyme Khánh Hoàng",
       href: "/files/pdf/huong-dan-su-dung-san-pham-enzyme-khanh-hoang.pdf",
     },
+    {
+      title: "Combo đậu trái",
+      href: "    https://drive.google.com/file/d/17sXN0LyY4UpwiZSk_8kfYBm0TK1tWdfz/view?usp=drive_link",
+    },
+    
   ];
 
   return (

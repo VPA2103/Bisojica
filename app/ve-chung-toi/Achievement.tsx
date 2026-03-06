@@ -5,10 +5,11 @@ import ab2 from "@/public/images/achievement/giay-phep-dang-ky-b.png";
 import ab3 from "@/public/images/achievement/chung-nhan-dang-ky1.png";
 import ab4 from "@/public/images/achievement/chung-nhan-dang-ky2.png";
 import ab5 from "@/public/images/achievement/giay-phep-an-toan-sp.png";
-import ab6 from "@/public/images/achievement/doi-tac-chien-luoc.png";
+import StrategicPartners from "./StrategicPartners";
+import LeadershipTeam from "../leadership/Leadership";
 
 export default function Achievement() {
-  const images = [ab1, ab2, ab3, ab4, ab5, ab6];
+  const images = [ab1, ab2, ab3, ab4, ab5];
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-10">
@@ -16,7 +17,7 @@ export default function Achievement() {
         {images.map((img, index) => (
           <div
             key={index}
-            className="relative overflow-hidden rounded-2xl shadow-md"
+            className="relative overflow-hidden rounded-2xl "
           >
             <Image
               src={img}
@@ -25,6 +26,9 @@ export default function Achievement() {
             />
           </div>
         ))}
+        <LeadershipTeam />
+        <StrategicPartners />
+
       </div>
     </div>
   );

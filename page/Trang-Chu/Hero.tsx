@@ -9,51 +9,51 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 
 const heroImages = [
-    "/images/hero/anh1.png",
-    "/images/hero/anh2.png",
-    "/images/hero/anh3.png",
-    "/images/hero/anh4.png",
-    "/images/hero/anh5.png",
-    "/images/hero/anh6.png",
-    "/images/hero/anh7.png",
-    "/images/hero/anh8.png",
-    "/images/hero/anh9.png",
-    "/images/hero/anh10.png",
-    "/images/hero/anh11.png",
-    "/images/hero/anh12.png",
-    "/images/hero/anh13.png",
+  "/images/hero/anh1.png",
+  "/images/hero/anh2.png",
+  "/images/hero/anh3.png",
+  "/images/hero/anh4.png",
+  "/images/hero/anh5.png",
+  "/images/hero/anh6.png",
+  "/images/hero/anh7.png",
+  "/images/hero/anh8.png",
+  "/images/hero/anh9.png",
+  "/images/hero/anh10.png",
+  "/images/hero/anh11.png",
+  "/images/hero/anh12.png",
+  "/images/hero/anh13.png",
 ];
 
 export default function Hero() {
-    return (
-        <section className="relative w-full h-svh overflow-hidden bg-white">
-            <Swiper
-                modules={[Autoplay, EffectFade, Pagination]}
-                effect="fade"
-                fadeEffect={{ crossFade: true }}
-                autoplay={{ delay: 1000, disableOnInteraction: false }}
-                speed={1200}
-                loop
-                pagination={{ clickable: true }}
-                className="w-full h-full hero-swiper"
-            >
-                {heroImages.map((src, idx) => (
-                    <SwiperSlide key={idx}>
-                        <div className="w-full h-full flex items-center justify-center overflow-hidden bg-white relative hero-slide-inner">
-                            <Image
-                                src={src}
-                                alt={`Hero slide ${idx + 1}`}
-                                fill
-                                priority={idx === 0}
-                                sizes="100vw"
-                                className="hero-image"
-                            />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+  return (
+    <section className="relative w-full h-svh overflow-hidden bg-white">
+      <Swiper
+        modules={[Autoplay, EffectFade, Pagination]}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        speed={1200}
+        loop
+        pagination={{ clickable: true }}
+        className="w-full h-full hero-swiper"
+      >
+        {heroImages.map((src, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="w-full h-full flex items-center justify-center overflow-hidden bg-[#f3edd7]/50 relative hero-slide-inner">
+              <Image
+                src={src}
+                alt={`Hero slide ${idx + 1}`}
+                fill
+                priority={idx === 0}
+                sizes="100vw"
+                className="hero-image"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
 
-            <style jsx global>{`
+      <style jsx global>{`
         .hero-swiper .swiper-slide {
           background: white;
           height: 100%;
@@ -96,6 +96,6 @@ export default function Hero() {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 }
