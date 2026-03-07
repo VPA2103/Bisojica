@@ -296,7 +296,7 @@ export default function Sections() {
               background: "rgba(22,163,74,0.1)", border: "1px solid rgba(22,163,74,0.2)",
               borderRadius: 100, padding: "8px 20px", marginBottom: 20,
             }}>
-              <span style={{ fontSize: 14, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 600 }}>
+              <span style={{ fontSize: 18, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 600 }}>
                 LĨNH VỰC HOẠT ĐỘNG
               </span>
             </div>
@@ -399,6 +399,7 @@ export default function Sections() {
                         backdropFilter: "blur(8px)",
                         border: "1px solid rgba(255,255,255,0.25)",
                         display: "flex",
+                        color: "#ffffff",
                         alignItems: "center",
                         justifyContent: "center",
                         flexShrink: 0,

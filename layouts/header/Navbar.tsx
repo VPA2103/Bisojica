@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 shadow-lg bg-[#20412E] text-[#fdfff0]">
 
       {/* NAVBAR */}
-      <nav className="flex items-center justify-between px-1 py-1">
+      <nav className="flex items-center justify-between px-1 py-1 ">
 
         {/* LOGO + SLOGAN */}
         <Link href="/" className="flex items-center gap-4 no-underline">
@@ -33,19 +33,25 @@ const Navbar = () => {
               </div>
 
               {/* Text thông tin */}
-              <div className="leading-tight">
-                <div className="font-bold text-xl tracking-wide ">
-                  BISO JICA
+              <div className="leading-tight"
+                style={{ fontFamily: "Montserrat " }}
+              >
+                <div className="font-bold text-xs tracking-wide">
+                  Công nghệ enzyme
                 </div>
                 <div className="text-sm text-[#ffd05c] mt-1">
-                  BISO - Công nghệ enzyme cho nền nông nghiệp bền vững.
+                  cho nền nông nghiệp bền vững.
                 </div>
               </div>
             </div>
 
             {/* Mô tả thêm */}
-            <div className="text-xs text-[#fdfff0]/80 leading-snug mt-1 ">
-              Chúng tôi không chỉ tạo ra sản phẩm.<br />
+            <div className="text-xs text-[#fdfff0]/80 leading-snug mt-1 "
+              style={{ fontFamily: "Montserrat " }}
+            >
+              <p className="pl-5">
+                Chúng tôi không chỉ tạo ra sản phẩm.
+              </p>
               Chúng tôi xây dựng một thế hệ nông nghiệp mới.
             </div>
           </div>
@@ -56,37 +62,37 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-10 list-none">
 
           <li>
-            <Link href="/" className="nav-link text-base font-medium hover:text-[#ffd05c] transition ">
+            <Link href="/" className="nav-link text-xl font-medium hover:text-[#ffd05c] transition ">
               Trang chủ
             </Link>
           </li>
 
           <li>
-            <Link href="/ve-chung-toi" className="text-base font-medium hover:text-[#ffd05c] transition">
+            <Link href="/ve-chung-toi" className="text-xl font-medium hover:text-[#ffd05c] transition">
               Về chúng tôi
             </Link>
           </li>
 
           <li>
-            <Link href="/enzyme" className="text-base font-medium hover:text-[#ffd05c] transition">
+            <Link href="/enzyme" className="text-xl font-medium hover:text-[#ffd05c] transition">
               Thông tin về Enzyme
             </Link>
           </li>
 
           <li>
-            <Link href="/products" className="text-base font-medium hover:text-[#ffd05c] transition">
+            <Link href="/products" className="text-xl font-medium hover:text-[#ffd05c] transition">
               Sản phẩm
             </Link>
           </li>
 
           <li>
-            <Link href="/bang-gia" className="text-base font-medium hover:text-[#ffd05c] transition">
+            <Link href="/bang-gia" className="text-xl font-medium hover:text-[#ffd05c] transition">
               Bảng giá
             </Link>
           </li>
 
           <li>
-            <Link href="/tin-tuc" className="text-base font-medium hover:text-[#ffd05c] transition">
+            <Link href="/tin-tuc" className="text-xl font-medium hover:text-[#ffd05c] transition">
               Tin tức
             </Link>
           </li>
@@ -94,7 +100,7 @@ const Navbar = () => {
           {/* DROPDOWN */}
           <li className="relative group">
 
-            <span className="text-base font-medium cursor-pointer hover:text-[#ffd05c] transition">
+            <span className="text-xl font-medium cursor-pointer hover:text-[#ffd05c] transition">
               Phát triển nhân tài ▼
             </span>
 
@@ -103,7 +109,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/phat-trien-nhan-tai"
-                  className="block px-4 py-2 text-sm hover:bg-[#2c5a43]"
+                  className="block px-4 py-2 text-xl hover:bg-[#2c5a43]"
                 >
                   Phát triển nhân tài
                 </Link>
@@ -112,7 +118,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/tai-lieu"
-                  className="block px-4 py-2 text-sm hover:bg-[#2c5a43]"
+                  className="block px-4 py-2 text-xl hover:bg-[#2c5a43]"
                 >
                   Tài liệu
                 </Link>

@@ -9,10 +9,12 @@ const footerLinks = {
   ],
   "Công Ty": [
     { label: "Về chúng tôi", href: "/ve-chung-toi" },
+    { label: "Thông tin về enzyme", href: "/enzyme" },
   ],
   "Hỗ Trợ": [
     { label: "Tài liệu", href: "/tai-lieu" },
-    { label: "Cộng đồng", href: "/contact" },
+    { label: "Tin tức", href: "/tin-tuc" },
+    { label: "Phát triển nhân tài", href: "/phat-trien-nhan-tai" },
   ],
 };
 
@@ -95,7 +97,7 @@ export default function Footer() {
 
             {Object.entries(footerLinks).map(([title, links]) => (
               <div key={title}>
-                <h4 className="text-sm text-[#ffd700] mb-6 tracking-widest uppercase">
+                <h4 className="text-sm text-[#ffd700] mb-6 tracking-widest uppercase pl-2">
                   {title}
                 </h4>
 
@@ -138,20 +140,6 @@ export default function Footer() {
               Hồ Chí Minh, Việt Nam
             </span>
           </div>
-
-          {/* Social */}
-          {/* <div className="flex gap-3">
-            {socials.map(({ label, href }) => (
-              <a
-                key={label}
-                href={href}
-                className="w-9 h-9 flex items-center justify-center border border-yellow-400/20 text-white/50 hover:bg-yellow-400 hover:text-black transition mb-6"
-              >
-                {label}
-              </a>
-            ))}
-          </div> */}
-
         </div>
       </div>
     </footer>
