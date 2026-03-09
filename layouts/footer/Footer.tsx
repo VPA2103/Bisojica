@@ -134,7 +134,7 @@ export default function Footer() {
             © 2026 BISO JICA
           </p>
           <div
-            className={`text-3xl text-center  max-w-xl mx-auto leading-relaxed ${dancing.className}`}
+            className={`text-2xl text-center  max-w-xl mx-auto leading-relaxed ${dancing.className}`}
             style={{ fontFamily: "Dancing Script"}}
           >
             <p>Chúng tôi không chỉ tạo ra sản phẩm.</p>
