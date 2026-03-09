@@ -6,11 +6,6 @@ const BisoYaiPromoBanner: React.FC = () => {
   return (
     <section className="py-12 px-6">
       <div className="max-w-6xl mx-auto relative overflow-hidden bg-green-800 rounded-3xl shadow-2xl">
-        {/* Họa tiết trang trí nền */}
-        <div className="absolute top-0 right-0 -mt-16 -mr-16 text-green-700/50">
-          <Leaf className="w-64 h-64 rotate-45" />
-        </div>
-        
         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-8 md:p-12 gap-8">
           
           {/* Nội dung bên trái */}
