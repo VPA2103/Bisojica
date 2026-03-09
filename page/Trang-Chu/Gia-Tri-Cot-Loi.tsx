@@ -199,7 +199,7 @@ export default function Sections() {
             style={{
               textAlign: "center",
               color: "var(--text-color)",
-              fontSize: 30,
+              fontSize: 17,
               fontWeight: 500,
               maxWidth: 800,
               margin: "0 auto 60px",
@@ -300,13 +300,13 @@ export default function Sections() {
               </span>
             </div>
             <p style={{
-              color: "var(--text-color)", fontSize: 40,
+              color: "var(--text-color)", fontSize: 30,
               fontWeight: 500, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 14,
             }}>
               3 Mảng Ứng Dụng Chính
             </p>
             <p style={{
-              color: "var(--text-color)", fontSize: 30, maxWidth: 700,
+              color: "var(--text-color)", fontSize: 20, maxWidth: 700,
               margin: "0 auto", lineHeight: 1.7, fontWeight:500
             }}
             className=""

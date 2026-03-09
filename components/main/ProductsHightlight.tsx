@@ -13,8 +13,8 @@ import "swiper/css/navigation";
 import { products_feature } from "@/data/products";
 
 export default function ProductsHighlight() {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const prevRef = useRef<HTMLButtonElement | null>(null);
+  const nextRef = useRef<HTMLButtonElement | null>(null);
 
   const highlightProducts = products_feature.filter((p) => p.featured);
 
@@ -31,14 +31,23 @@ export default function ProductsHighlight() {
           spaceBetween={24}
           grabCursor
           loop
+          onInit={(swiper) => {
+            if (
+              swiper.params.navigation &&
+              typeof swiper.params.navigation !== "boolean"
+            ) {
+              const navigation = swiper.params.navigation as NavigationOptions;
+
+              navigation.prevEl = prevRef.current;
+              navigation.nextEl = nextRef.current;
+
+              swiper.navigation.init();
+              swiper.navigation.update();
+            }
+          }}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
-          }}
-          onBeforeInit={(swiper) => {
-            const navigation = swiper.params.navigation as NavigationOptions;
-            navigation.prevEl = prevRef.current;
-            navigation.nextEl = nextRef.current;
           }}
           breakpoints={{
             320: { slidesPerView: 1.2 },
@@ -54,21 +63,25 @@ export default function ProductsHighlight() {
           ))}
         </Swiper>
 
-        {/* Navigation dưới */}
         <div className="flex justify-center gap-6 mt-8">
-          <button
-            ref={prevRef}
-            className="px-4 py-2 border rounded-lg hover:bg-gray-100"
-          >
-            ←
-          </button>
+          <div>
+            <button
+              ref={prevRef}
+              className="px-4 py-2 border rounded-lg hover:bg-gray-100"
+            >
+              ←
+            </button>
+          </div>
 
-          <button
-            ref={nextRef}
-            className="px-4 py-2 border rounded-lg hover:bg-gray-100"
-          >
-            →
-          </button>
+          <div>
+            <button
+              ref={nextRef}
+              className="px-4 py-2 border rounded-lg hover:bg-gray-100"
+            >
+              →
+            </button>
+          </div>
+
         </div>
 
       </div>

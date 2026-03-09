@@ -30,17 +30,19 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en" className="scroll-smooth">
-      <Header />
+    <html>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
+
         <AosProvider />
         {children}
         <QuickContact />
+        <Footer />
+        <ScrollToTop />
+
       </body>
-      <Footer />
-      <ScrollToTop />
     </html>
   );
 }
