@@ -19,6 +19,10 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3e7e58 !important;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
