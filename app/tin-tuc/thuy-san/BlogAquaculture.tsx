@@ -130,15 +130,21 @@ export default function BlogAquaculture() {
               className="p-8 mb-6 transition-all duration-500"
               style={{ background: "rgba(32,65,46,0.06)", border: "1px solid rgba(32,65,46,0.2)" }}
             >
-              <div className="flex items-start gap-6">
-                <span
-                  className="text-6xl font-black shrink-0 leading-none"
-                  style={{ color: "rgba(32,65,46,0.15)" }}
-                >
-                  {b.num}
-                </span>
-                <div className="flex-1">
-                  <h2 className="text-4xl font-bold mb-6" style={{ color: "#20412e" }}>{b.title}</h2>
+              <div className=" items-start gap-6">
+                <div className="flex mb-2">
+                  <div className="flex">
+                    <div className="mr-2">
+                      <span
+                        className="text-6xl font-black shrink-0 leading-none"
+                        style={{ color: "rgba(32,65,46,0.15)" }}
+                      >
+                        {b.num}
+                      </span>
+                    </div>
+                    <h2 className="text-4xl font-bold mt-2" style={{ color: "#20412e" }}>{b.title}</h2>
+                  </div>
+                </div>
+                <div>
                   <ul className="space-y-3 mb-6">
                     {b.items.map((item, j) => (
                       <li key={j} className="flex items-center gap-3">

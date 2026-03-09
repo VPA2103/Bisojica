@@ -55,24 +55,21 @@ export default function LanguageSwitcher() {
       <div className="flex gap-3 items-center">
         <button
           onClick={() => changeLanguage("vi")}
-          className={`text-2xl transition-all duration-200 text-[#fdfff0] hover:opacity-100 ${
-            active === "vi"
-              ? "scale-110 opacity-100"
-              : "opacity-50 hover:scale-105"
-          }`}
+          className={`text-2xl transition-all duration-200 text-[#fdfff0] hover:opacity-100 ${active === "vi"
+            ? "scale-110 opacity-100"
+            : "opacity-50 hover:scale-105"
+            }`}
         >
-          <Image src='/images/vn.png' alt="vn"width={30} height={50}/>
+          <Image src='/images/vn.png' alt="VietNam" width={30} height={50} />
         </button>
-
         <button
           onClick={() => changeLanguage("en")}
-          className={`text-2xl transition-all duration-200 text-[#fdfff0] hover:opacity-100 ${
-            active === "en"
-              ? "scale-110 opacity-100"
-              : "opacity-50 hover:scale-105"
-          }`}
+          className={`text-2xl transition-all duration-200 text-[#fdfff0] hover:opacity-100 ${active === "en"
+            ? "scale-110 opacity-100"
+            : "opacity-50 hover:scale-105"
+            }`}
         >
-          <Image src='/images/en.png' alt="en"width={30} height={50}/>
+          <Image src='/images/en.png' alt="English" width={30} height={50} />
         </button>
       </div>
     </>

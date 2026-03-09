@@ -108,7 +108,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
           <div style={{
             fontFamily: "'Playfair Display', Georgia, serif",
             color: "#fff",
-            fontSize: "15px",
+            fontSize: "18px",
             fontWeight: 700,
             lineHeight: 1.4,
             marginBottom: "6px",
@@ -118,7 +118,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
           <div style={{
             fontFamily: "'Source Sans 3', sans-serif",
             color: "rgba(255,255,255,0.72)",
-            fontSize: "11.5px",
+            fontSize: "16px",
             lineHeight: 1.5,
             fontStyle: "italic",
           }}>
@@ -183,7 +183,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
               <p style={{
                 margin: 0,
                 fontFamily: "'Source Sans 3', 'Noto Sans', sans-serif",
-                fontSize: "13.5px",
+                fontSize: "18px",
                 color: "#444",
                 lineHeight: 1.75,
               }}>

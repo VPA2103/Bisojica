@@ -123,21 +123,26 @@ export default function BlogIndustry() {
           {sections.map((s, i) => (
             <div
               key={i}
-              className={`group flex gap-6 p-8 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
+              className={`group gap-6 p-8 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
               style={{
                 border: "1px solid rgba(32,65,46,0.22)",
                 background: "rgba(32,65,46,0.03)",
                 transitionDelay: `${400 + i * 150}ms`,
               }}
             >
-              <div
-                className="shrink-0 w-14 h-14 flex items-center justify-center text-2xl"
-                style={{ border: "2px solid #20412e" }}
-              >
-                {s.icon}
+              <div className="flex">
+                <div className="pr-2 mt-2">
+                  <div
+                    className="shrink-0 w-14 h-14 flex items-center justify-center text-2xl"
+                    style={{ border: "2px solid #20412e" }}
+                  >
+                    {s.icon}
+                  </div>
+                </div>
+
+                <h2 className="text-3xl font-bold " style={{ color: "#20412e" }}>{s.title}</h2>
               </div>
-              <div className="flex-1">
-                <h2 className="text-3xl font-bold mb-3" style={{ color: "#20412e" }}>{s.title}</h2>
+              <div>
                 <p className="text-xl leading-relaxed mb-4" style={{ color: "#20412e" }}>{s.body}</p>
                 <div className="flex flex-wrap gap-2">
                   {s.tags.map((t, j) => (
