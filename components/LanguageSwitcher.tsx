@@ -52,32 +52,32 @@ export default function LanguageSwitcher() {
     <>
       <div id="google_translate_element" style={{ display: "none" }} />
 
-        <div>
-          <button
-            onClick={() => changeLanguage("vi")}
-            className={`text-xl transition-all duration-200 text-[#fdfff0] hover:opacity-100 ${active === "vi"
-              ? "scale-110 opacity-100"
-              : "opacity-50 hover:scale-105"
-              }`}
-          >
-            VN
-          </button>
-        </div>
-
-        <div className="ml-2">
-          <button
-            onClick={() => changeLanguage("en")}
-            className={`text-xl transition-all duration-200  text-[#fdfff0] hover:opacity-100 ${active === "en"
-              ? "scale-110 opacity-100"
-              : "opacity-50 hover:scale-105"
-              }`}
-          >
-            EN
-          </button>
-        </div>
-
+      <div>
+        <button
+          onClick={() => changeLanguage("vi")}
+          className={`text-xl transition-all duration-200 text-[#fdfff0] hover:opacity-100 ${active === "vi"
+            ? "scale-110 opacity-100"
+            : "opacity-50 hover:scale-105"
+            }`}
+        >
+          VN
+        </button>
       </div>
+
+      <div className="ml-2">
+        <button
+          onClick={() => changeLanguage("en")}
+          className={`text-xl transition-all duration-200  text-[#fdfff0] hover:opacity-100 ${active === "en"
+            ? "scale-110 opacity-100"
+            : "opacity-50 hover:scale-105"
+            }`}
+        >
+          EN
+        </button>
+      </div>
+
       <div className="flex gap-3 items-center relative z-50">
+      </div>
 
     </>
   );
