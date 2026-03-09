@@ -152,7 +152,7 @@ export default function Sections() {
           background: "#ffffff",
           padding: "40px 24px 20px",
           position: "relative",
-          fontFamily: " Arial, sans-serif",
+          // fontFamily: " Arial, sans-serif",
         }}
       >
         <div style={{ maxWidth: 960, margin: "0 auto", position: "relative" }}>

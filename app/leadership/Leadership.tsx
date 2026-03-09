@@ -106,7 +106,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
 
         <div style={{ textAlign: "center", position: "relative", zIndex: 1 }}>
           <div style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            // fontFamily: "'Playfair Display', Georgia, serif",
             color: "#fff",
             fontSize: "18px",
             fontWeight: 700,
@@ -116,7 +116,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
             {leader.name}
           </div>
           <div style={{
-            fontFamily: "'Source Sans 3', sans-serif",
+            // fontFamily: "'Source Sans 3', sans-serif",
             color: "rgba(255,255,255,0.72)",
             fontSize: "16px",
             lineHeight: 1.5,
@@ -132,7 +132,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
           width: 28, height: 28, borderRadius: "50%",
           background: "rgba(255,255,255,0.15)",
           display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: "'Playfair Display', serif",
+          // fontFamily: "'Playfair Display', serif",
           color: "rgba(255,255,255,0.8)",
           fontSize: "13px",
           fontWeight: 700,
@@ -160,7 +160,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
             background: "linear-gradient(90deg, #3d7a35, #5a9e50)",
           }} />
           <span style={{
-            fontFamily: "'Playfair Display', Georgia, serif",
+            // fontFamily: "'Playfair Display', Georgia, serif",
             fontSize: "12px",
             fontWeight: 700,
             letterSpacing: "2px",
@@ -182,7 +182,7 @@ function LeaderCard({ leader, index }: LeaderCardProps) {
               }} />
               <p style={{
                 margin: 0,
-                fontFamily: "'Source Sans 3', 'Noto Sans', sans-serif",
+                // fontFamily: "'Source Sans 3', 'Noto Sans', sans-serif",
                 fontSize: "18px",
                 color: "#444",
                 lineHeight: 1.75,
@@ -251,7 +251,7 @@ export default function LeadershipTeam() {
         minHeight: "100vh",
         background: "#ffffff",
         padding: "60px 20px",
-        fontFamily: "'Source Sans 3', sans-serif",
+        // fontFamily: "'Source Sans 3', sans-serif",
       }}>
         <div style={{ maxWidth: 900, margin: "0 auto" }}>
 
@@ -271,7 +271,7 @@ export default function LeadershipTeam() {
               }} />
               <h1 style={{
                 margin: 0,
-                fontFamily: "'Arial', Georgia, serif",
+                // fontFamily: "'Arial', Georgia, serif",
                 fontSize: "clamp(24px, 5vw, 42px)",
                 fontWeight: 700,
                 color: "#1e4620",

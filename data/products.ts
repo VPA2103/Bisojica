@@ -4,7 +4,10 @@ export const products = [
     name: "DAICHI NO TOMO",
     slug: "daichi-no-tomo",
     category: "nong-nghiep",
-    mainApplication: "Enzyme cải tạo đất trồng, trị nấm bệnh, tuyến trùng,tăng sức đề kháng...",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication:
+      "Enzyme cải tạo đất , trị nấm bệnh, tuyến trùng,tăng sức đề kháng...",
     features: [
       "Trị nấm bệnh, tuyến trùng",
       "Loại bỏ (khóa) kim loại nặng",
@@ -38,7 +41,10 @@ export const products = [
     name: "DAICHI NO TOMO 500",
     slug: "daichi-no-tomo-500",
     category: "nong-nghiep",
-    mainApplication: "Enzyme dinh dưỡng hữu cơ,trị thối rễ, phục hồi bộ rễ, khắc phục vàng lá,...",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication:
+      "Enzyme dinh dưỡng hữu cơ,trị thối rễ, phục hồi bộ rễ, khắc phục vàng lá,...",
     features: [
       "Trị thối rễ, phục hồi bộ rễ",
       "Khắc phục vàng lá, cây suy",
@@ -69,6 +75,8 @@ export const products = [
     slug: "sp-10-15-20",
     featured: true,
     category: "nong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme hữu cơ, tăng năng suất thu hoạch,...",
     features: [
       "Tăng năng suất thu hoạch",
@@ -102,7 +110,9 @@ export const products = [
     name: "MITAKA 1000",
     slug: "mitaka-1000",
     category: "nong-nghiep",
-    mainApplication: "Enzyme trị bệnh, bổ sung vitamin khoáng chất,...",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication: "Enzyme trị sâu bệnh, trị nhện, bọ trĩ, ruồi vàng,...",
     features: [
       "Bổ sung vitamin khoáng chất",
       "Thúc đẩy quá trình trao đổi chất",
@@ -130,9 +140,13 @@ export const products = [
   },
   {
     name: "MITAKA 1200",
-    slug: "mitaka-1200",category: "nong-nghiep",
+    slug: "mitaka-1200",
+    category: "nong-nghiep",
     featured: true,
-    mainApplication: "Enzyme bảo quản trái cây sau thu hoạch, rửa trôi nấm bệnh trên bề mặt trái,...",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication:
+      "Enzyme bảo quản trái cây sau thu hoạch, rửa trôi nấm bệnh trên bề mặt trái,...",
     features: [
       "Rửa trôi nấm bệnh trên bề mặt trái",
       "Kéo dài thời gian bảo quản",
@@ -151,6 +165,8 @@ export const products = [
     name: "MITAKA 3000",
     slug: "mitaka-3000",
     category: "nong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme phân hóa mầm hoa, tăng năng suất thu hoạch,...",
     features: [
       "Tăng năng suất thu hoạch",
@@ -180,7 +196,9 @@ export const products = [
     slug: "bk-partner",
     featured: true,
     category: "cong-nghiep",
-    mainApplication: "Enzyme xử lý nước thải, cải thiện nước, giảm BOD, COD, ...",
+    volumes: ["100ml", "1L", "10L"],
+    mainApplication:
+      "Enzyme xử lý nước thải, cải thiện nước, giảm BOD, COD, ...",
     features: [
       "Cải thiện nước, giảm BOD, COD và chỉ số ô nhiễm",
       "Tăng vi sinh có lợi, thúc đẩy lợi khuẩn",
@@ -209,7 +227,10 @@ export const products = [
     name: "BK OILBUSTER",
     slug: "bk-oilbuster",
     category: "cong-nghiep",
-    mainApplication: "Enzyme xử lý chất béo/dầu, loại bỏ chất béo, dầu mỡ và BOD trong,...",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication:
+      "Enzyme xử lý chất béo/dầu, loại bỏ chất béo, dầu mỡ và BOD trong,...",
     features: [
       "Loại bỏ chất béo, dầu mỡ và BOD trong nước thải",
       "Phân hủy, ngăn bám cặn, hạn chế đông tụ",
@@ -237,7 +258,10 @@ export const products = [
     name: "NIOI - ZERO",
     slug: "nioi-zero",
     category: "cong-nghiep",
-    mainApplication: "Enzyme khử mùi làm sạch không khí, cải thiện chất lượng không khí,....",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication:
+      "Enzyme khử mùi làm sạch không khí, cải thiện chất lượng không khí,....",
     features: [
       "Cải thiện chất lượng không khí",
       "Xử lý mùi hôi chuồng trại, bãi rác, cống rãnh, nước thải và khu công nghiệp",
@@ -265,17 +289,17 @@ export const products = [
     slug: "lake-power",
     featured: true,
     category: "thuy-san",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme cho ao/ hồ nuôi, làm sạch môi trường,....",
     features: [
       "Làm sạch môi trường sống",
       "Xử lý khí độc, (H2S, CH4, NO2-,NO3-,NH3)",
     ],
     images: [
-      "/images/products/lake-power.png",
-      "/images/products/lake-power.png",
       "/images/products/lake-power-f.png",
-      "/images/products/lake-power-b.jpg",
-
+      "/images/products/lake-power-b.png",
+      
     ],
     cach_su_dung: {
       huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
@@ -294,14 +318,14 @@ export const products = [
     name: "BF - NATURAL",
     slug: "bf-natural",
     featured: true,
+    volumes: ["100ml", "1L", "10L"],
+
     category: "thuy-san",
     mainApplication: "Enzyme chăn nuôi thủy sản, tăng sức đề kháng,...",
     features: ["Tăng sức đề kháng", "Phát triển hệ tiêu hóa"],
     images: [
-      "/images/products/bf-natural.png",
-      "/images/products/bf-natural.png",
       "/images/products/bf-natural-f.png",
-      "/images/products/bf-natural-b.jpg",
+      "/images/products/bf-natural-b.png",
     ],
     cach_su_dung: {
       huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
@@ -321,9 +345,103 @@ export const products = [
 
 export const products_feature = [
   {
+    name: "BK PARTNER",
+    slug: "bk-partner",
+    featured: true,
+    category: "cong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+    mainApplication: "Enzyme xử lý nước thải",
+    features: [
+      "Cải thiện nước, giảm BOD, COD và chỉ số ô nhiễm",
+      "Tăng vi sinh có lợi, thúc đẩy lợi khuẩn",
+      "Ngăn và phân hủy nấm sợi, xạ khuẩn",
+      "Cải thiện bùn lắng, khử mùi hôi tận gốc",
+    ],
+    images: [
+      "/images/products/BK PARTNER.jpg",
+      "/images/products/BK PARTNER-mini.jpg",
+    ],
+    cach_su_dung: {
+      huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
+      phuong_phap_su_dung: [
+        {
+          cach_thuc:
+            "Phun hoặc bơm vào bể xử lý nước, bể chứa nước, bể phốt và bể tự hoại.",
+          ti_le_pha_loang: "Pha loãng",
+          vi_du: "1 - 10 ml / 700L - 1000L",
+        },
+      ],
+      tan_suat: "1 lần / ngày hoặc cách 2 - 3 ngày",
+      ghi_chu: null,
+    },
+  },
+  {
+    name: "BK OILBUSTER",
+    slug: "bk-oilbuster",
+    featured: true,
+    category: "cong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication: "Enzyme xử lý chất béo/dầu",
+    features: [
+      "Loại bỏ chất béo, dầu mỡ và BOD trong nước thải",
+      "Phân hủy, ngăn bám cặn, hạn chế đông tụ",
+      "Tăng hiệu suất bể, giảm chi phí vệ sinh",
+      "Làm sạch và khử mùi bề mặt hiệu quả",
+    ],
+    images: [
+      "/images/products/BK OILBUSTER.jpg",
+      "/images/products/BK OILBUSTER-mini.jpg",
+    ],
+    cach_su_dung: {
+      huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
+      phuong_phap_su_dung: [
+        {
+          cach_thuc: "Phun hoặc bơm vào bể xử lý nước.",
+          ti_le_pha_loang: "Pha loãng",
+          vi_du: "10ml - 20ml / 1000L",
+        },
+      ],
+      tan_suat: "1 lần / ngày hoặc cách 2 - 3 ngày",
+      ghi_chu: null,
+    },
+  },
+  {
+    name: "NIOI - ZERO",
+    slug: "nioi-zero",
+    featured: true,
+    category: "cong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
+    mainApplication: "Enzyme khử mùi làm sạch không khí",
+    features: [
+      "Cải thiện chất lượng không khí",
+      "Xử lý mùi hôi chuồng trại, bãi rác, cống rãnh, nước thải và khu công nghiệp",
+    ],
+    images: [
+      "/images/products/NIOI - ZERO.jpg",
+      "/images/products/NIOI - ZERO-mini.jpg",
+    ],
+    cach_su_dung: {
+      huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
+      phuong_phap_su_dung: [
+        {
+          cach_thuc:
+            "Phun đều vào môi trường ô nhiễm hoặc chuồng nuôi công nghiệp.",
+          ti_le_pha_loang: "Pha loãng 1000 - 2000 lần",
+          vi_du: "10ml / 20L - 40L",
+        },
+      ],
+      tan_suat: "1-2 lần / tuần",
+      ghi_chu: null,
+    },
+  },
+  {
     name: "DAICHI NO TOMO",
     slug: "daichi-no-tomo",
     category: "nong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme cải tạo đất ",
     features: [
       "Trị nấm bệnh, tuyến trùng",
@@ -358,6 +476,8 @@ export const products_feature = [
     name: "DAICHI NO TOMO 500",
     slug: "daichi-no-tomo-500",
     category: "nong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme dinh dưỡng hữu cơ",
     featured: true,
     features: [
@@ -390,6 +510,8 @@ export const products_feature = [
     slug: "sp-10-15-20",
     featured: true,
     category: "nong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme hữu cơ",
     features: [
       "Tăng năng suất thu hoạch",
@@ -424,6 +546,8 @@ export const products_feature = [
     slug: "mitaka-1000",
     category: "nong-nghiep",
     featured: true,
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme trị bệnh",
     features: [
       "Bổ sung vitamin khoáng chất",
@@ -455,6 +579,8 @@ export const products_feature = [
     slug: "mitaka-1200",
     featured: true,
     category: "nong-nghiep",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme bảo quản trái cây sau thu hoạch",
     features: [
       "Rửa trôi nấm bệnh trên bề mặt trái",
@@ -475,6 +601,8 @@ export const products_feature = [
     slug: "mitaka-3000",
     category: "nong-nghiep",
     featured: true,
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme phân hóa mầm hoa",
     features: [
       "Tăng năng suất thu hoạch",
@@ -500,105 +628,21 @@ export const products_feature = [
     },
   },
   {
-    name: "BK PARTNER",
-    slug: "bk-partner",
-    featured: true,
-    category: "cong-nghiep",
-    mainApplication: "Enzyme xử lý nước thải",
-    features: [
-      "Cải thiện nước, giảm BOD, COD và chỉ số ô nhiễm",
-      "Tăng vi sinh có lợi, thúc đẩy lợi khuẩn",
-      "Ngăn và phân hủy nấm sợi, xạ khuẩn",
-      "Cải thiện bùn lắng, khử mùi hôi tận gốc",
-    ],
-    images: [
-      "/images/products/BK PARTNER.jpg",
-      "/images/products/BK PARTNER-mini.jpg",
-    ],
-    cach_su_dung: {
-      huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
-      phuong_phap_su_dung: [
-        {
-          cach_thuc:
-            "Phun hoặc bơm vào bể xử lý nước, bể chứa nước, bể phốt và bể tự hoại.",
-          ti_le_pha_loang: "Pha loãng",
-          vi_du: "1 - 10 ml / 700L - 1000L",
-        },
-      ],
-      tan_suat: "1 lần / ngày hoặc cách 2 - 3 ngày",
-      ghi_chu: null,
-    },
-  },
-  {
-    name: "BK OILBUSTER",
-    slug: "bk-oilbuster",
-    featured: true,
-    category: "cong-nghiep",
-    mainApplication: "Enzyme xử lý chất béo/dầu",
-    features: [
-      "Loại bỏ chất béo, dầu mỡ và BOD trong nước thải",
-      "Phân hủy, ngăn bám cặn, hạn chế đông tụ",
-      "Tăng hiệu suất bể, giảm chi phí vệ sinh",
-      "Làm sạch và khử mùi bề mặt hiệu quả",
-    ],
-    images: [
-      "/images/products/BK OILBUSTER.jpg",
-      "/images/products/BK OILBUSTER-mini.jpg",
-    ],
-    cach_su_dung: {
-      huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
-      phuong_phap_su_dung: [
-        {
-          cach_thuc: "Phun hoặc bơm vào bể xử lý nước.",
-          ti_le_pha_loang: "Pha loãng",
-          vi_du: "10ml - 20ml / 1000L",
-        },
-      ],
-      tan_suat: "1 lần / ngày hoặc cách 2 - 3 ngày",
-      ghi_chu: null,
-    },
-  },
-  {
-    name: "NIOI - ZERO",
-    slug: "nioi-zero",
-    featured: true,
-    category: "cong-nghiep",
-    mainApplication: "Enzyme khử mùi làm sạch không khí",
-    features: [
-      "Cải thiện chất lượng không khí",
-      "Xử lý mùi hôi chuồng trại, bãi rác, cống rãnh, nước thải và khu công nghiệp",
-    ],
-    images: [
-      "/images/products/NIOI - ZERO.jpg",
-      "/images/products/NIOI - ZERO-mini.jpg",
-    ],
-    cach_su_dung: {
-      huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
-      phuong_phap_su_dung: [
-        {
-          cach_thuc:
-            "Phun đều vào môi trường ô nhiễm hoặc chuồng nuôi công nghiệp.",
-          ti_le_pha_loang: "Pha loãng 1000 - 2000 lần",
-          vi_du: "10ml / 20L - 40L",
-        },
-      ],
-      tan_suat: "1-2 lần / tuần",
-      ghi_chu: null,
-    },
-  },
-  {
     name: "LAKE - POWER",
     slug: "lake-power",
     featured: true,
     category: "thuy-san",
+    volumes: ["100ml", "1L", "10L"],
+
     mainApplication: "Enzyme cho ao/ hồ nuôi",
     features: [
       "Làm sạch môi trường sống",
       "Xử lý khí độc, (H2S, CH4, NO2-,NO3-,NH3)",
     ],
     images: [
-      "/images/products/lake-power.png",
-      "/images/products/lake-power-mini.png",
+      "/images/products/lake-power-f.png",
+      "/images/products/lake-power-b.png",
+      
     ],
     cach_su_dung: {
       huong_dan_chung: "Pha loãng với nước sạch theo tỉ lệ",
@@ -617,12 +661,12 @@ export const products_feature = [
     name: "BF - NATURAL",
     slug: "bf-natural",
     featured: true,
+    volumes: ["100ml", "1L", "10L"],
+
     category: "thuy-san",
     mainApplication: "Enzyme chăn nuôi thủy sản",
     features: ["Tăng sức đề kháng", "Phát triển hệ tiêu hóa"],
     images: [
-      "/images/products/bf-natural.png",
-      "/images/products/bf-natural-mini.png",
       "/images/products/bf-natural-f.png",
       "/images/products/bf-natural-b.png",
     ],

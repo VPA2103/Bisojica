@@ -116,6 +116,25 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                         <h1 className="text-3xl sm:text-4xl font-bold text-green-800 mb-4">
                             {product.name}
                         </h1>
+                        {/* Volumes */}
+                        {product.volumes && (
+                            <div className="mb-4">
+                                <p className="text-lg font-semibold text-green-800 mb-2">
+                                    Dung tích
+                                </p>
+
+                                <div className="flex flex-wrap gap-2">
+                                    {product.volumes.map((volumes, index) => (
+                                        <span
+                                            key={index}
+                                            className="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full border border-green-200"
+                                        >
+                                            {volumes}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
 
                         {/* Main Application */}
                         <p className="text-lg text-gray-700 mb-6">

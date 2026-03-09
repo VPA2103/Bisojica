@@ -18,7 +18,7 @@ const PhatTrienNhanTai: React.FC = () => {
     const YOUTUBE_ID = "dQw4w9WgXcQ";
 
     return (
-        <div className="min-h-screen font-sans text-[#20412e] bg-white">
+        <div className="min-h-screen text-[#20412e] bg-white">
 
             {/* ── HERO ── */}
             <section

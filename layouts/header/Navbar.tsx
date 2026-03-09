@@ -5,10 +5,18 @@ import Link from "next/link";
 import { useState } from "react";
 import logo from "@/public/logo.png";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { Dancing_Script } from "next/font/google";
+
+const dancing = Dancing_Script({
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isTalentOpen, setIsTalentOpen] = useState(false);
+
+
 
   return (
     <header className="sticky top-0 z-50 shadow-lg bg-[#20412E] text-[#fdfff0]">
@@ -22,7 +30,7 @@ const Navbar = () => {
             {/* Logo + Tên + Slogan */}
             <div className=" items-center gap-2 py-1">
               {/* Logo */}
-              <div className="w-20 h-20 rounded-xl overflow-hidden bg-amber-50 flex items-center justify-center ml-5">
+              <div className="w-20 h-20 rounded-xl overflow-hidden bg-amber-50 flex items-center justify-center ml-2">
                 <Image
                   src={logo}
                   alt="BISO JICA"
@@ -36,10 +44,12 @@ const Navbar = () => {
               <div className="leading-tight"
                 style={{ fontFamily: "Montserrat " }}
               >
-                <div className="font-bold text-xs tracking-wide">
+                <div className={`font-bold text-xs text-[#ffd05c] tracking-wide ${dancing.className} `}
+                >
                   Công nghệ enzyme cho
                 </div>
-                <div className="text-sm text-[#ffd05c] mt-1">
+                <div className={`text-sm text-[#ffd05c] mt-1 ${dancing.className}`}
+                >
                   nông nghiệp bền vững.
                 </div>
               </div>
@@ -51,8 +61,7 @@ const Navbar = () => {
         </Link>
 
         {/* DESKTOP MENU */}
-        <ul className="hidden md:flex items-center gap-10 list-none">
-
+        <ul className="hidden md:flex items-center gap-10 list-none ">
           <li>
             <Link href="/" className="nav-link  font-medium hover:text-[#ffd05c] transition ">
               Trang chủ
@@ -120,21 +129,22 @@ const Navbar = () => {
           </li>
 
         </ul>
-        <div className="flex">
-          <div>
+
+        <div className="flex items-center">
+          <div className="hidden md:flex items-center">
             <LanguageSwitcher />
           </div>
-
-
+          <div className="md:hidden flex items-center">
+            <LanguageSwitcher />
+          </div>
           {/* MOBILE BUTTON */}
           <button
-            className="md:hidden"
+            className="md:hidden ml-6"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
-
 
       </nav>
 
