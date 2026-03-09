@@ -50,7 +50,6 @@ export default function LanguageSwitcher() {
 
   return (
     <>
-      <div className="flex gap-3 items-center relative z-50">
       <div id="google_translate_element" style={{ display: "none" }} />
 
         <div>
@@ -78,6 +77,8 @@ export default function LanguageSwitcher() {
         </div>
 
       </div>
+      <div className="flex gap-3 items-center relative z-50">
+
     </>
   );
 }
