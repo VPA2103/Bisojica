@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div className="max-w-5xl mx-auto p-6 font-sans">
       <h1 className="text-3xl font-bold text-center text-[--text-color] mb-10 uppercase">
-        Tài Liệu Báo Giá Biso Jica
+        Bảng báo giá Biso Jica
       </h1>
 
       {/* NHÚNG FILE BÁO GIÁ CÔNG NGHIỆP */}

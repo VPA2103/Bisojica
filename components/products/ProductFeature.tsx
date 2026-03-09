@@ -9,8 +9,8 @@ interface Props {
 const ProductFeature: React.FC<Props> = ({ product }) => {
   return (
     <Link
-      href={`/products/${product.slug}`}
-      className="group flex bg-white  overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex-col"
+      href={`/products?category=${product.category}`}
+      className="group flex bg-white overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex-col"
     >
       {/* Ảnh */}
       <div className="relative w-full h-56 overflow-hidden bg-gray-100 flex items-center justify-center">

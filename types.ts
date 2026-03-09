@@ -7,6 +7,7 @@ export type Product = {
   name: string;
   slug: string,
   mainApplication: string;
+  category:string;
   features: string[];
   featured?: boolean;
   images: string[];

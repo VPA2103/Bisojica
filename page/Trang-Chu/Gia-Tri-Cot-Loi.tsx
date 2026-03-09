@@ -173,8 +173,7 @@ export default function Sections() {
                 style={{
                   fontSize: 18,
                   color: "var(--text-color)",
-                  letterSpacing: "0.08em",
-                  fontWeight: 600,
+                  fontWeight: 700,
                 }}
               >
                 TẦM NHÌN
@@ -187,7 +186,7 @@ export default function Sections() {
               textAlign: "center",
               color: "var(--text-color)",
               fontSize: "clamp(26px, 4vw, 40px)",
-              fontWeight: 700,
+              fontWeight: 500,
               lineHeight: 1.25,
               marginBottom: 16,
               letterSpacing: "-0.02em",
@@ -201,7 +200,7 @@ export default function Sections() {
               textAlign: "center",
               color: "var(--text-color)",
               fontSize: 30,
-              fontWeight: 700,
+              fontWeight: 500,
               maxWidth: 800,
               margin: "0 auto 60px",
               lineHeight: 1.7,
@@ -261,7 +260,7 @@ export default function Sections() {
                 <h3
                   style={{
                     color: "var(--text-color)",
-                    fontWeight: 700,
+                    fontWeight: 500,
                     fontSize: 19,
                     marginBottom: 10,
                     letterSpacing: "-0.01em",
@@ -296,19 +295,19 @@ export default function Sections() {
               background: "rgba(22,163,74,0.1)", border: "1px solid rgba(22,163,74,0.2)",
               borderRadius: 100, padding: "8px 20px", marginBottom: 20,
             }}>
-              <span style={{ fontSize: 18, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 600 }}>
+              <span style={{ fontSize: 18, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 500 }}>
                 LĨNH VỰC HOẠT ĐỘNG
               </span>
             </div>
             <p style={{
               color: "var(--text-color)", fontSize: 40,
-              fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 14,
+              fontWeight: 500, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 14,
             }}>
               3 Mảng Ứng Dụng Chính
             </p>
             <p style={{
               color: "var(--text-color)", fontSize: 30, maxWidth: 700,
-              margin: "0 auto", lineHeight: 1.7, fontWeight:700
+              margin: "0 auto", lineHeight: 1.7, fontWeight:500
             }}
             className=""
             >
@@ -411,7 +410,7 @@ export default function Sections() {
                     <h3
                       style={{
                         color: "var(--background)",
-                        fontWeight: 700,
+                        fontWeight: 500,
                         fontSize: 30,
                         margin: 0,
                         letterSpacing: "-0.02em",

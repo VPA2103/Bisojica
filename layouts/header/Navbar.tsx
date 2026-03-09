@@ -20,9 +20,9 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-4 no-underline">
           <div className="ml-5 max-w-md">
             {/* Logo + Tên + Slogan */}
-            <div className="flex items-center gap-2 py-1">
+            <div className=" items-center gap-2 py-1">
               {/* Logo */}
-              <div className="w-20 h-20 rounded-xl overflow-hidden bg-amber-50 flex items-center justify-center">
+              <div className="w-20 h-20 rounded-xl overflow-hidden bg-amber-50 flex items-center justify-center ml-5">
                 <Image
                   src={logo}
                   alt="BISO JICA"
@@ -40,20 +40,12 @@ const Navbar = () => {
                   Công nghệ enzyme cho
                 </div>
                 <div className="text-sm text-[#ffd05c] mt-1">
-                   nền nông nghiệp bền vững.
+                  nông nghiệp bền vững.
                 </div>
               </div>
             </div>
 
-            {/* Mô tả thêm */}
-            <div className="text-xs text-[#fdfff0]/80 leading-snug mt-1 "
-              style={{ fontFamily: "Montserrat " }}
-            >
-              <p className="pl-5">
-                Chúng tôi không chỉ tạo ra sản phẩm.
-              </p>
-              Chúng tôi xây dựng một thế hệ nông nghiệp mới.
-            </div>
+
           </div>
 
         </Link>
@@ -128,19 +120,21 @@ const Navbar = () => {
           </li>
 
         </ul>
+        <div className="flex">
+          <div>
+            <LanguageSwitcher />
+          </div>
 
-        <LanguageSwitcher />
-        <div>
 
+          {/* MOBILE BUTTON */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
 
-        {/* MOBILE BUTTON */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
 
       </nav>
 

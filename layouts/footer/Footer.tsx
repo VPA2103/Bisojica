@@ -132,6 +132,13 @@ export default function Footer() {
           <p className="text-xs text-white/40 tracking-widest">
             © 2026 BISO JICA
           </p>
+          <div
+            className="text-2xl text-center  max-w-xl mx-auto leading-relaxed"
+            style={{ fontFamily: "Montserrat" }}
+          >
+            <p>Chúng tôi không chỉ tạo ra sản phẩm.</p>
+            <p>Chúng tôi xây dựng một thế hệ nông nghiệp mới.</p>
+          </div>
 
           {/* Location */}
           <div className="flex items-center gap-2 border border-yellow-400/20 px-4 py-2 bg-yellow-400/5 mb-6">

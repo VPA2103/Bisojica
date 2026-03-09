@@ -1,23 +1,51 @@
-import { products } from "@/data/products";
+"use client";
+
 import ProductFeature from "../products/ProductFeature";
 
-export default function ProductsHightlight() {
-  const highlightProducts = products
-    .filter((p) => p.featured)
-    .slice(0, 4);
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import { products_feature } from "@/data/products";
+
+export default function ProductsHighlight() {
+
+  const highlightProducts = products_feature.filter(
+    (p) => p.featured
+  );
 
   return (
-    <section className="py-4 var(--background)">
+    <section className="py-10 bg-background">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8 ">
+
+        <h2
+          className="text-4xl text-center mb-10"
+          style={{ fontWeight: 500 }}
+        >
           Sản phẩm tiêu biểu
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={24}
+          grabCursor={true}
+          loop={true}
+          breakpoints={{
+            320: { slidesPerView: 1.2 },
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+        >
           {highlightProducts.map((product) => (
-            <ProductFeature key={product.slug} product={product} />
+            <SwiperSlide key={product.slug}>
+              <ProductFeature product={product} />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
+
       </div>
     </section>
   );
