@@ -173,7 +173,7 @@ export default function Sections() {
                 style={{
                   fontSize: 18,
                   color: "var(--text-color)",
-                  fontWeight: 700,
+                  fontWeight: 500,
                 }}
               >
                 TẦM NHÌN
