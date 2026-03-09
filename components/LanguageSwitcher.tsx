@@ -51,7 +51,6 @@ export default function LanguageSwitcher() {
   return (
     <>
       <div id="google_translate_element" style={{ display: "none" }} />
-
       <div className="flex gap-3 items-center">
         <button
           onClick={() => changeLanguage("vi")}
@@ -60,7 +59,7 @@ export default function LanguageSwitcher() {
             : "opacity-50 hover:scale-105"
             }`}
         >
-          <Image src='/images/vn.png' alt="VietNam" width={30} height={50} />
+          VN
         </button>
         <button
           onClick={() => changeLanguage("en")}
@@ -69,7 +68,7 @@ export default function LanguageSwitcher() {
             : "opacity-50 hover:scale-105"
             }`}
         >
-          <Image src='/images/en.png' alt="English" width={30} height={50} />
+          EN
         </button>
       </div>
     </>

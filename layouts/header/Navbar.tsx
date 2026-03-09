@@ -37,10 +37,10 @@ const Navbar = () => {
                 style={{ fontFamily: "Montserrat " }}
               >
                 <div className="font-bold text-xs tracking-wide">
-                  Công nghệ enzyme
+                  Công nghệ enzyme cho
                 </div>
                 <div className="text-sm text-[#ffd05c] mt-1">
-                  cho nền nông nghiệp bền vững.
+                   nền nông nghiệp bền vững.
                 </div>
               </div>
             </div>
@@ -62,37 +62,37 @@ const Navbar = () => {
         <ul className="hidden md:flex items-center gap-10 list-none">
 
           <li>
-            <Link href="/" className="nav-link text-xl font-medium hover:text-[#ffd05c] transition ">
+            <Link href="/" className="nav-link  font-medium hover:text-[#ffd05c] transition ">
               Trang chủ
             </Link>
           </li>
 
           <li>
-            <Link href="/ve-chung-toi" className="text-xl font-medium hover:text-[#ffd05c] transition">
+            <Link href="/ve-chung-toi" className=" font-medium hover:text-[#ffd05c] transition">
               Về chúng tôi
             </Link>
           </li>
 
           <li>
-            <Link href="/enzyme" className="text-xl font-medium hover:text-[#ffd05c] transition">
+            <Link href="/enzyme" className=" font-medium hover:text-[#ffd05c] transition">
               Thông tin về Enzyme
             </Link>
           </li>
 
           <li>
-            <Link href="/products" className="text-xl font-medium hover:text-[#ffd05c] transition">
+            <Link href="/products" className=" font-medium hover:text-[#ffd05c] transition">
               Sản phẩm
             </Link>
           </li>
 
           <li>
-            <Link href="/bang-gia" className="text-xl font-medium hover:text-[#ffd05c] transition">
+            <Link href="/bang-gia" className=" font-medium hover:text-[#ffd05c] transition">
               Bảng giá
             </Link>
           </li>
 
           <li>
-            <Link href="/tin-tuc" className="text-xl font-medium hover:text-[#ffd05c] transition">
+            <Link href="/tin-tuc" className=" font-medium hover:text-[#ffd05c] transition">
               Tin tức
             </Link>
           </li>
@@ -100,7 +100,7 @@ const Navbar = () => {
           {/* DROPDOWN */}
           <li className="relative group">
 
-            <span className="text-xl font-medium cursor-pointer hover:text-[#ffd05c] transition">
+            <span className=" font-medium cursor-pointer hover:text-[#ffd05c] transition">
               Phát triển nhân tài ▼
             </span>
 
@@ -109,7 +109,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/phat-trien-nhan-tai"
-                  className="block px-4 py-2 text-xl hover:bg-[#2c5a43]"
+                  className="block px-4 py-2  hover:bg-[#2c5a43]"
                 >
                   Phát triển nhân tài
                 </Link>
@@ -118,7 +118,7 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/tai-lieu"
-                  className="block px-4 py-2 text-xl hover:bg-[#2c5a43]"
+                  className="block px-4 py-2  hover:bg-[#2c5a43]"
                 >
                   Tài liệu
                 </Link>
