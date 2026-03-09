@@ -50,8 +50,9 @@ export default function LanguageSwitcher() {
 
   return (
     <>
-      <div id="google_translate_element" style={{ display: "none" }} />
       <div className="flex gap-3 items-center relative z-50">
+      <div id="google_translate_element" style={{ display: "none" }} />
+
         <div>
           <button
             onClick={() => changeLanguage("vi")}
