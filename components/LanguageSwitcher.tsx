@@ -61,9 +61,7 @@ export default function LanguageSwitcher() {
         >
           VN
         </button>
-        <div className="">
-
-        </div>
+        
         <button
           onClick={() => changeLanguage("en")}
           className={`text-xl transition-all duration-200  text-[#fdfff0] hover:opacity-100 ${active === "en"
