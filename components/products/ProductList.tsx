@@ -77,7 +77,7 @@ export default function ProductList() {
               : "bg-gray-100 hover:bg-gray-200"
             }`}
         >
-          Thủy sản
+          Thủy hải sản
         </button>
       </div>
 

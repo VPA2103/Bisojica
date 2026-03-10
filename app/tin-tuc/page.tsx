@@ -29,7 +29,7 @@ const articles = [
   },
   {
     id: 3,
-    category: "Thủy Sản",
+    category: "Thủy Hải Sản",
     tag: "Nuôi trồng bền vững",
     title: "Giải Pháp Sinh Học Cho Thủy Sản – Nâng Cao Hiệu Quả Nuôi Trồng",
     excerpt:
@@ -38,6 +38,18 @@ const articles = [
     href: "/tin-tuc/thuy-san",
     readTime: "4 phút đọc",
     index: "03",
+  },
+  {
+    id: 4,
+    category: "Nông nghiệp",
+    tag: "Nuôi trồng bền vững",
+    title: "Enzyme “Liều thuốc” sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
+    excerpt:
+      "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn “bó tay” nhìn vườn cây tàn lụi.",
+    image: "https://media.daidoanket.vn/w3840/uploaded/images/2025/09/08/a95db1d3-29cf-4849-aac2-56ecb03da9ee.jpg.avif",
+    href: "https://daidoanket.vn/enzyme-lieu-thuoc-sinh-hoc-cuu-dat-hoi-sinh-vuon-cay-tuong-nhu-da-chet-10310034.html",
+    readTime: "10 phút đọc",
+    index: "04",
   },
 ];
 
@@ -118,6 +130,10 @@ export default function NewsListBlog() {
             <ArticleRow key={article.id} article={article} index={i} />
           ))}
         </div>
+        {/* Thêm ở đây */}
+
+
+
 
         {/* Footer line */}
         <div
@@ -146,6 +162,7 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
       <a
         href={article.href}
         className="group block"
+        target="_blank"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{ textDecoration: "none" }}
