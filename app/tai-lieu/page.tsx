@@ -3,6 +3,10 @@ import ProductDocuments from "./ProductDocuments";
 export default function PdfDownloadSection() {
   const documents = [
     {
+      title: "Thông tin về enzyme",
+      href: "/enzyme",
+    },
+    {
       title: "Bảng giá sản phẩm nông nghiệp",
       href: "/files/pdf/san-pham-nong-nghiep.pdf",
     },

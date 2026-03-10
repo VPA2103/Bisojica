@@ -6,7 +6,16 @@ interface Props {
   product: Product;
 }
 
+// map category slug -> chữ có dấu
+const categoryMap: Record<string, string> = {
+  "cong-nghiep": "Công nghiệp",
+  "nong-nghiep": "Nông nghiệp",
+  "thuy-san": "Thủy hải sản",
+};
+
 const ProductFeature: React.FC<Props> = ({ product }) => {
+  const categoryLabel = categoryMap[product.category];
+
   return (
     <Link
       href={`/products?category=${product.category}`}
@@ -19,6 +28,13 @@ const ProductFeature: React.FC<Props> = ({ product }) => {
           alt={product.name}
           className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110"
         />
+
+        {/* Category badge */}
+        {categoryLabel && (
+          <span className="absolute top-2 left-2 bg-[#20412e] text-white text-xs px-2 py-1 uppercase tracking-wider">
+            {categoryLabel}
+          </span>
+        )}
       </div>
 
       {/* Label */}

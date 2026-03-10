@@ -11,7 +11,7 @@ import ProductList from "./ProductList";
 interface Props {
     product: Product;
 }
-
+const sizes = ["1L", "100ml", "10L"]; // mô tả cho từng hình
 const ProductDetail: React.FC<Props> = ({ product }) => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
@@ -103,6 +103,9 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                                                 sizes="80px"
                                             />
                                         </div>
+                                        <span className="text-xl font-medium ml-4 text-gray-600">
+                                            {sizes[index]}
+                                        </span>
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
@@ -117,24 +120,7 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                             {product.name}
                         </h1>
                         {/* Volumes */}
-                        {product.volumes && (
-                            <div className="mb-4">
-                                <p className="text-lg font-semibold text-green-800 mb-2">
-                                    Dung tích
-                                </p>
-
-                                <div className="flex flex-wrap gap-2">
-                                    {product.volumes.map((volumes, index) => (
-                                        <span
-                                            key={index}
-                                            className="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full border border-green-200"
-                                        >
-                                            {volumes}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
+                        
 
                         {/* Main Application */}
                         <p className="text-lg text-gray-700 mb-6">

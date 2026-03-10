@@ -75,8 +75,8 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link href="/enzyme" className=" font-medium hover:text-[#ffd05c] transition">
-              Thông tin về Enzyme
+            <Link href="/tai-lieu" className=" font-medium hover:text-[#ffd05c] transition">
+              Tài liệu
             </Link>
           </li>
 
@@ -115,16 +115,6 @@ const Navbar = () => {
                   Phát triển nhân tài
                 </Link>
               </li>
-
-              <li>
-                <Link
-                  href="/tai-lieu"
-                  className="block px-4 py-2  hover:bg-[#2c5a43]"
-                >
-                  Tài liệu
-                </Link>
-              </li>
-
             </ul>
           </li>
 
@@ -167,8 +157,8 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="/enzyme" onClick={() => setIsOpen(false)} className="block py-3 text-base">
-                Thông tin về Enzyme
+              <Link href="/tai-lieu" onClick={() => setIsOpen(false)} className="block py-3 text-base">
+                Tài liệu
               </Link>
             </li>
 
@@ -216,7 +206,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li>
+                  {/* <li>
                     <Link
                       href="/tai-lieu"
                       onClick={() => setIsOpen(false)}
@@ -224,7 +214,7 @@ const Navbar = () => {
                     >
                       Tài liệu
                     </Link>
-                  </li>
+                  </li> */}
 
                 </ul>
               )}
