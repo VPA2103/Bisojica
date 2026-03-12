@@ -26,7 +26,7 @@ export default function Hero() {
           delay: 10000,
           disableOnInteraction: false,
         }}
-        pagination={{ clickable: false }}
+        // pagination={{ clickable: false }}
         loop={true}
         className="w-full h-full"
       >
