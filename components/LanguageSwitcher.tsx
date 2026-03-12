@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { useEffect, useState } from "react";
 
 declare global {
@@ -14,6 +14,9 @@ export default function LanguageSwitcher() {
   const [active, setActive] = useState("vi");
 
   useEffect(() => {
+    const savedLang = localStorage.getItem("site-language");
+    if (savedLang) setActive(savedLang);
+
     if (document.getElementById("google-translate-script")) return;
 
     const script = document.createElement("script");
@@ -37,15 +40,23 @@ export default function LanguageSwitcher() {
   }, []);
 
   const changeLanguage = (lang: string) => {
-    const select = document.querySelector(
-      ".goog-te-combo"
-    ) as HTMLSelectElement;
-
-    if (!select) return;
-
-    select.value = lang;
-    select.dispatchEvent(new Event("change"));
-    setActive(lang);
+    const tryChange = () => {
+      const select = document.querySelector(
+        ".goog-te-combo"
+      ) as HTMLSelectElement;
+  
+      if (!select) {
+        setTimeout(tryChange, 300);
+        return;
+      }
+  
+      select.value = lang;
+      select.dispatchEvent(new Event("change"));
+  
+      setActive(lang);
+    };
+  
+    tryChange();
   };
 
   return (
@@ -61,7 +72,7 @@ export default function LanguageSwitcher() {
         >
           VN
         </button>
-        
+
         <button
           onClick={() => changeLanguage("en")}
           className={`text-xl transition-all duration-200  text-[#fdfff0] hover:opacity-100 ${active === "en"

@@ -48,6 +48,19 @@ export default function QuickContact() {
           Chat Zalo
         </span>
       </div>
+      <div className="relative group flex justify-center">
+        <a
+          href="https://zalo.me/2469997295755147479?src=qr"
+          target="_blank"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg hover:scale-110 transition"
+        >
+          <Image src="/icons/zalo-view.jpg" alt="Zalo" width={30} height={26} />
+        </a>
+
+        <span className="hidden md:block absolute right-14 bg-black text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+          Xem Zalo
+        </span>
+      </div>
 
       {/* Email */}
       <div className="relative group flex justify-center">
@@ -75,7 +88,7 @@ export default function QuickContact() {
         </a>
 
         <span className="hidden md:block absolute right-14 bg-black text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-          1145 Nguyễn Thị Định, P. Cát Lái, TP. Thủ Đức
+          Số 16, đường D4, phường Cát Lái, Phường Cát Lái, Thành phố Hồ Chí Minh
         </span>
       </div>
 
