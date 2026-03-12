@@ -42,7 +42,7 @@ const articles = [
   {
     id: 4,
     category: "Nông nghiệp",
-    tag: "Nuôi trồng bền vững",
+    tag: "Canh tác bền vững",
     title: "Enzyme “Liều thuốc” sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
     excerpt:
       "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn “bó tay” nhìn vườn cây tàn lụi.",
@@ -50,6 +50,18 @@ const articles = [
     href: "https://daidoanket.vn/enzyme-lieu-thuoc-sinh-hoc-cuu-dat-hoi-sinh-vuon-cay-tuong-nhu-da-chet-10310034.html",
     readTime: "10 phút đọc",
     index: "04",
+  },
+  {
+    id: 5,
+    category: "Nông nghiệp",
+    tag: "Canh tác bền vững",
+    title: "Thăm vườn cây hiếm ngay đảo Kim Cương - Cùng Biso Jica thăm nhà anh Vinh Chà Là",
+    excerpt:
+      "Chào mừng bạn đến với kênh Biso Jica – nơi chia sẻ kiến thức và giải pháp về enzyme hữu cơ ứng dụng trong các ngành nông nghiệp, công nghiệp và thủy sản.",
+    image: "https://img.youtube.com/vi/oJuhF7213Pw/0.jpg",
+    href: "https://www.youtube.com/watch?v=oJuhF7213Pw",
+    readTime: "13 phút 51 giây xem",
+    index: "05",
   },
 ];
 

@@ -87,6 +87,24 @@ export default function PdfDownloadSection() {
         title: "Ứng dụng Enzyme Biso vào trang trại chăn nuôi lợn",
         href: "/files/pdf/vi/ung-dung-enzyme-biso-vao-trang-trai-chan-nuoi-lon.pdf",
       },
+      
+      {
+        title: "Bệnh cháy lá",
+        href: "/files/pdf/vi/benh-chay-la.pdf",
+      },
+      {
+        title: "Về trồng sầu riêng",
+        href: "/files/pdf/vi/ve-trong-sau-rieng.pdf",
+      },
+      {
+        title: "Quy trình trồng sầu riêng hữu cơ xuất khẩu",
+        href: "/files/pdf/vi/quy-trinh-trong-sau-rieng-huu-co-xuat-khau.pdf",
+      },
+      {
+        title: "Tăng sản lượng bằng cách trồng khoải tây",
+        href: "/files/pdf/vi/tang-san-luong-bang-cach-trong-khoai-tay.pdf",
+      },
+      
     ],
 
     en: [
@@ -162,6 +180,23 @@ export default function PdfDownloadSection() {
         title: "Application of Biso Enzyme in Pig Farms",
         href: "/files/pdf/en/ung-dung-enzyme-biso-vao-trang-trai-chan-nuoi-lon.pdf",
       },
+
+      {
+        title: "Leaf Blight Disease",
+        href: "/files/pdf/en/benh-chay-la.pdf",
+      },
+      {
+        title: "About Durian Cultivation",
+        href: "/files/pdf/en/ve-trong-sau-rieng.pdf",
+      },
+      {
+        title: "Organic Durian Export Cultivation Process",
+        href: "/files/pdf/en/quy-trinh-trong-sau-rieng-huu-co-xuat-khau.pdf",
+      },
+      {
+        title: "Increasing Yield by Growing Potatoes",
+        href: "/files/pdf/en/tang-san-luong-bang-cach-trong-khoai-tay.pdf",
+      }
     ],
   };
 
