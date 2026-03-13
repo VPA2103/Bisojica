@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <VerticalVideo/>
+      {/* <VerticalVideo/> */}
       <Sections />
       <ProductsHightlight/>
       <BisoYaiPromoBanner/>
