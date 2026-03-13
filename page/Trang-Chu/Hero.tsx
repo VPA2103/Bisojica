@@ -44,7 +44,7 @@ export default function Hero() {
   const lang = useGoogleTranslateLanguage();
   const slides = images[lang];
   return (
-    <section className="relative w-full h-[80vh] md:h-[90vh] overflow-hidden">
+    <section className="relative w-full min-h md:h-[90vh] overflow-hidden">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
