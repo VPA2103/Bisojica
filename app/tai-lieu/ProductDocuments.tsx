@@ -1,5 +1,5 @@
 "use client";
-import useGoogleTranslateLanguage from "@/components/hooks/useGoogleTranslateLanguage";
+import useGoogleTranslateLanguage from "@/hooks/useGoogleTranslateLanguage";
 
 
 type DocumentItem = {

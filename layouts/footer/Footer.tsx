@@ -137,8 +137,8 @@ export default function Footer() {
             className={`text-2xl text-center  max-w-xl mx-auto leading-relaxed ${dancing.className}`}
             style={{ fontFamily: "Dancing Script"}}
           >
-            <p>Chúng tôi không chỉ tạo ra sản phẩm.</p>
-            <p>Chúng tôi xây dựng một thế hệ nông nghiệp mới.</p>
+            <p>"Chúng tôi không chỉ tạo ra sản phẩm</p>
+            <p>"Chúng tôi xây dựng một thế hệ nông nghiệp mới"</p>
           </div>
 
           {/* Location */}

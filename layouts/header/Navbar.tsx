@@ -120,7 +120,7 @@ const Navbar = () => {
 
         </ul>
 
-        <div className="flex items-center">
+        <div className="flex items-center mt-14">
           <div className="hidden md:flex items-center">
             <LanguageSwitcher />
           </div>

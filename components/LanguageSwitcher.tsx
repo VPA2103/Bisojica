@@ -66,7 +66,7 @@ export default function LanguageSwitcher() {
       <div className="flex gap-3 items-center relative z-50">
         <button
           onClick={() => changeLanguage("vi")}
-          className={`text-xl text-[#fdfff0] ${active === "vi" ? "scale-110 opacity-100" : "opacity-50"
+          className={` notranslate text-xl text-[#fdfff0] ${active === "vi" ? "scale-110 opacity-100" : "opacity-50"
             }`}
         >
           VN
@@ -74,7 +74,7 @@ export default function LanguageSwitcher() {
 
         <button
           onClick={() => changeLanguage("en")}
-          className={`text-xl text-[#fdfff0] ${active === "en" ? "scale-110 opacity-100" : "opacity-50"
+          className={` notranslate text-xl text-[#fdfff0] ${active === "en" ? "scale-110 opacity-100" : "opacity-50"
             }`}
         >
           EN
