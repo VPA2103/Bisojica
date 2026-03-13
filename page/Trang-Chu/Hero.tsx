@@ -44,32 +44,30 @@ export default function Hero() {
   const lang = useGoogleTranslateLanguage();
   const slides = images[lang];
   return (
-    <section className="relative w-full min-h md:h-[90vh] overflow-hidden">
+    <section className="relative w-full h-auto md:h-[90vh] overflow-hidden">
       <Swiper
         modules={[Autoplay, Pagination, EffectFade]}
         effect="fade"
         speed={800}
         grabCursor={true}
         autoplay={{
-          delay: 8000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
-        // pagination={{ clickable: true }}
-        loop={true}
-        className="w-full h-full "
-        // style={{ background: '#f3edd7' }}
+        loop
+        className="w-full h-full"
       >
         {slides.map((src, index) => (
           <SwiperSlide
             key={index}
-            className="flex items-center justify-center  bg-[#f3edd7]"
+            className="flex items-center justify-center bg-[#f3edd7]"
           >
             <Image
               src={src}
               alt={`Slide ${index + 1}`}
               width={1600}
               height={900}
-              className="object-contain max-h-full w-auto mx-auto"
+              className="object-contain w-full h-auto md:h-full"
               priority={index === 0}
             />
           </SwiperSlide>
