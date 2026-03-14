@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const withNextIntl = createNextIntlPlugin(
+  "./i18n/request.ts" // đường dẫn tới file request config
+);
 
-export default nextConfig;
+export default withNextIntl({
+  // các config Next.js khác nếu có
+});

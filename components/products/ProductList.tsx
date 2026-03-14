@@ -4,23 +4,32 @@ import React, { useState, useEffect } from "react";
 import { products, category } from "@/data/products";
 import ProductCard from "./ProductCard";
 import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function ProductList() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
+  const t = useTranslations();
 
   const [filter, setFilter] = useState<category | "all">("all");
 
   useEffect(() => {
-    if (categoryParam) {
-      setFilter(categoryParam as category);
-    }
+    if (categoryParam) setFilter(categoryParam as category);
   }, [categoryParam]);
 
   const filteredProducts =
-    filter === "all"
-      ? products
-      : products.filter((p) => p.category === filter);
+    filter === "all" ? products : products.filter((p) => p.category === filter);
+
+  // Tận dụng lại common.categories đã tách trước đó
+  const tCommon = useTranslations("common");
+  const tList = useTranslations("productList");
+
+  const filterButtons: { value: category | "all"; label: string }[] = [
+    { value: "all",          label: tList("filterAll") },
+    { value: "nong-nghiep",  label: tCommon("categories.nong-nghiep") },
+    { value: "cong-nghiep",  label: tCommon("categories.cong-nghiep") },
+    { value: "thuy-san",     label: tCommon("categories.thuy-san") },
+  ];
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
@@ -28,57 +37,29 @@ export default function ProductList() {
       {/* Header */}
       <div className="mb-8 sm:mb-10">
         <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">
-          Danh sách sản phẩm
+          {tList("title")}
         </h1>
-
         <p className="mt-1.5 text-sm sm:text-base text-gray-500">
-          {filteredProducts.length} sản phẩm
+          {tList("count", { count: filteredProducts.length })}
         </p>
-
         <div className="mt-4 h-px bg-linear-to-r from-emerald-200 via-teal-100 to-transparent" />
       </div>
 
       {/* Filter */}
       <div className="flex flex-wrap gap-3 mb-8">
-        <button
-          onClick={() => setFilter("all")}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition ${filter === "all"
-              ? "bg-emerald-600 text-white"
-              : "bg-gray-100 hover:bg-gray-200"
+        {filterButtons.map(({ value, label }) => (
+          <button
+            key={value}
+            onClick={() => setFilter(value)}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+              filter === value
+                ? "bg-emerald-600 text-white"
+                : "bg-gray-100 hover:bg-gray-200"
             }`}
-        >
-          Tất cả
-        </button>
-
-        <button
-          onClick={() => setFilter("nong-nghiep")}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition ${filter === "nong-nghiep"
-              ? "bg-emerald-600 text-white"
-              : "bg-gray-100 hover:bg-gray-200"
-            }`}
-        >
-          Nông nghiệp
-        </button>
-
-        <button
-          onClick={() => setFilter("cong-nghiep")}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition ${filter === "cong-nghiep"
-              ? "bg-emerald-600 text-white"
-              : "bg-gray-100 hover:bg-gray-200"
-            }`}
-        >
-          Công nghiệp
-        </button>
-
-        <button
-          onClick={() => setFilter("thuy-san")}
-          className={`px-4 py-2 rounded-lg text-sm font-medium transition ${filter === "thuy-san"
-              ? "bg-emerald-600 text-white"
-              : "bg-gray-100 hover:bg-gray-200"
-            }`}
-        >
-          Thủy hải sản
-        </button>
+          >
+            {label}
+          </button>
+        ))}
       </div>
 
       {/* Grid */}
@@ -90,7 +71,7 @@ export default function ProductList() {
 
       {filteredProducts.length === 0 && (
         <div className="flex justify-center py-20">
-          Không có sản phẩm
+          {tList("empty")}
         </div>
       )}
     </div>

@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import useGoogleTranslateLanguage from "@/hooks/useGoogleTranslateLanguage";
+import { useLocale } from "next-intl";
 
 const images: Record<"vi" | "en", string[]> = {
   vi: [
@@ -41,7 +42,8 @@ const images: Record<"vi" | "en", string[]> = {
 };
 
 export default function Hero() {
-  const lang = useGoogleTranslateLanguage();
+  const locale = useLocale();
+  const lang = (locale === "en" ? "en" : "vi") as "vi" | "en";
   const slides = images[lang];
   return (
     <section className="relative w-full h-auto md:h-[90vh] overflow-hidden">

@@ -1,0 +1,664 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "documents": "Documents",
+    "products": "Products",
+    "priceList": "Price List",
+    "news": "News",
+    "talent": "Talent Development",
+    "slogan1": "Enzyme technology for",
+    "slogan2": "sustainable agriculture."
+  },
+  "sections": {
+    "vision": {
+      "badge": "VISION",
+      "title": "Leading the World in Organic Enzymes Imported Directly from Japan",
+      "desc": "Driving a sustainable green economy — for a better future for ecosystems and people.",
+      "values": {
+        "bio": {
+          "title": "Superior Biological Effectiveness",
+          "desc": "Tailored to Vietnam's agricultural and environmental conditions, delivering measurable results."
+        },
+        "safe": {
+          "title": "Absolutely Safe",
+          "desc": "100% biodegradable, safe for humans, livestock, and the entire ecosystem."
+        },
+        "japan": {
+          "title": "Japanese Technology",
+          "desc": "Meets international standards: USDA, GlobalG.A.P., and leading export certifications worldwide."
+        }
+      }
+    },
+    "fields": {
+      "badge": "FIELDS OF APPLICATION",
+      "title": "3 Main Application Areas",
+      "desc": "Comprehensive biological enzyme solutions, from fields to factories and fish farms.",
+      "viewSolution": "View solutions",
+      "agriculture": {
+        "label": "Agriculture",
+        "item1": "Rehabilitate and restore agricultural land",
+        "item2": "Effectively treat fungal diseases and pests",
+        "item3": "Increase crop yield and quality"
+      },
+      "industry": {
+        "label": "Industry",
+        "item1": "Wastewater treatment (BOD, COD)",
+        "item2": "Odor elimination in farms & landfills",
+        "item3": "Eco-friendly biological cleaning agents"
+      },
+      "aquatic": {
+        "label": "Aquaculture",
+        "item1": "Improve pond environment",
+        "item2": "Reduce toxic gases H₂S, NH₃",
+        "item3": "Boost immunity in shrimp and fish"
+      }
+    }
+  },
+  "home": { "featuredProducts": "Featured Products" },
+  "products": {
+    "daichi-no-tomo": {
+      "mainApplication": "Soil-improving enzyme, treats fungal diseases and...",
+      "features": [
+        "Treats fungal diseases and nematodes",
+        "Removes (binds) heavy metals",
+        "Enhances resistance",
+        "Detoxifies soil and activates beneficial microorganisms"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Soil irrigation",
+            "ratio": "Dilute 1:2000",
+            "example": "100ml / 200L"
+          },
+          {
+            "method": "Foliar spray",
+            "ratio": "Dilute 1:2000-2500",
+            "example": "100ml / 200L ~ 250L"
+          }
+        ],
+        "frequency": "Once a month",
+        "note": null
+      }
+    },
+    "daichi-no-tomo-500": {
+      "mainApplication": "Organic nutrient enzyme, treats root rot, restores root system...",
+      "features": [
+        "Treats root rot, restores root system",
+        "Fixes yellowing leaves and weak plants",
+        "Promotes rapid shoot growth and green leaves",
+        "Enhances root development",
+        "Supplies essential nutrients"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Soil irrigation",
+            "ratio": "Dilute 1:300 ~ 1:500",
+            "example": "100ml / 30L ~ 50L\n1L / 300L ~ 500L"
+          }
+        ],
+        "frequency": "1-2 times per month",
+        "note": "Can be combined with DAICHI NO TOMO for soil irrigation\n*Can replace fertilizer"
+      }
+    },
+    "sp-10-15-20": {
+      "mainApplication": "Organic enzyme, increases harvest yield...",
+      "features": [
+        "Increases harvest yield",
+        "Accelerates fruit growth",
+        "Enhances sweetness (Brix)",
+        "Provides full nutrients for crops"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Soil irrigation",
+            "ratio": "Dilute 1:300 ~ 1:500",
+            "example": "1L / 300L ~ 500L"
+          },
+          {
+            "method": "Foliar spray",
+            "ratio": "Dilute 1:300 ~ 1:500",
+            "example": "1L / 300L ~ 500L"
+          }
+        ],
+        "frequency": "Once a month",
+        "note": "*Can replace fertilizer"
+      }
+    },
+    "mitaka-1000": {
+      "mainApplication": "Enzyme for pest control, treats mites, thrips, fruit flies...",
+      "features": [
+        "Supplies vitamins and minerals",
+        "Promotes metabolic processes",
+        "Creates green and glossy leaves",
+        "Treats mites, thrips, fruit flies",
+        "Prevents and repels harmful insects",
+        "Protects fruit and prevents rot"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Foliar spray",
+            "ratio": "Dilute 1:1000-2000",
+            "example": "100ml / 100L ~ 200L"
+          }
+        ],
+        "frequency": "Once a month",
+        "note": "Can be combined with DAICHI NO TOMO for foliar spray"
+      }
+    },
+    "mitaka-1200": {
+      "mainApplication": "Enzyme for post-harvest fruit preservation, washes...",
+      "features": [
+        "Washes off fungal infections on fruit surface",
+        "Extends shelf life",
+        "Inhibits harmful microorganisms",
+        "Preserves color, flavor, and nutrients",
+        "Reduces post-harvest losses",
+        "Safe for human use"
+      ],
+      "usage": null
+    },
+    "mitaka-3000": {
+      "mainApplication": "Enzyme for flower bud differentiation, increases harvest yield...",
+      "features": [
+        "Increases harvest yield",
+        "Enhances flowering and fruit setting",
+        "Boosts crop productivity",
+        "Helps plants develop naturally without affecting growth"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Soil irrigation",
+            "ratio": "Dilute 1:300 ~ 1:500",
+            "example": "1L / 300L ~ 500L"
+          }
+        ],
+        "frequency": null,
+        "note": "Use once during flowering and fruit setting"
+      }
+    },
+    "bk-partner": {
+      "mainApplication": "Enzyme for wastewater treatment, improves water...",
+      "features": [
+        "Improves water quality, reduces BOD, COD, and pollution indices",
+        "Enhances beneficial microorganisms",
+        "Prevents and decomposes filamentous fungi and actinomycetes",
+        "Improves sludge settling and eliminates odors at the source"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Spray or pump into treatment tanks, water tanks, septic tanks, and cesspools.",
+            "ratio": "Dilute",
+            "example": "1 - 10 ml / 700L - 1000L"
+          }
+        ],
+        "frequency": "Once a day or every 2-3 days",
+        "note": null
+      }
+    },
+    "bk-oilbuster": {
+      "mainApplication": "Enzyme for fat/oil treatment, removes grease and BOD...",
+      "features": [
+        "Removes grease, oil, and BOD in wastewater",
+        "Decomposes, prevents clogging, and reduces coagulation",
+        "Improves tank efficiency and reduces cleaning costs",
+        "Cleans and deodorizes surfaces effectively"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Spray or pump into treatment tanks.",
+            "ratio": "Dilute",
+            "example": "10ml - 20ml / 1000L"
+          }
+        ],
+        "frequency": "Once a day or every 2-3 days",
+        "note": null
+      }
+    },
+    "nioi-zero": {
+      "mainApplication": "Enzyme for odor removal and air cleaning, improves air quality...",
+      "features": [
+        "Improves air quality",
+        "Treats odors from livestock farms, landfills, drains, wastewater, and industrial areas"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Spray evenly into polluted environments or industrial livestock houses.",
+            "ratio": "Dilute 1:1000 - 1:2000",
+            "example": "10ml / 20L - 40L"
+          }
+        ],
+        "frequency": "1-2 times per week",
+        "note": null
+      }
+    },
+    "lake-power": {
+      "mainApplication": "Enzyme for ponds/lakes, cleans environment...",
+      "features": [
+        "Cleans living environment",
+        "Treats toxic gases (H2S, CH4, NO2-, NO3-, NH3)"
+      ],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Spread evenly on the water surface",
+            "ratio": "Dilute with clean water, 1L treats 10m³",
+            "example": ""
+          }
+        ],
+        "frequency": "Once a week",
+        "note": null
+      }
+    },
+    "bf-natural": {
+      "mainApplication": "Enzyme for aquaculture, increases resistance...",
+      "features": ["Increases resistance", "Enhances digestive system"],
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Spray evenly on feed for shrimp, fish, and livestock. For 2 tons of feed.",
+            "ratio": "Dilute with 1L clean water",
+            "example": ""
+          }
+        ],
+        "frequency": "",
+        "note": null
+      }
+    }
+  },
+  "common": {
+    "categories": {
+      "cong-nghiep": "Industry",
+      "nong-nghiep": "Agriculture",
+      "thuy-san": "Aquaculture"
+    }
+  },
+  "bisoyai": {
+    "badge": "Hands-on Program",
+    "title": "BISO Young Agri Innovators 2026",
+    "desc": "More than an internship — this is a journey to shape the next generation of farmers. Learn enzyme technology from the ground up and master clean agriculture with BISO.",
+    "tag1": "For students",
+    "tag2": "Enzyme Application",
+    "cta": "Learn More & Register"
+  },
+  "leadership": {
+    "title": "LEADERSHIP TEAM",
+    "sectionLabel": "Brief Profile",
+    "leaders": [
+      {
+        "name": "Mr. Ngo Khanh Linh",
+        "title": "Founder & Chairman of the Members' Council",
+        "points": [
+          "A pioneer in Vietnam's circular agriculture sector, Mr. Linh has over 15 years of experience consulting and implementing organic farming models, carbon emission reduction, and agricultural land regulations.",
+          "As Founder and Chairman, Mr. Linh is the driving force behind the strategy to import and apply Japanese microbial enzyme technology in real-world farming — contributing to soil restoration, yield improvement, and sustainable agricultural production.",
+          "Mr. Linh also advises on international standards such as USDA Organic, GlobalG.A.P., and GACC, helping agribusinesses access export markets and carbon credit opportunities."
+        ]
+      },
+      {
+        "name": "Ms. Nguyen Phuoc Huong Thao",
+        "title": "Chief Executive Officer",
+        "points": [
+          "Ms. Hương Thảo has held senior management positions at KFC, Starbucks, Dairy Queen, The Coffee House, The Coffee Bean & Tea Leaf, MK Restaurant, and Food Court systems.",
+          "She currently serves as General Manager of VFBS, overseeing the Popeyes Vietnam brand — the globally renowned American fried chicken chain.",
+          "Ms. Hương Thảo is recognized as a strategic expert with a proven ability to restructure operations, build high-performing teams, and scale systems — particularly in international franchise projects and F&B market development in Vietnam.",
+          "With over 20 years of cross-industry management experience spanning F&B, real estate, printing, and agriculture, she consistently partners with businesses to create sustainable value and long-term growth."
+        ]
+      }
+    ]
+  },
+  "partners": {
+    "title": "STRATEGIC PARTNERS",
+    "partner1": {
+      "heading": "1. Member of the Vietnam Organic Agriculture Association",
+      "desc": "BISO JICA is proud to be an official member of the Vietnam Organic Agriculture Association, contributing to the sustainable and safe development of organic farming in the country.",
+      "imageAlt": "Vietnam Organic Agriculture Association",
+      "caption": "Mr. Mịch – Chairman of the Vietnam Organic Agriculture Association"
+    },
+    "partner2": {
+      "heading": "2. Partnering with the Vietnam Farmers' Union Central Committee",
+      "desc": "BISO actively collaborates with the Vietnam Farmers' Union Central Committee to develop organic farming models nationwide.",
+      "imageAlt": "Vietnam Farmers' Union Central Committee",
+      "caption": "Working with Mr. Đinh Khắc Đính – Vice Chairman of the Vietnam Farmers' Union Central Committee and Chairman of the Đắk Nông Provincial Farmers' Association"
+    },
+    "partner3": {
+      "heading": "3. Collaboration with Provincial Farmers' Unions",
+      "desc": "We regularly support local Farmers' Unions across provinces through consulting, technical training, and the implementation of organic farming models — helping farmers improve crop value and income."
+    }
+  },
+  "documents": {
+    "title": "Documents",
+    "productDeclTitle": "Product Declaration Documents"
+  },
+  "productList": {
+    "title": "Product List",
+    "count": "{count} products",
+    "filterAll": "All",
+    "empty": "No products found",
+    "viewDetail": "View details"
+  },
+  "productDetail": {
+    "mainApplication": "Main Application",
+    "features": "Key Features",
+    "usage": "Usage Instructions",
+    "generalGuide": "General Guide",
+    "dilutionRatio": "Dilution Ratio",
+    "example": "Example"
+  },
+  "pricePage": {
+    "title": "BISO JICA Price List",
+    "section1Title": "1. Enzyme Pricing – Wastewater, Oil & Odor Treatment",
+    "section2Title": "2. Enzyme Pricing – Agriculture (Soil Restoration, Pest Control)",
+    "table": {
+      "goods": "PRODUCT",
+      "volume": "VOLUME",
+      "listedPrice": "LISTED PRICE (VND)",
+      "discount": "DISCOUNT (15%)",
+      "finalPrice": "PRICE AFTER DISCOUNT (VND)",
+      "sectionLabel": "ENZYME SOLUTIONS FROM JAPAN",
+      "currency": "₫"
+    },
+    "industrial": {
+      "bk-partner":   "enzyme for wastewater treatment (organic decomposition)",
+      "bk-oilbuster": "enzyme for fat and oil treatment",
+      "nioi-zero":    "enzyme for odor elimination in farms and composting"
+    },
+    "agriculture": {
+      "daichi-no-tomo":     "soil restoration enzyme for crops",
+      "daichi-no-tomo-500": "organic biological enzyme",
+      "mitaka-1000":        "enzyme for pest, fungal, and insect control on crops",
+      "mitaka-1200":        "enzyme for post-harvest fruit preservation and fungal removal",
+      "mitaka-3000":        "flower bud differentiation enzyme",
+      "sp-10-15-20":        "organic biological enzyme fertilizer"
+    }
+  },
+  "news": {
+    "eyebrow": "News & Topics",
+    "titleLine1": "Solutions",
+    "titleLine2": "Biological Enzymes",
+    "desc": "Explore the application of biological enzyme technology in agriculture, industry, and aquaculture — the foundation for a greener and more sustainable Vietnam.",
+    "readMore": "Read article",
+    "footer": "Biological Enzymes · Japanese Technology · USDA · GlobalG.A.P.",
+    "articles": [
+      {
+        "category": "Agriculture",
+        "tag": "Sustainable farming",
+        "title": "Biological Enzyme Technology – A Sustainable Solution for Vietnamese Agriculture",
+        "excerpt": "As Vietnamese agriculture faces soil degradation and rising pest pressure, biological enzymes have emerged as a comprehensive solution for soil restoration meeting USDA and GlobalG.A.P. international standards.",
+        "readTime": "5 min read"
+      },
+      {
+        "category": "Industry",
+        "tag": "Environmental treatment",
+        "title": "Biological Enzymes in Industry – Effective Environmental Treatment Solutions",
+        "excerpt": "From BOD/COD wastewater treatment and NH₃/H₂S odor elimination in farms, to biological detergents — enzymes deliver a comprehensive green solution for businesses on their sustainable transition journey.",
+        "readTime": "4 min read"
+      },
+      {
+        "category": "Aquaculture",
+        "tag": "Sustainable aquaculture",
+        "title": "Biological Solutions for Aquaculture – Improving Farming Efficiency",
+        "excerpt": "Biological enzymes help balance pond environments, decompose toxic gases H₂S and NH₃, and naturally boost immunity in shrimp and fish — aiming for international export standards without relying on antibiotics.",
+        "readTime": "4 min read"
+      },
+      {
+        "category": "Agriculture",
+        "tag": "Sustainable farming",
+        "title": "Enzyme: The Biological \"Medicine\" Saving Soil and Reviving Gardens Thought Dead",
+        "excerpt": "Degraded, hardened soil, stunted roots, widespread pests — this is the common reality in many long-farmed areas. Despite heavy fertilizing and chemical inputs, farmers watch helplessly as their gardens wither.",
+        "readTime": "10 min read"
+      },
+      {
+        "category": "Agriculture",
+        "tag": "Sustainable farming",
+        "title": "Visiting Rare Plants on Kim Cuong Island – BISO JICA Visits Mr. Vinh's Date Palm Garden",
+        "excerpt": "Welcome to the BISO JICA channel – where we share knowledge and solutions on organic enzymes applied in agriculture, industry, and aquaculture.",
+        "readTime": "13 min 51 sec watch"
+      }
+    ]
+  },
+  "blogAgri": {
+    "badge": "Sustainable Agriculture",
+    "titleLine1": "Biological",
+    "titleLine2": "Enzyme Technology",
+    "subtitle": "A Sustainable Solution for Vietnamese Agriculture",
+    "imageAlt": "Green agriculture in Vietnam",
+    "imageCaption": "Sustainable farming with biological enzymes",
+    "intro": "As Vietnamese agriculture faces soil degradation, rising pest pressure, and export standard demands, biological enzyme technology has emerged as a comprehensive and sustainable solution.",
+    "section1": {
+      "title": "Superior Biological Effectiveness",
+      "desc": "Biological enzymes are developed to suit Vietnam's climate, soil conditions, and farming practices. Through their natural mechanism of action, the products deliver outstanding benefits.",
+      "quote": "Beyond helping crops grow healthier, biological solutions also improve soil microbial ecosystems — the core foundation of sustainable agriculture.",
+      "features": [
+        { "icon": "🌱", "text": "Rehabilitate and restore agricultural land" },
+        { "icon": "🧪", "text": "Break down organic residues and chemicals" },
+        { "icon": "🛡️", "text": "Support control of fungal diseases and pests" },
+        { "icon": "📈", "text": "Increase crop yield and quality" }
+      ]
+    },
+    "section2": {
+      "title": "Absolutely Safe for the Ecosystem",
+      "desc": "Unlike conventional agricultural chemicals, biological enzymes are designed with maximum safety standards.",
+      "points": [
+        "100% biodegradable",
+        "No harmful residues",
+        "Safe for users and livestock",
+        "Does not pollute water or soil"
+      ]
+    },
+    "section3": {
+      "title": "Internationally Certified",
+      "desc": "Built on Japanese technology, our products meet the stringent standards of global markets.",
+      "quote": "Using biological enzymes not only improves farming efficiency but also expands access to global markets.",
+      "certifications": ["USDA", "GlobalG.A.P.", "Japanese Standards"]
+    }
+  },
+  "blogIndustry": {
+    "badge": "Industry & Environment",
+    "titleLine1": "Biological Enzymes",
+    "titleLine2": "In Industry",
+    "intro": "Industrial pollution is becoming an urgent issue. From wastewater and emissions to odors, businesses need solutions that are both effective and environmentally friendly.",
+    "imageAlt": "Industrial wastewater treatment",
+    "imageCaption": "Sustainable industrial environmental treatment",
+    "stats": [
+      { "val": "BOD↓", "label": "Reduced pollution index" },
+      { "val": "NH₃",  "label": "Toxic gas decomposition" },
+      { "val": "100%", "label": "Eco-friendly" }
+    ],
+    "sections": [
+      {
+        "icon": "💧",
+        "title": "BOD & COD Wastewater Treatment",
+        "body": "Biological enzymes break down organic compounds, reduce BOD and COD levels, and improve biological treatment system efficiency. Through their natural catalytic mechanism, treatment is faster, operating costs are reduced, and chemical dependency is minimized.",
+        "tags": ["Reduce BOD/COD", "Natural catalyst", "Cost savings"]
+      },
+      {
+        "icon": "💨",
+        "title": "Odor Elimination in Farms & Landfills",
+        "body": "Odors from toxic gases like NH₃ and H₂S not only affect the environment but also negatively impact public health. Biological enzymes decompose toxic gases, effectively reduce odors, and improve working environments.",
+        "tags": ["Decompose NH₃", "Decompose H₂S", "Improve environment"]
+      },
+      {
+        "icon": "🧴",
+        "title": "Eco-Friendly Biological Detergents",
+        "body": "In industrial production, enzymes are applied in biological detergent formulations. Effective cleaning, non-corrosive, no water pollution — an inevitable trend in the green transition.",
+        "tags": ["Non-corrosive", "No pollution", "Green transition"]
+      }
+    ],
+    "callout": {
+      "title": "An Inevitable Trend",
+      "desc": "This is the inevitable trend in the green transition and sustainable development of Vietnamese businesses in the new era."
+    }
+  },
+  "blogAquaculture": {
+    "badge": "Vietnamese Aquaculture",
+    "titleLine1": "Biological",
+    "titleLine2": "Solutions",
+    "titleLine3": "For Aquaculture",
+    "intro": "Vietnam's aquaculture industry plays a vital role in exports, but also faces many challenges such as pond pollution, toxic gases, and disease outbreaks.",
+    "imageAlt": "Vietnamese aquaculture farming",
+    "imageCaption": "Sustainable aquaculture farming",
+    "footerLine1": "Towards",
+    "footerLine2": "Sustainable Farming ✦ International Export Standards",
+    "benefits": [
+      {
+        "num": "01",
+        "title": "Improve Pond Environment",
+        "items": ["Decompose organic waste", "Stabilize microbial systems", "Balance water environment"],
+        "note": "Clean ponds help shrimp and fish develop steadily and reduce loss rates."
+      },
+      {
+        "num": "02",
+        "title": "Reduce Toxic Gases H₂S, NH₃",
+        "items": ["Decompose toxic gases in water", "Reduce odor and pond sediment", "Improve water quality"],
+        "note": "Toxic gases are the main cause of stress and disease in aquatic species."
+      },
+      {
+        "num": "03",
+        "title": "Boost Immunity in Shrimp & Fish",
+        "items": ["Healthy development", "Increase natural immunity", "Reduce antibiotic dependency"],
+        "note": "An important step towards sustainable aquaculture."
+      }
+    ]
+  },
+  "talent": {
+    "hero": {
+      "badge": "The next generation of agricultural innovators through enzyme technology",
+      "title": "BISO Young Agri Innovators 2026",
+      "subtitle": "Real-world clean farming – Master enzymes from the ground up – Become the next generation of farmers",
+      "ctaPrimary": "Register now",
+      "ctaSecondary": "Watch program video"
+    },
+    "why": {
+      "title": "Why did BISO create this program?",
+      "line1": "Vietnamese agriculture is transforming.",
+      "line2": "But sustainable change doesn't start from products. It starts from mindset.",
+      "quote": "\"BISO believes: If agriculture students can access enzyme technology and clean farming zone models while still in school, they will become the next generation of innovative engineers and farmers.\""
+    },
+    "experience": {
+      "title": "What will you experience?",
+      "footer": "This is not an \"office-sitting\" internship. This is real hands-on practice.",
+      "items": [
+        { "title": "Visit farming zones", "desc": "Directly observe farming zones applying BISO enzyme technology." },
+        { "title": "Real-world observation", "desc": "Evaluate clear differences in soil, root systems, and crops." },
+        { "title": "Zone code traceability", "desc": "Practice helps students understand standardized origin traceability processes." },
+        { "title": "Effectiveness analysis", "desc": "Measure real data before and after technology application." },
+        { "title": "Connect with farmers", "desc": "Communicate directly and understand the real challenges farmers face." }
+      ]
+    },
+    "roadmap": {
+      "title": "Program Roadmap",
+      "tracks": [
+        {
+          "duration": "3 Months",
+          "track": "Track 1 – Foundation",
+          "items": [
+            "Master foundational knowledge of Enzyme technology",
+            "Field trips to farming zones",
+            "Complete reports & present early-term project"
+          ]
+        },
+        {
+          "duration": "6 Months",
+          "track": "Track 2 – Talent",
+          "items": [
+            "Directly participate in deploying the BISO model",
+            "Collect and analyze agricultural data",
+            "Support technical team & market development",
+            "Opportunity to become official staff"
+          ]
+        }
+      ]
+    },
+    "recruit": {
+      "lookingTitle": "Who are we looking for?",
+      "lookingItems": [
+        "3rd, 4th year students or recent graduates",
+        "Passionate about clean agriculture",
+        "Ready for field work, not afraid of challenges",
+        "Open-minded, eager to learn and embrace innovation"
+      ],
+      "opportunityTitle": "Opportunities after the program",
+      "opportunityItems": [
+        "Official staff at BISO",
+        "Technical collaborator",
+        "BISO student ambassador",
+        "Project-based commission"
+      ]
+    },
+    "register": {
+      "title": "Register to join now",
+      "subtitle": "Become part of the next generation of farmers",
+      "profileTitle": "Application includes:",
+      "profileItems": [
+        "Personal CV",
+        "Short essay (approximately 300 words) on the topic:"
+      ],
+      "essayPrompt": "\"What would you like to change about Vietnamese agriculture?\"",
+      "emailLabel": "Send to Email:",
+      "email": "bisojica@gmail.com",
+      "subjectLabel": "Email subject:",
+      "subject": "BISO YAI 2026 – Full name"
+    }
+  },
+  "footer": {
+    "contact": {
+      "badge": "Contact Information",
+      "addressLabel": "Address",
+      "address": "1145 Nguyen Thi Dinh, Cat Lai Ward, Thu Duc City",
+      "phoneLabel": "Phone Number",
+      "phone": "092 8899 939",
+      "email": "bisojica@gmail.com",
+      "qr": {
+        "contact": "Scan to contact",
+        "info": "Scan to view"
+      }
+    },
+    "sections": [
+      {
+        "title": "Products",
+        "links": [
+          { "label": "Our Products", "href": "/products" },
+          { "label": "Price List", "href": "/price-list" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About Us", "href": "/about-us" },
+          { "label": "Enzyme Information", "href": "/enzyme" }
+        ]
+      },
+      {
+        "title": "Support",
+        "links": [
+          { "label": "Documentation", "href": "/documents" },
+          { "label": "News", "href": "/news" },
+          { "label": "Talent Development", "href": "/talent-development" }
+        ]
+      }
+    ],
+    "quote": {
+      "line1": "We don't just create products",
+      "line2": "We are building a new generation of agriculture"
+    },
+    "location": "Ho Chi Minh City, Vietnam"
+  }
+}

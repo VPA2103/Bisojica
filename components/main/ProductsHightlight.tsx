@@ -9,8 +9,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { products_feature } from "@/data/products";
+import { useTranslations } from "next-intl";
 
 export default function ProductsHighlight() {
+  const t = useTranslations("home"); // ← thêm
   const highlightProducts = products_feature.filter((p) => p.featured);
 
   return (
@@ -18,7 +20,7 @@ export default function ProductsHighlight() {
       <div className="max-w-7xl mx-auto px-4">
 
         <h2 className="text-4xl text-center mb-10" style={{ fontWeight: 500 }}>
-          Sản phẩm tiêu biểu
+          {t("featuredProducts")}
         </h2>
 
         <Swiper

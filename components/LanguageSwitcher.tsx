@@ -1,75 +1,52 @@
 "use client";
 
-import { useEffect, useState } from "react";
-
-declare global {
-  interface Window {
-    google: any;
-    googleTranslateElementInit: () => void;
-  }
-}
+import { useLocale } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
+import { useTransition } from "react";
 
 export default function LanguageSwitcher() {
-  const [active, setActive] = useState("vi");
-
-  useEffect(() => {
-    const savedLang = localStorage.getItem("site-language") || "vi";
-    setActive(savedLang);
-
-    if (document.getElementById("google-translate-script")) return;
-
-    const script = document.createElement("script");
-    script.id = "google-translate-script";
-    script.src =
-      "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.async = true;
-
-    window.googleTranslateElementInit = () => {
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "vi",
-          includedLanguages: "vi,en",
-          autoDisplay: false,
-        },
-        "google_translate_element"
-      );
-    };
-    document.body.appendChild(script);
-  }, []);
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const [isPending, startTransition] = useTransition();
 
   const changeLanguage = (lang: "vi" | "en") => {
-    const value = `/vi/${lang}`;
+    // Thay phần locale trong URL
+    // VD: /vi/about → /en/about
+    const segments = pathname.split("/");
+    segments[1] = lang; // index 1 là [locale]
+    const newPath = segments.join("/");
 
-    document.cookie = `googtrans=${value};path=/`;
-    document.cookie = `googtrans=${value};domain=${window.location.hostname};path=/`;
-
-    localStorage.setItem("site-language", lang);
-    setActive(lang);
-
-    window.location.reload();
+    startTransition(() => {
+      router.push(newPath);
+    });
   };
 
   return (
-    <>
-      <div className="flex gap-3 items-center relative z-50">
-        <button
-          onClick={() => changeLanguage("vi")}
-          className={` notranslate text-xl text-[#fdfff0]
-            }`}
-        >
-          VN
-        </button>
+    <div className="flex gap-3 items-center relative z-50">
+      <button
+        onClick={() => changeLanguage("vi")}
+        disabled={isPending}
+        className={`text-xl transition-opacity ${locale === "vi"
+            ? "text-white font-bold"
+            : "text-white/60 hover:text-white"
+          }`}
+      >
+        VN
+      </button>
 
-        <button
-          onClick={() => changeLanguage("en")}
-          className={` notranslate text-xl text-[#fdfff0]
-            }`}
-        >
-          EN
-        </button>
-      </div>
+      <span className="text-white/40">|</span>
 
-      <div id="google_translate_element" style={{ display: "none" }} />
-    </>
+      <button
+        onClick={() => changeLanguage("en")}
+        disabled={isPending}
+        className={`text-xl transition-opacity ${locale === "en"
+            ? "text-white font-bold"
+            : "text-white/60 hover:text-white"
+          }`}
+      >
+        EN
+      </button>
+    </div>
   );
 }

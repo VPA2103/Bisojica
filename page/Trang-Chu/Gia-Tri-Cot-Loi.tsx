@@ -1,4 +1,5 @@
 "use client"
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 const CheckIcon = () => (
@@ -66,77 +67,79 @@ const ArrowRightIcon = () => (
   </svg>
 );
 
-const coreValues = [
-  {
-    icon: <LeafIcon />,
-    title: "Hiệu quả sinh học vượt trội",
-    desc: "Phù hợp với thực tiễn nông nghiệp và môi trường Việt Nam, mang lại kết quả rõ rệt.",
-    accent: "#16A34A",
-  },
-  {
-    icon: <FlaskIcon />,
-    title: "An toàn tuyệt đối",
-    desc: "100% phân hủy sinh học, an toàn cho con người, vật nuôi và toàn bộ hệ sinh thái.",
-    accent: "#0284C7",
-  },
-  {
-    icon: <GlobeIcon />,
-    title: "Công nghệ Nhật Bản",
-    desc: "Đạt chuẩn quốc tế USDA, GlobalG.A.P. và các tiêu chuẩn xuất khẩu hàng đầu thế giới.",
-    accent: "#7C3AED",
-  },
-];
 
-const fields = [
-  {
-    icon: <SproutIcon />,
-    label: "Nông Nghiệp",
-    color: "#16A34A",
-    bg: "rgba(22,163,74,0.08)",
-    border: "rgba(22,163,74,0.25)",
-    gradientOverlay: "linear-gradient(to top, rgba(10,38,21,0.72) 0%, rgba(10,38,21,0.2) 55%, transparent 100%)",
-    image: "/images/nong-nghiep.png",
-    imageAlt: "Cánh đồng lúa xanh tươi",
-    items: [
-      "Cải tạo và phục hồi đất nông nghiệp",
-      "Trị nấm bệnh, sâu hại hiệu quả",
-      "Tăng năng suất và chất lượng nông sản",
-    ],
-  },
-  {
-    icon: <FactoryIcon />,
-    label: "Công Nghiệp",
-    color: "#0284C7",
-    bg: "rgba(2,132,199,0.08)",
-    border: "rgba(2,132,199,0.25)",
-    gradientOverlay: "linear-gradient(to top, rgba(1,40,70,0.72) 0%, rgba(1,40,70,0.2) 55%, transparent 100%)",
-    image: "/images/cong-nghiep.png",
-    imageAlt: "Nhà máy xử lý nước thải",
-    items: [
-      "Xử lý nước thải (BOD, COD)",
-      "Khử mùi hôi chuồng trại & bãi rác",
-      "Chất tẩy rửa sinh học thân thiện môi trường",
-    ],
-  },
-  {
-    icon: <FishIcon />,
-    label: "Thủy Sản",
-    color: "#0891B2",
-    bg: "rgba(8,145,178,0.08)",
-    border: "rgba(8,145,178,0.25)",
-    gradientOverlay: "linear-gradient(to top, rgba(3,37,65,0.75) 0%, rgba(3,37,65,0.2) 55%, transparent 100%)",
-    image: "/images/thuy-san.png",
-    imageAlt: "Ao nuôi tôm cá",
-    items: [
-      "Cải thiện môi trường ao nuôi",
-      "Giảm khí độc H₂S, NH₃",
-      "Tăng sức đề kháng cho tôm cá",
-    ],
-  },
-];
 
 export default function Sections() {
   const [hoveredField, setHoveredField] = useState<number | null>(null);
+  const t = useTranslations("sections");
+  const coreValues = [
+    {
+      icon: <LeafIcon />,
+      title: t("vision.values.bio.title"),
+      desc: t("vision.values.bio.desc"),
+      accent: "#16A34A",
+    },
+    {
+      icon: <FlaskIcon />,
+      title: t("vision.values.safe.title"),
+      desc: t("vision.values.safe.desc"),
+      accent: "#0284C7",
+    },
+    {
+      icon: <GlobeIcon />,
+      title: t("vision.values.japan.title"),
+      desc: t("vision.values.japan.desc"),
+      accent: "#7C3AED",
+    },
+  ];
+
+  const fields = [
+    {
+      icon: <SproutIcon />,
+      label: t("fields.agriculture.label"),
+      color: "#16A34A",
+      bg: "rgba(22,163,74,0.08)",
+      border: "rgba(22,163,74,0.25)",
+      gradientOverlay: "linear-gradient(to top, rgba(10,38,21,0.72) 0%, rgba(10,38,21,0.2) 55%, transparent 100%)",
+      image: "/images/nong-nghiep.png",
+      imageAlt: t("fields.agriculture.label"),
+      items: [
+        t("fields.agriculture.item1"),
+        t("fields.agriculture.item2"),
+        t("fields.agriculture.item3"),
+      ],
+    },
+    {
+      icon: <FactoryIcon />,
+      label: t("fields.industry.label"),
+      color: "#0284C7",
+      bg: "rgba(2,132,199,0.08)",
+      border: "rgba(2,132,199,0.25)",
+      gradientOverlay: "linear-gradient(to top, rgba(1,40,70,0.72) 0%, rgba(1,40,70,0.2) 55%, transparent 100%)",
+      image: "/images/cong-nghiep.png",
+      imageAlt: t("fields.industry.label"),
+      items: [
+        t("fields.industry.item1"),
+        t("fields.industry.item2"),
+        t("fields.industry.item3"),
+      ],
+    },
+    {
+      icon: <FishIcon />,
+      label: t("fields.aquatic.label"),
+      color: "#0891B2",
+      bg: "rgba(8,145,178,0.08)",
+      border: "rgba(8,145,178,0.25)",
+      gradientOverlay: "linear-gradient(to top, rgba(3,37,65,0.75) 0%, rgba(3,37,65,0.2) 55%, transparent 100%)",
+      image: "/images/thuy-san.png",
+      imageAlt: t("fields.aquatic.label"),
+      items: [
+        t("fields.aquatic.item1"),
+        t("fields.aquatic.item2"),
+        t("fields.aquatic.item3"),
+      ],
+    },
+  ];
 
   return (
     <div
@@ -176,7 +179,7 @@ export default function Sections() {
                   fontWeight: 500,
                 }}
               >
-                TẦM NHÌN
+                 {t("vision.badge")}
               </span>
             </div>
           </div>
@@ -192,7 +195,7 @@ export default function Sections() {
               letterSpacing: "-0.02em",
             }}
           >
-            Dẫn đầu Thế Giới về Enzyme Hữu Cơ được nhập trực tiếp từ Nhật Bản
+            {t("vision.title")}
           </h2>
 
           <p
@@ -204,10 +207,10 @@ export default function Sections() {
               maxWidth: 800,
               margin: "0 auto 60px",
               lineHeight: 1.7,
-              
+
             }}
           >
-            Thúc đẩy nền kinh tế xanh bền vững — vì một tương lai tốt đẹp hơn cho hệ sinh thái và con người.
+            {t("vision.desc")} 
           </p>
 
           <div
@@ -296,22 +299,22 @@ export default function Sections() {
               borderRadius: 100, padding: "8px 20px", marginBottom: 20,
             }}>
               <span style={{ fontSize: 18, color: "var(--text-color)", letterSpacing: "0.08em", fontWeight: 500 }}>
-                LĨNH VỰC HOẠT ĐỘNG
+              {t("fields.badge")}
               </span>
             </div>
             <p style={{
               color: "var(--text-color)", fontSize: 30,
               fontWeight: 500, letterSpacing: "-0.02em", lineHeight: 1.25, marginBottom: 14,
             }}>
-              3 Mảng Ứng Dụng Chính
+               {t("fields.title")}
             </p>
             <p style={{
               color: "var(--text-color)", fontSize: 20, maxWidth: 700,
-              margin: "0 auto", lineHeight: 1.7, fontWeight:500
+              margin: "0 auto", lineHeight: 1.7, fontWeight: 500
             }}
-            className=""
+              className=""
             >
-              Giải pháp enzyme sinh học toàn diện, từ ruộng đồng đến nhà máy và ao nuôi.
+              {t("fields.desc")}
             </p>
           </div>
 
@@ -494,7 +497,7 @@ export default function Sections() {
                           letterSpacing: "0.01em",
                         }}
                       >
-                        Xem giải pháp
+                         {t("fields.viewSolution")}
                         <span
                           style={{
                             display: "inline-flex",

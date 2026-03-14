@@ -1,32 +1,22 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
-const benefits = [
-  {
-    num: "01",
-    title: "Cải thiện môi trường ao nuôi",
-    items: ["Phân hủy chất thải hữu cơ", "Ổn định hệ vi sinh", "Cân bằng môi trường nước"],
-    note: "Ao nuôi sạch giúp tôm cá phát triển ổn định và giảm tỷ lệ hao hụt.",
-  },
-  {
-    num: "02",
-    title: "Giảm khí độc H₂S, NH₃",
-    items: ["Phân giải khí độc trong nước", "Giảm mùi và bùn đáy ao", "Tăng chất lượng nước"],
-    note: "Khí độc là nguyên nhân chính gây stress và bệnh cho thủy sản.",
-  },
-  {
-    num: "03",
-    title: "Tăng sức đề kháng cho tôm cá",
-    items: ["Phát triển khỏe mạnh", "Tăng khả năng miễn dịch tự nhiên", "Giảm phụ thuộc kháng sinh"],
-    note: "Bước tiến quan trọng hướng tới nuôi trồng thủy sản bền vững.",
-  },
-];
+type Benefit = {
+  num: string;
+  title: string;
+  items: string[];
+  note: string;
+};
 
 export default function BlogAquaculture() {
   const [visible, setVisible] = useState(false);
   const [activeCard, setActiveCard] = useState(0);
   const ref = useRef<HTMLDivElement>(null);
+  const t = useTranslations("blogAquaculture");
+
+  const benefits = t.raw("benefits") as Benefit[];
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -45,37 +35,31 @@ export default function BlogAquaculture() {
     >
       <div
         className="absolute inset-0 opacity-30 pointer-events-none"
-        style={{
-          backgroundImage: `radial-gradient(circle at 15% 80%, rgba(32,65,46,0.08) 0%, transparent 45%)`,
-        }}
+        style={{ backgroundImage: `radial-gradient(circle at 15% 80%, rgba(32,65,46,0.08) 0%, transparent 45%)` }}
       />
 
       <div className="relative max-w-4xl mx-auto px-6 py-20">
+
         {/* Badge */}
         <div
           className={`inline-flex items-center gap-2 mb-8 px-4 py-2 text-xl font-semibold tracking-widest uppercase transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-          style={{
-            background: "rgba(32,65,46,0.08)",
-            border: "1px solid rgba(32,65,46,0.3)",
-            color: "#20412e",
-          }}
+          style={{ background: "rgba(32,65,46,0.08)", border: "1px solid rgba(32,65,46,0.3)", color: "#20412e" }}
         >
           <span className="w-2 h-2 rounded-full" style={{ background: "#20412e" }} />
-          Thủy Sản Việt Nam
+          {t("badge")}
         </div>
 
         {/* Title */}
         <div className={`mb-10 transition-all duration-1000 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <h1 className="text-5xl md:text-7xl font-black leading-none mb-6" style={{ color: "#20412e", letterSpacing: "-0.03em" }}>
-            Giải Pháp
+            {t("titleLine1")}
             <br />
-            <span className="italic font-bold" style={{ color: "#3a6e4a" }}>Sinh Học</span>
+            <span className="italic font-bold" style={{ color: "#3a6e4a" }}>{t("titleLine2")}</span>
             <br />
-            <span className="text-3xl md:text-4xl font-light" style={{ color: "#20412e" }}>Cho Thủy Sản</span>
+            <span className="text-3xl md:text-4xl font-light" style={{ color: "#20412e" }}>{t("titleLine3")}</span>
           </h1>
           <p className="text-2xl leading-relaxed max-w-4xl" style={{ color: "#20412e" }}>
-            Ngành thủy sản Việt Nam đóng vai trò quan trọng trong xuất khẩu, nhưng cũng đối mặt với nhiều thách
-            thức như ô nhiễm ao nuôi, khí độc và dịch bệnh.
+            {t("intro")}
           </p>
         </div>
 
@@ -86,26 +70,18 @@ export default function BlogAquaculture() {
         >
           <img
             src="/images/thuy-san.png"
-            alt="Nuôi trồng thủy sản Việt Nam"
+            alt={t("imageAlt")}
             className="w-full h-full object-cover"
             style={{ filter: "sepia(12%) saturate(85%)" }}
           />
-          <div
-            className="absolute inset-0"
-            style={{ background: "linear-gradient(to top, rgba(32,65,46,0.4) 0%, transparent 55%)" }}
-          />
-          <span
-            className="absolute bottom-5 left-6 text-xl tracking-widest uppercase"
-            style={{ color: "#ffffff", opacity: 0.9 }}
-          >
-            Nuôi trồng thủy sản bền vững
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(32,65,46,0.4) 0%, transparent 55%)" }} />
+          <span className="absolute bottom-5 left-6 text-xl tracking-widest uppercase" style={{ color: "#ffffff", opacity: 0.9 }}>
+            {t("imageCaption")}
           </span>
         </div>
 
         {/* Tab selector */}
-        <div
-          className={`flex gap-2 mb-8 transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-        >
+        <div className={`flex gap-2 mb-8 transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
           {benefits.map((b, i) => (
             <button
               key={i}
@@ -130,14 +106,11 @@ export default function BlogAquaculture() {
               className="p-8 mb-6 transition-all duration-500"
               style={{ background: "rgba(32,65,46,0.06)", border: "1px solid rgba(32,65,46,0.2)" }}
             >
-              <div className=" items-start gap-6">
+              <div className="items-start gap-6">
                 <div className="flex mb-2">
                   <div className="flex">
                     <div className="mr-2">
-                      <span
-                        className="text-6xl font-black shrink-0 leading-none"
-                        style={{ color: "rgba(32,65,46,0.15)" }}
-                      >
+                      <span className="text-6xl font-black shrink-0 leading-none" style={{ color: "rgba(32,65,46,0.15)" }}>
                         {b.num}
                       </span>
                     </div>
@@ -166,9 +139,7 @@ export default function BlogAquaculture() {
         ))}
 
         {/* Mini cards */}
-        <div
-          className={`grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 transition-all duration-700 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-        >
+        <div className={`grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 transition-all duration-700 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
           {benefits.map((b, i) => (
             <button
               key={i}
@@ -189,18 +160,19 @@ export default function BlogAquaculture() {
         </div>
 
         {/* Footer */}
-        <div
-          className={`flex items-center gap-6 transition-all duration-700 delay-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-        >
+        <div className={`flex items-center gap-6 transition-all duration-700 delay-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
           <div className="h-px flex-1" style={{ background: "rgba(32,65,46,0.3)" }} />
           <div className="text-center">
-            <p className="text-2xl tracking-[0.4em] uppercase mb-1" style={{ color: "#3a6e4a" }}>Hướng tới</p>
+            <p className="text-2xl tracking-[0.4em] uppercase mb-1" style={{ color: "#3a6e4a" }}>
+              {t("footerLine1")}
+            </p>
             <p className="text-2xl font-bold" style={{ color: "#3a6e4a" }}>
-              Nuôi Trồng Bền Vững ✦ Tiêu Chuẩn Xuất Khẩu Quốc Tế
+              {t("footerLine2")}
             </p>
           </div>
           <div className="h-px flex-1" style={{ background: "rgba(32,65,46,0.3)" }} />
         </div>
+
       </div>
     </article>
   );

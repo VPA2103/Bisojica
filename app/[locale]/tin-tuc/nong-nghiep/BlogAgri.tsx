@@ -1,26 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
-const features = [
-  { icon: "🌱", text: "Cải tạo và phục hồi đất nông nghiệp" },
-  { icon: "🧪", text: "Phân giải tồn dư hữu cơ và hóa chất" },
-  { icon: "🛡️", text: "Hỗ trợ kiểm soát nấm bệnh, sâu hại" },
-  { icon: "📈", text: "Tăng năng suất và chất lượng nông sản" },
-];
-
-const safetyPoints = [
-  "100% phân hủy sinh học",
-  "Không gây tồn dư độc hại",
-  "An toàn cho người sử dụng và vật nuôi",
-  "Không làm ô nhiễm nguồn nước và đất",
-];
-
-const certifications = ["USDA", "GlobalG.A.P.", "Tiêu chuẩn Nhật Bản"];
+type Feature = { icon: string; text: string };
 
 export default function BlogAgri() {
   const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const t = useTranslations("blogAgri");
+
+  const features = t.raw("section1.features") as Feature[];
+  const safetyPoints = t.raw("section2.points") as string[];
+  const certifications = t.raw("section3.certifications") as string[];
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -39,30 +31,29 @@ export default function BlogAgri() {
     >
       <div
         className="absolute inset-0 opacity-40 pointer-events-none"
-        style={{
-          backgroundImage: `radial-gradient(circle at 85% 10%, rgba(32,65,46,0.07) 0%, transparent 50%)`,
-        }}
+        style={{ backgroundImage: `radial-gradient(circle at 85% 10%, rgba(32,65,46,0.07) 0%, transparent 50%)` }}
       />
 
       <div className="relative max-w-4xl mx-auto px-6 py-20">
+
         {/* Badge */}
         <div
           className={`inline-flex items-center gap-2 border text-xl tracking-[0.3em] uppercase px-10 py-4 mb-10 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           style={{ borderColor: "#20412e", color: "#20412e" }}
         >
-          <span className="w-2 h-2 rounded-full animate-pulse text-2xl" style={{ background: "#20412e" }} />
-          Nông Nghiệp Bền Vững
+          <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#20412e" }} />
+          {t("badge")}
         </div>
 
         {/* Title */}
         <div className={`transition-all duration-1000 delay-100 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-3" style={{ color: "#20412e" }}>
-            Công Nghệ
+            {t("titleLine1")}
             <br />
-            <span className="italic" style={{ color: "#3a6e4a" }}>Enzyme Sinh Học</span>
+            <span className="italic" style={{ color: "#3a6e4a" }}>{t("titleLine2")}</span>
           </h1>
           <p className="text-2xl mb-2" style={{ color: "#3a6e4a", lineHeight: "1.8" }}>
-            Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam
+            {t("subtitle")}
           </p>
         </div>
 
@@ -73,7 +64,7 @@ export default function BlogAgri() {
         >
           <img
             src="/images/nong-nghiep.png"
-            alt="Nông nghiệp xanh Việt Nam"
+            alt={t("imageAlt")}
             className="w-full h-full object-cover"
             style={{ filter: "sepia(15%) saturate(85%)" }}
           />
@@ -81,11 +72,8 @@ export default function BlogAgri() {
             className="absolute inset-0"
             style={{ background: "linear-gradient(to top, rgba(32,65,46,0.35) 0%, transparent 55%)" }}
           />
-          <span
-            className="absolute bottom-5 left-6 text-xl tracking-widest uppercase"
-            style={{ color: "#ffffff", opacity: 0.9 }}
-          >
-            Canh tác bền vững với enzyme sinh học
+          <span className="absolute bottom-5 left-6 text-xl tracking-widest uppercase" style={{ color: "#ffffff", opacity: 0.9 }}>
+            {t("imageCaption")}
           </span>
         </div>
 
@@ -101,18 +89,15 @@ export default function BlogAgri() {
           className={`text-2xl leading-8 mb-8 max-w-5xl transition-all duration-700 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           style={{ color: "#20412e" }}
         >
-          Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất, sâu bệnh gia tăng
-          và áp lực từ tiêu chuẩn xuất khẩu, công nghệ enzyme sinh học nổi lên như một giải pháp toàn diện
-          và bền vững.
+          {t("intro")}
         </p>
 
         {/* Section 1 */}
         <section className={`mb-16 transition-all duration-700 delay-400 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-          <h2 className="text-5xl font-bold mb-4" style={{ color: "#20412e" }}>Hiệu quả sinh học vượt trội</h2>
+          <h2 className="text-5xl font-bold mb-4" style={{ color: "#20412e" }}>{t("section1.title")}</h2>
           <div className="w-16 h-0.5 mb-6" style={{ background: "#20412e" }} />
           <p className="mb-8 leading-relaxed text-2xl" style={{ color: "#20412e" }}>
-            Enzyme sinh học được nghiên cứu để phù hợp với điều kiện khí hậu, thổ nhưỡng và thực tiễn canh tác
-            tại Việt Nam. Nhờ cơ chế tác động tự nhiên, sản phẩm mang lại nhiều lợi ích vượt trội.
+            {t("section1.desc")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {features.map((f, i) => (
@@ -127,17 +112,16 @@ export default function BlogAgri() {
             ))}
           </div>
           <p className="mt-6 italic text-2xl pl-4" style={{ borderLeft: "2px solid #20412e", color: "#3a6e4a" }}>
-            Không chỉ giúp cây trồng phát triển khỏe mạnh, giải pháp sinh học còn cải thiện hệ vi sinh vật đất –
-            yếu tố cốt lõi của một nền nông nghiệp bền vững.
+            {t("section1.quote")}
           </p>
         </section>
 
         {/* Section 2 */}
         <section className={`mb-16 transition-all duration-700 delay-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-          <h2 className="text-4xl font-bold mb-2" style={{ color: "#20412e" }}>An toàn tuyệt đối cho hệ sinh thái</h2>
+          <h2 className="text-4xl font-bold mb-2" style={{ color: "#20412e" }}>{t("section2.title")}</h2>
           <div className="w-16 h-0.5 mb-6" style={{ background: "#20412e" }} />
           <p className="mb-6 leading-relaxed text-2xl" style={{ color: "#20412e" }}>
-            Khác với hóa chất nông nghiệp truyền thống, enzyme sinh học được thiết kế với tiêu chí an toàn tối đa.
+            {t("section2.desc")}
           </p>
           <div className="space-y-3">
             {safetyPoints.map((p, i) => (
@@ -151,10 +135,10 @@ export default function BlogAgri() {
 
         {/* Section 3 */}
         <section className={`transition-all duration-700 delay-600 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
-          <h2 className="text-4xl font-bold mb-2" style={{ color: "#20412e" }}>Đạt chuẩn quốc tế</h2>
+          <h2 className="text-4xl font-bold mb-2" style={{ color: "#20412e" }}>{t("section3.title")}</h2>
           <div className="w-16 h-0.5 mb-6" style={{ background: "#20412e" }} />
           <p className="mb-8 leading-relaxed text-2xl" style={{ color: "#20412e" }}>
-            Ứng dụng công nghệ Nhật Bản, sản phẩm đáp ứng các tiêu chuẩn khắt khe của thị trường toàn cầu.
+            {t("section3.desc")}
           </p>
           <div className="flex flex-wrap gap-4">
             {certifications.map((c, i) => (
@@ -168,10 +152,10 @@ export default function BlogAgri() {
             ))}
           </div>
           <p className="mt-8 italic text-2xl pl-4" style={{ borderLeft: "2px solid #20412e", color: "#3a6e4a" }}>
-            Sử dụng enzyme sinh học không chỉ giúp nâng cao hiệu quả canh tác mà còn mở rộng cơ hội tiếp cận
-            thị trường toàn cầu.
+            {t("section3.quote")}
           </p>
         </section>
+
       </div>
     </article>
   );

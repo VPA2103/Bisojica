@@ -1,5 +1,7 @@
 "use client";
 
+import { articlesStatic } from "@/data/newsArticles";
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
 const articles = [
@@ -65,6 +67,15 @@ const articles = [
   },
 ];
 
+type ArticleTranslated = {
+  category: string;
+  tag: string;
+  title: string;
+  excerpt: string;
+  readTime: string;
+};
+
+
 function useInView(threshold = 0.15) {
   const [visible, setVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -78,82 +89,69 @@ function useInView(threshold = 0.15) {
 
 export default function NewsListBlog() {
   const header = useInView(0.1);
+  const t = useTranslations("news");
+  const articles = t.raw("articles") as ArticleTranslated[];
 
   return (
     <section
       style={{ background: "#ffffff", color: "#20412e", fontFamily: "'Lato', 'Times New Roman', serif" }}
       className="relative min-h-screen px-6 py-20 overflow-hidden"
     >
-      {/* Subtle corner accents */}
-      <div
-        className="absolute top-0 right-0 w-72 h-72 pointer-events-none opacity-10"
-        style={{
-          background: "radial-gradient(circle at top right, rgba(32,65,46,0.3) 0%, transparent 70%)",
-        }}
+      {/* Corner accents — giữ nguyên */}
+      <div className="absolute top-0 right-0 w-72 h-72 pointer-events-none opacity-10"
+        style={{ background: "radial-gradient(circle at top right, rgba(32,65,46,0.3) 0%, transparent 70%)" }}
       />
-      <div
-        className="absolute bottom-0 left-0 w-64 h-64 pointer-events-none opacity-10"
-        style={{
-          background: "radial-gradient(circle at bottom left, rgba(32,65,46,0.25) 0%, transparent 70%)",
-        }}
+      <div className="absolute bottom-0 left-0 w-64 h-64 pointer-events-none opacity-10"
+        style={{ background: "radial-gradient(circle at bottom left, rgba(32,65,46,0.25) 0%, transparent 70%)" }}
       />
 
       <div className="relative max-w-5xl mx-auto">
 
         {/* Header */}
         <div ref={header.ref}>
-          {/* Eyebrow */}
-          <div
-            className={`flex items-center gap-4 mb-8 transition-all duration-700 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-          >
+          <div className={`flex items-center gap-4 mb-8 transition-all duration-700 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             <div className="w-8 h-px" style={{ background: "#20412e" }} />
             <span className="text-xl tracking-[0.45em] uppercase font-semibold" style={{ color: "#20412e" }}>
-              Tin Tức &amp; Chuyên Đề
+              {t("eyebrow")}
             </span>
             <div className="flex-1 h-px" style={{ background: "rgba(32,65,46,0.18)" }} />
           </div>
 
-          {/* Title */}
-          <div
-            className={`mb-4 transition-all duration-1000 delay-100 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-          >
-            <h2
-              className="text-5xl md:text-6xl font-bold leading-none"
-              style={{ color: "#20412e", letterSpacing: "-0.02em" }}
-            >
-              Giải Pháp
+          <div className={`mb-4 transition-all duration-1000 delay-100 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
+            <h2 className="text-5xl md:text-6xl font-bold leading-none" style={{ color: "#20412e", letterSpacing: "-0.02em" }}>
+              {t("titleLine1")}
               <br />
-              <span className="italic font-light" style={{ color: "#3a6e4a" }}>Enzyme Sinh Học</span>
+              <span className="italic font-light" style={{ color: "#3a6e4a" }}>
+                {t("titleLine2")}
+              </span>
             </h2>
           </div>
 
-          <p
-            className={` leading-relaxed max-w-2xl text-xl mb-16 transition-all duration-700 delay-200 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+          <p className={`leading-relaxed max-w-2xl text-xl mb-16 transition-all duration-700 delay-200 ${header.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
             style={{ color: "rgba(32,65,46,0.7)" }}
           >
-            Khám phá ứng dụng công nghệ enzyme sinh học trong nông nghiệp, công nghiệp và nuôi trồng thủy sản —
-            nền tảng cho một Việt Nam xanh và bền vững hơn.
+            {t("desc")}
           </p>
         </div>
 
         {/* Article list */}
         <div className="space-y-0">
-          {articles.map((article, i) => (
-            <ArticleRow key={article.id} article={article} index={i} />
+          {articlesStatic.map((staticData, i) => (
+            <ArticleRow
+              key={staticData.id}
+              staticData={staticData}
+              translated={articles[i]}
+              index={i}
+            />
           ))}
         </div>
-        {/* Thêm ở đây */}
-
-
-
 
         {/* Footer line */}
-        <div
-          className="mt-16 flex items-center gap-4"
+        <div className="mt-16 flex items-center gap-4"
           style={{ borderTop: "1px solid rgba(32,65,46,0.15)", paddingTop: "2rem" }}
         >
           <span className="text-xs tracking-widest uppercase" style={{ color: "rgba(32,65,46,0.45)" }}>
-            Enzyme Sinh Học · Công Nghệ Nhật Bản · USDA · GlobalG.A.P.
+            {t("footer")}
           </span>
         </div>
       </div>
@@ -161,9 +159,19 @@ export default function NewsListBlog() {
   );
 }
 
-function ArticleRow({ article, index }: { article: typeof articles[0]; index: number }) {
+
+function ArticleRow({
+  staticData,
+  translated,
+  index,
+}: {
+  staticData: (typeof articlesStatic)[0];
+  translated: ArticleTranslated;
+  index: number;
+}) {
   const { ref, visible } = useInView(0.15);
   const [hovered, setHovered] = useState(false);
+  const t = useTranslations("news");
 
   return (
     <div
@@ -172,13 +180,13 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
       style={{ transitionDelay: `${index * 150}ms` }}
     >
       <a
-        href={article.href}
+        href={staticData.href}
         className="group block"
         target="_blank"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{ textDecoration: "none" }}
-      >
+      > 
         <div
           className="grid md:grid-cols-[1fr_320px] gap-0 py-10 transition-all duration-300"
           style={{
@@ -188,20 +196,17 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
         >
           {/* Left: Text */}
           <div className="pr-0 md:pr-12 flex flex-col justify-between">
-            {/* Meta row */}
             <div className="flex items-center gap-4 mb-5">
-              <span
-                className="text-xl tracking-widest uppercase font-bold px-3 py-1"
+              <span className="text-xl tracking-widest uppercase font-bold px-3 py-1"
                 style={{ background: "rgba(32,65,46,0.1)", color: "#20412e" }}
               >
-                {article.category}
+                {translated.category}
               </span>
               <span className="text-xl" style={{ color: "rgba(32,65,46,0.5)" }}>
-                {article.readTime}
+                {translated.readTime}
               </span>
             </div>
 
-            {/* Index + Title */}
             <div className="flex gap-5 items-start mb-5">
               <span
                 className="text-5xl font-black leading-none shrink-0 mt-1 transition-all duration-300"
@@ -211,38 +216,27 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
                   lineHeight: 1,
                 }}
               >
-                {article.index}
+                {staticData.index}
               </span>
               <h3
                 className="text-xl md:text-2xl font-bold leading-snug transition-colors duration-300"
                 style={{ color: hovered ? "#20412e" : "#2d5a3d" }}
               >
-                {article.title}
+                {translated.title}
               </h3>
             </div>
 
-            <p
-              className="text-xl leading-relaxed mb-6 max-w-xl"
-              style={{ color: "rgba(32,65,46,0.65)" }}
-            >
-              {article.excerpt}
+            <p className="text-xl leading-relaxed mb-6 max-w-xl" style={{ color: "rgba(32,65,46,0.65)" }}>
+              {translated.excerpt}
             </p>
 
-            {/* CTA */}
             <div className="flex items-center gap-3">
-              <span
-                className="text-xl font-bold tracking-[0.2em] uppercase transition-all duration-300"
-                style={{ color: "#20412e" }}
-              >
-                Đọc bài viết
+              <span className="text-xl font-bold tracking-[0.2em] uppercase transition-all duration-300" style={{ color: "#20412e" }}>
+                {t("readMore")}
               </span>
               <span
                 className="inline-block transition-transform duration-300"
-                style={{
-                  transform: hovered ? "translateX(6px)" : "translateX(0)",
-                  color: "#20412e",
-                  fontSize: "1rem",
-                }}
+                style={{ transform: hovered ? "translateX(6px)" : "translateX(0)", color: "#20412e", fontSize: "1rem" }}
               >
                 →
               </span>
@@ -250,25 +244,17 @@ function ArticleRow({ article, index }: { article: typeof articles[0]; index: nu
           </div>
 
           {/* Right: Image */}
-          <div
-            className="hidden md:block relative overflow-hidden mt-0"
-            style={{ height: "220px", flexShrink: 0 }}
-          >
+          <div className="hidden md:block relative overflow-hidden mt-0" style={{ height: "220px", flexShrink: 0 }}>
             <img
-              src={article.image}
-              alt={article.title}
+              src={staticData.image}
+              alt={translated.title}
               className="w-full h-full object-cover transition-transform duration-700"
-              style={{
-                transform: hovered ? "scale(1.05)" : "scale(1)",
-                filter: "sepia(12%) saturate(85%)",
-              }}
+              style={{ transform: hovered ? "scale(1.05)" : "scale(1)", filter: "sepia(12%) saturate(85%)" }}
             />
-            {/* Tag overlay */}
-            <div
-              className="absolute bottom-3 left-3 text-xl px-3 py-1 font-semibold tracking-wide"
+            <div className="absolute bottom-3 left-3 text-xl px-3 py-1 font-semibold tracking-wide"
               style={{ background: "#f3edd7", color: "#20412e" }}
             >
-              {article.tag}
+              {translated.tag}
             </div>
           </div>
         </div>

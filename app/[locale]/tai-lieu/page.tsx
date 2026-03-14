@@ -1,6 +1,6 @@
 "use client";
-import useGoogleTranslateLanguage from "@/hooks/useGoogleTranslateLanguage";
 import ProductDocuments from "./ProductDocuments";
+import { useLocale, useTranslations } from "next-intl";
 
 
 
@@ -10,7 +10,10 @@ type DocumentItem = {
 };
 
 export default function PdfDownloadSection() {
-  const lang = useGoogleTranslateLanguage();
+
+  const t = useTranslations("documents");
+  const locale = useLocale();                              // ← thay dòng này
+  const lang = (locale === "en" ? "en" : "vi") as "vi" | "en";
   console.log("Current language:", lang);
 
   const documents: Record<string, DocumentItem[]> = {
@@ -207,7 +210,7 @@ export default function PdfDownloadSection() {
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Tài liệu
+        {t("title")}
         </h2>
 
         <div className="grid grid-cols-1 gap-6">

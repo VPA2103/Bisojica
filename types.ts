@@ -1,21 +1,30 @@
-type UsageMethod = {
-  cach_thuc: string;
-  ti_le_pha_loang: string;
-  vi_du: string;
-};
+// types/index.ts
+
+export type Category = "nong-nghiep" | "cong-nghiep" | "thuy-san";
+
 export type Product = {
   name: string;
-  slug: string,
+  slug: string;
+  category: Category;
   mainApplication: string;
   volumes: string[];
-  category:string;
-  features: string[];
   featured?: boolean;
   images: string[];
-  cach_su_dung: {
-    huong_dan_chung: string;
-    phuong_phap_su_dung: UsageMethod[];
-    tan_suat: string | null;
-    ghi_chu: string | null;
+};
+
+export type ProductUsageMethod = {
+  method: string;
+  ratio: string;
+  example: string;
+};
+
+export type ProductTranslation = {
+  mainApplication: string;
+  features: string[];
+  usage: {
+    general: string;
+    methods: ProductUsageMethod[];
+    frequency: string | null;
+    note: string | null;
   } | null;
 };

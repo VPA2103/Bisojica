@@ -1,0 +1,692 @@
+{
+  "navbar": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "documents": "Tài liệu",
+    "products": "Sản phẩm",
+    "priceList": "Bảng giá",
+    "news": "Tin tức",
+    "talent": "Phát triển nhân tài",
+    "slogan1": "Công nghệ enzyme cho",
+    "slogan2": "nông nghiệp bền vững."
+  },
+
+  "sections": {
+    "vision": {
+      "badge": "TẦM NHÌN",
+      "title": "Dẫn đầu Thế Giới về Enzyme Hữu Cơ được nhập trực tiếp từ Nhật Bản",
+      "desc": "Thúc đẩy nền kinh tế xanh bền vững — vì một tương lai tốt đẹp hơn cho hệ sinh thái và con người.",
+      "values": {
+        "bio": {
+          "title": "Hiệu quả sinh học vượt trội",
+          "desc": "Phù hợp với thực tiễn nông nghiệp và môi trường Việt Nam, mang lại kết quả rõ rệt."
+        },
+        "safe": {
+          "title": "An toàn tuyệt đối",
+          "desc": "100% phân hủy sinh học, an toàn cho con người, vật nuôi và toàn bộ hệ sinh thái."
+        },
+        "japan": {
+          "title": "Công nghệ Nhật Bản",
+          "desc": "Đạt chuẩn quốc tế USDA, GlobalG.A.P. và các tiêu chuẩn xuất khẩu hàng đầu thế giới."
+        }
+      }
+    },
+    "fields": {
+      "badge": "LĨNH VỰC HOẠT ĐỘNG",
+      "title": "3 Mảng Ứng Dụng Chính",
+      "desc": "Giải pháp enzyme sinh học toàn diện, từ ruộng đồng đến nhà máy và ao nuôi.",
+      "viewSolution": "Xem giải pháp",
+      "agriculture": {
+        "label": "Nông Nghiệp",
+        "item1": "Cải tạo và phục hồi đất nông nghiệp",
+        "item2": "Trị nấm bệnh, sâu hại hiệu quả",
+        "item3": "Tăng năng suất và chất lượng nông sản"
+      },
+      "industry": {
+        "label": "Công Nghiệp",
+        "item1": "Xử lý nước thải (BOD, COD)",
+        "item2": "Khử mùi hôi chuồng trại & bãi rác",
+        "item3": "Chất tẩy rửa sinh học thân thiện môi trường"
+      },
+      "aquatic": {
+        "label": "Thủy Sản",
+        "item1": "Cải thiện môi trường ao nuôi",
+        "item2": "Giảm khí độc H₂S, NH₃",
+        "item3": "Tăng sức đề kháng cho tôm cá"
+      }
+    }
+  },
+  "home": { "featuredProducts": "Sản phẩm tiêu biểu" },
+  "products": {
+    "daichi-no-tomo": {
+      "mainApplication": "Enzyme cải tạo đất, trị nấm bệnh, tuyến trùng,...",
+      "features": [
+        "Trị nấm bệnh, tuyến trùng",
+        "Loại bỏ (khóa) kim loại nặng",
+        "Tăng sức đề kháng",
+        "Giải độc đất và hoạt hóa vi sinh vật có lợi cho đất"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Tưới đất",
+            "ratio": "Pha loãng 2000 lần",
+            "example": "100ml / 200L"
+          },
+          {
+            "method": "Phun trên lá",
+            "ratio": "Pha loãng 2000-2500 lần",
+            "example": "100ml / 200L ~ 250L"
+          }
+        ],
+        "frequency": "1 lần/ tháng",
+        "note": null
+      }
+    },
+    "daichi-no-tomo-500": {
+      "mainApplication": "Enzyme dinh dưỡng hữu cơ, trị thối rễ, phục hồi bộ rễ...",
+      "features": [
+        "Trị thối rễ, phục hồi bộ rễ",
+        "Khắc phục vàng lá, cây suy",
+        "Kéo đọt nhanh, xanh lá",
+        "Phát triển bộ rễ",
+        "Bổ sung các chất dinh dưỡng cần thiết"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Tưới đất",
+            "ratio": "Pha loãng 300 lần ~ 500 lần",
+            "example": "100ml / 30L ~ 50L\n1L / 300L ~ 500L"
+          }
+        ],
+        "frequency": "1-2 lần/ tháng",
+        "note": "Có thể kết hợp với DAICHI NO TOMO tưới đất\n*Thay thế cho phân bón"
+      }
+    },
+    "sp-10-15-20": {
+      "mainApplication": "Enzyme hữu cơ, tăng năng suất thu hoạch...",
+      "features": [
+        "Tăng năng suất thu hoạch",
+        "Thúc trái nhanh lớn",
+        "Tăng độ ngọt Brix",
+        "Cung cấp đầy đủ dưỡng chất cho cây trồng"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Tưới đất",
+            "ratio": "Pha loãng 300 lần ~ 500 lần",
+            "example": "1L / 300L ~ 500L"
+          },
+          {
+            "method": "Phun trên lá",
+            "ratio": "Pha loãng 300 lần ~ 500 lần",
+            "example": "1L / 300L ~ 500L"
+          }
+        ],
+        "frequency": "1 lần/ tháng",
+        "note": "*Thay thế cho phân bón"
+      }
+    },
+    "mitaka-1000": {
+      "mainApplication": "Enzyme trị sâu bệnh, trị nhện, bọ trĩ, ruồi vàng...",
+      "features": [
+        "Bổ sung vitamin khoáng chất",
+        "Thúc đẩy quá trình trao đổi chất",
+        "Tạo lá xanh và bóng",
+        "Trị nhện, bọ trĩ, ruồi vàng",
+        "Ngăn ngừa, xua đuổi sâu và côn trùng gây hại",
+        "Bảo vệ trái, ngăn ngừa thối trái"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Phun trên lá",
+            "ratio": "Pha loãng 1000-2000 lần",
+            "example": "100ml / 100L ~ 200L"
+          }
+        ],
+        "frequency": "1 lần/ tháng",
+        "note": "Có thể kết hợp với DAICHI NO TOMO phun trên lá"
+      }
+    },
+    "mitaka-1200": {
+      "mainApplication": "Enzyme bảo quản trái cây sau thu hoạch, rửa trôi ...",
+      "features": [
+        "Rửa trôi nấm bệnh trên bề mặt trái",
+        "Kéo dài thời gian bảo quản",
+        "Gây ức chế vi sinh vật gây hại",
+        "Bảo vệ màu sắc, hương vị, dinh dưỡng",
+        "Giảm tổn thất sau thu hoạch",
+        "An toàn cho người sử dụng"
+      ],
+      "usage": null
+    },
+    "mitaka-3000": {
+      "mainApplication": "Enzyme phân hóa mầm hoa, tăng năng suất thu hoạch...",
+      "features": [
+        "Tăng năng suất thu hoạch",
+        "Tăng khả năng tạo bông, đậu trái",
+        "Tăng năng suất nông sản",
+        "Giúp cây phát triển tự nhiên mà không can thiệp đến sinh trưởng"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Tưới đất",
+            "ratio": "Pha loãng 300 lần ~ 500 lần",
+            "example": "1L / 300L ~ 500L"
+          }
+        ],
+        "frequency": null,
+        "note": "Dùng 1 lần khi tạo bông, làm trái"
+      }
+    },
+    "bk-partner": {
+      "mainApplication": "Enzyme xử lý nước thải, cải thiện nước, giảm BOD...",
+      "features": [
+        "Cải thiện nước, giảm BOD, COD và chỉ số ô nhiễm",
+        "Tăng vi sinh có lợi, thúc đẩy lợi khuẩn",
+        "Ngăn và phân hủy nấm sợi, xạ khuẩn",
+        "Cải thiện bùn lắng, khử mùi hôi tận gốc"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Phun hoặc bơm vào bể xử lý nước, bể chứa nước, bể phốt và bể tự hoại.",
+            "ratio": "Pha loãng",
+            "example": "1 - 10 ml / 700L - 1000L"
+          }
+        ],
+        "frequency": "1 lần / ngày hoặc cách 2 - 3 ngày",
+        "note": null
+      }
+    },
+    "bk-oilbuster": {
+      "mainApplication": "Enzyme xử lý chất béo/dầu, loại bỏ chất béo, dầu mỡ và BOD...",
+      "features": [
+        "Loại bỏ chất béo, dầu mỡ và BOD trong nước thải",
+        "Phân hủy, ngăn bám cặn, hạn chế đông tụ",
+        "Tăng hiệu suất bể, giảm chi phí vệ sinh",
+        "Làm sạch và khử mùi bề mặt hiệu quả"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Phun hoặc bơm vào bể xử lý nước.",
+            "ratio": "Pha loãng",
+            "example": "10ml - 20ml / 1000L"
+          }
+        ],
+        "frequency": "1 lần / ngày hoặc cách 2 - 3 ngày",
+        "note": null
+      }
+    },
+    "nioi-zero": {
+      "mainApplication": "Enzyme khử mùi làm sạch không khí, cải thiện chất lượng không khí...",
+      "features": [
+        "Cải thiện chất lượng không khí",
+        "Xử lý mùi hôi chuồng trại, bãi rác, cống rãnh, nước thải và khu công nghiệp"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Phun đều vào môi trường ô nhiễm hoặc chuồng nuôi công nghiệp.",
+            "ratio": "Pha loãng 1000 - 2000 lần",
+            "example": "10ml / 20L - 40L"
+          }
+        ],
+        "frequency": "1-2 lần / tuần",
+        "note": null
+      }
+    },
+    "lake-power": {
+      "mainApplication": "Enzyme cho ao/ hồ nuôi, làm sạch môi trường...",
+      "features": [
+        "Làm sạch môi trường sống",
+        "Xử lý khí độc, (H2S, CH4, NO2-,NO3-,NH3)"
+      ],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Tạt đều lên mặt ao",
+            "ratio": "Pha với nước sạch tỉ lệ 1L xử lý cho 10m3",
+            "example": ""
+          }
+        ],
+        "frequency": "Tuần 1 lần",
+        "note": null
+      }
+    },
+    "bf-natural": {
+      "mainApplication": "Enzyme chăn nuôi thủy sản, tăng sức đề kháng...",
+      "features": ["Tăng sức đề kháng", "Phát triển hệ tiêu hóa"],
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Phun đều lên thức ăn tôm cá, vật nuôi. Cho 2 tấn thức ăn.",
+            "ratio": "Pha với nước sạch 1L (căn nước)",
+            "example": ""
+          }
+        ],
+        "frequency": "",
+        "note": null
+      }
+    }
+  },
+  "common": {
+    "categories": {
+      "cong-nghiep": "Công nghiệp",
+      "nong-nghiep": "Nông nghiệp",
+      "thuy-san": "Thủy hải sản"
+    }
+  },
+  "bisoyai": {
+    "badge": "Chương trình thực chiến",
+    "title": "BISO Young Agri Innovators 2026",
+    "desc": "Không chỉ là thực tập, đây là hành trình tạo ra thế hệ nhà nông mới. Tiếp cận công nghệ enzyme từ gốc và làm chủ mô hình nông nghiệp sạch cùng BISO.",
+    "tag1": "Dành cho sinh viên",
+    "tag2": "Ứng dụng Enzyme",
+    "cta": "Tìm hiểu và Đăng ký"
+  },
+  "leadership": {
+    "title": "ĐỘI NGŨ LÃNH ĐẠO",
+    "sectionLabel": "Giới thiệu tóm tắt năng lực",
+    "leaders": [
+      {
+        "name": "Mr. Ngô Khánh Linh",
+        "title": "Người sáng lập và Chủ tịch Hội đồng thành viên",
+        "points": [
+          "Là người tiên phong tại Việt Nam trong lĩnh vực nông nghiệp tuần hoàn, Mr. Linh có hơn 15 năm kinh nghiệm tư vấn và triển khai mô hình nông nghiệp hữu cơ, giảm phát thải carbon và pháp lý đất nông nghiệp.",
+          "Dưới vai trò là Người sáng lập và là Chủ tịch Hội đồng thành viên, Mr. Linh là người khởi xướng chiến lược nhập khẩu và ứng dụng enzyme vi sinh Nhật Bản trong canh tác thực tế, góp phần phục hồi đất, tăng năng suất và hỗ trợ sản xuất nông nghiệp bền vững.",
+          "Mr. Linh cũng là chuyên gia tư vấn các tiêu chuẩn quốc tế như USDA Organic, GlobalG.A.P., GACC… giúp doanh nghiệp nông sản tiếp cận thị trường xuất khẩu và tín chỉ carbon."
+        ]
+      },
+      {
+        "name": "Ms. Nguyễn Phước Hương Thảo",
+        "title": "Giám đốc Điều hành",
+        "points": [
+          "Ms. Hương Thảo từng giữ các vị trí quản lý cấp cao tại KFC, Starbucks, Dairy Queen, The Coffee House, The Coffee Bean & Tea Leaf, MK Restaurant, và hệ thống Food Court.",
+          "Hiện tại, Ms. Hương Thảo là General Manager của VFBS, điều hành thương hiệu Popeyes Việt Nam – chuỗi gà ran nổi tiếng toàn cầu từ Hoa Kỳ.",
+          "Ms. Hương Thảo được biết đến như một chuyên gia chiến lược có khả năng tái cấu trúc, phát triển đội ngũ và mở rộng hệ thống hiệu quả, đặc biệt trong các dự án nhượng quyền quốc tế và phát triển thị trường F&B tại Việt Nam.",
+          "Với hơn 20 năm kinh nghiệm quản trị đa ngành từ F&B, bất động sản, in ấn đến nông nghiệp, Ms. Hương Thảo luôn đồng hành cùng doanh nghiệp kiến tạo giá trị bền vững và phát triển dài lâu."
+        ]
+      }
+    ]
+  },
+  "partners": {
+    "title": "ĐỐI TÁC CHIẾN LƯỢC",
+    "partner1": {
+      "heading": "1. Thành viên của Hiệp hội Nông nghiệp Hữu cơ Việt Nam",
+      "desc": "Công ty BISO JICA tự hào là thành viên chính thức của Hiệp hội Nông nghiệp Hữu cơ Việt Nam, góp phần thúc đẩy sự phát triển bền vững và an toàn của nền nông nghiệp hữu cơ trong nước.",
+      "imageAlt": "Hiệp hội Nông nghiệp Hữu cơ Việt Nam",
+      "caption": "Anh Mịch – Chủ tịch Hiệp hội Nông nghiệp Hữu cơ Việt Nam"
+    },
+    "partner2": {
+      "heading": "2. Đồng hành cùng Trung ương Hội Nông dân Việt Nam",
+      "desc": "BISO tích cực phối hợp cùng Trung ương Hội Nông dân trong việc phát triển mô hình nông nghiệp hữu cơ trên phạm vi cả nước.",
+      "imageAlt": "Trung ương Hội Nông dân Việt Nam",
+      "caption": "Làm việc với đồng chí Đinh Khắc Đính – Phó Chủ tịch Trung ương Hội Nông dân Việt Nam, đồng thời là Chủ tịch Hội Gấm Hiệp hội Nông dân tỉnh Đắk Nông"
+    },
+    "partner3": {
+      "heading": "3. Hợp tác cùng Hội Nông dân các tỉnh",
+      "desc": "Chúng tôi thường xuyên đồng hành và hỗ trợ Hội Nông dân tại nhiều địa phương trong công tác tư vấn, tập huấn kỹ thuật và triển khai các mô hình nông nghiệp hữu cơ, nhằm nâng cao giá trị nông sản và thu nhập cho bà con nông dân."
+    }
+  },
+  "documents": {
+    "title": "Tài liệu",
+    "productDeclTitle": "Tài liệu công bố sản phẩm"
+  },
+  "productList": {
+    "title": "Danh sách sản phẩm",
+    "count": "{count} sản phẩm",
+    "filterAll": "Tất cả",
+    "empty": "Không có sản phẩm",
+    "viewDetail": "Xem chi tiết"
+  },
+  "productDetail": {
+    "mainApplication": "Ứng dụng chính",
+    "features": "Đặc điểm nổi bật",
+    "usage": "Cách sử dụng",
+    "generalGuide": "Hướng dẫn chung",
+    "dilutionRatio": "Tỉ lệ pha loãng",
+    "example": "Ví dụ"
+  },
+  "pricePage": {
+    "title": "Bảng báo giá Biso Jica",
+    "section1Title": "1. Báo giá Enzyme xử lý nước thải, dầu mỡ, mùi hôi",
+    "section2Title": "2. Báo giá Enzyme Nông nghiệp (Cải tạo đất, Sâu bệnh)",
+    "table": {
+      "goods": "HÀNG HÓA",
+      "volume": "DUNG TÍCH",
+      "listedPrice": "GIÁ NIÊM YẾT (VND)",
+      "discount": "CHIẾT KHẤU (15%)",
+      "finalPrice": "GIÁ SAU CHIẾT KHẤU (VND)",
+      "sectionLabel": "GIẢI PHÁP ENZYME ĐẾN TỪ NHẬT BẢN",
+      "currency": "đ"
+    },
+    "industrial": {
+      "bk-partner": "enzyme xử lý nước thải (phân hủy hữu cơ)",
+      "bk-oilbuster": "enzyme xử lý chất béo và dầu mỡ",
+      "nioi-zero": "enzyme xử lý mùi hôi chuồng trại, ủ phân bón"
+    },
+    "agriculture": {
+      "daichi-no-tomo": "enzyme cải tạo đất cho cây trồng",
+      "daichi-no-tomo-500": "enzyme hữu cơ, sinh học",
+      "mitaka-1000": "enzyme xử lý sâu bệnh, nấm bệnh và côn trùng gây hại trên cây trồng",
+      "mitaka-1200": "enzyme bảo quản trái cây sau thu hoạch, rửa trôi nấm bệnh gây hại",
+      "mitaka-3000": "phân hóa mầm hoa",
+      "sp-10-15-20": "phân bón sinh học hữu cơ enzyme"
+    }
+  },
+  "news": {
+    "eyebrow": "Tin Tức & Chuyên Đề",
+    "titleLine1": "Giải Pháp",
+    "titleLine2": "Enzyme Sinh Học",
+    "desc": "Khám phá ứng dụng công nghệ enzyme sinh học trong nông nghiệp, công nghiệp và nuôi trồng thủy sản — nền tảng cho một Việt Nam xanh và bền vững hơn.",
+    "readMore": "Đọc bài viết",
+    "footer": "Enzyme Sinh Học · Công Nghệ Nhật Bản · USDA · GlobalG.A.P.",
+    "articles": [
+      {
+        "category": "Nông Nghiệp",
+        "tag": "Canh tác bền vững",
+        "title": "Công Nghệ Enzyme Sinh Học – Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam",
+        "excerpt": "Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất và sâu bệnh gia tăng, enzyme sinh học nổi lên như một giải pháp toàn diện, cải tạo đất và đạt chuẩn quốc tế USDA, GlobalG.A.P.",
+        "readTime": "5 phút đọc"
+      },
+      {
+        "category": "Công Nghiệp",
+        "tag": "Xử lý môi trường",
+        "title": "Ứng Dụng Enzyme Sinh Học Trong Công Nghiệp – Giải Pháp Xử Lý Môi Trường Hiệu Quả",
+        "excerpt": "Từ xử lý nước thải BOD/COD, khử mùi hôi NH₃ và H₂S chuồng trại, đến chất tẩy rửa sinh học — enzyme mang đến giải pháp xanh toàn diện cho doanh nghiệp trong hành trình chuyển đổi bền vững.",
+        "readTime": "4 phút đọc"
+      },
+      {
+        "category": "Thủy Hải Sản",
+        "tag": "Nuôi trồng bền vững",
+        "title": "Giải Pháp Sinh Học Cho Thủy Sản – Nâng Cao Hiệu Quả Nuôi Trồng",
+        "excerpt": "Enzyme sinh học giúp cân bằng môi trường ao nuôi, phân giải khí độc H₂S và NH₃, tăng sức đề kháng tự nhiên cho tôm cá — hướng tới tiêu chuẩn xuất khẩu quốc tế mà không phụ thuộc kháng sinh.",
+        "readTime": "4 phút đọc"
+      },
+      {
+        "category": "Nông nghiệp",
+        "tag": "Canh tác bền vững",
+        "title": "Enzyme \"Liều thuốc\" sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
+        "excerpt": "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn \"bó tay\" nhìn vườn cây tàn lụi.",
+        "readTime": "10 phút đọc"
+      },
+      {
+        "category": "Nông nghiệp",
+        "tag": "Canh tác bền vững",
+        "title": "Thăm vườn cây hiếm ngay đảo Kim Cương - Cùng Biso Jica thăm nhà anh Vinh Chà Là",
+        "excerpt": "Chào mừng bạn đến với kênh Biso Jica – nơi chia sẻ kiến thức và giải pháp về enzyme hữu cơ ứng dụng trong các ngành nông nghiệp, công nghiệp và thủy sản.",
+        "readTime": "13 phút 51 giây xem"
+      }
+    ]
+  },
+  "blogAgri": {
+    "badge": "Nông Nghiệp Bền Vững",
+    "titleLine1": "Công Nghệ",
+    "titleLine2": "Enzyme Sinh Học",
+    "subtitle": "Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam",
+    "imageAlt": "Nông nghiệp xanh Việt Nam",
+    "imageCaption": "Canh tác bền vững với enzyme sinh học",
+    "intro": "Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất, sâu bệnh gia tăng và áp lực từ tiêu chuẩn xuất khẩu, công nghệ enzyme sinh học nổi lên như một giải pháp toàn diện và bền vững.",
+    "section1": {
+      "title": "Hiệu quả sinh học vượt trội",
+      "desc": "Enzyme sinh học được nghiên cứu để phù hợp với điều kiện khí hậu, thổ nhưỡng và thực tiễn canh tác tại Việt Nam. Nhờ cơ chế tác động tự nhiên, sản phẩm mang lại nhiều lợi ích vượt trội.",
+      "quote": "Không chỉ giúp cây trồng phát triển khỏe mạnh, giải pháp sinh học còn cải thiện hệ vi sinh vật đất – yếu tố cốt lõi của một nền nông nghiệp bền vững.",
+      "features": [
+        { "icon": "🌱", "text": "Cải tạo và phục hồi đất nông nghiệp" },
+        { "icon": "🧪", "text": "Phân giải tồn dư hữu cơ và hóa chất" },
+        { "icon": "🛡️", "text": "Hỗ trợ kiểm soát nấm bệnh, sâu hại" },
+        { "icon": "📈", "text": "Tăng năng suất và chất lượng nông sản" }
+      ]
+    },
+    "section2": {
+      "title": "An toàn tuyệt đối cho hệ sinh thái",
+      "desc": "Khác với hóa chất nông nghiệp truyền thống, enzyme sinh học được thiết kế với tiêu chí an toàn tối đa.",
+      "points": [
+        "100% phân hủy sinh học",
+        "Không gây tồn dư độc hại",
+        "An toàn cho người sử dụng và vật nuôi",
+        "Không làm ô nhiễm nguồn nước và đất"
+      ]
+    },
+    "section3": {
+      "title": "Đạt chuẩn quốc tế",
+      "desc": "Ứng dụng công nghệ Nhật Bản, sản phẩm đáp ứng các tiêu chuẩn khắt khe của thị trường toàn cầu.",
+      "quote": "Sử dụng enzyme sinh học không chỉ giúp nâng cao hiệu quả canh tác mà còn mở rộng cơ hội tiếp cận thị trường toàn cầu.",
+      "certifications": ["USDA", "GlobalG.A.P.", "Tiêu chuẩn Nhật Bản"]
+    }
+  },
+  "blogIndustry": {
+    "badge": "Công Nghiệp & Môi Trường",
+    "titleLine1": "Enzyme Sinh Học",
+    "titleLine2": "Trong Công Nghiệp",
+    "intro": "Ô nhiễm môi trường công nghiệp đang trở thành vấn đề cấp bách. Từ nước thải, khí thải đến mùi hôi, doanh nghiệp cần những giải pháp vừa hiệu quả vừa thân thiện môi trường.",
+    "imageAlt": "Xử lý nước thải công nghiệp",
+    "imageCaption": "Xử lý môi trường công nghiệp bền vững",
+    "stats": [
+      { "val": "BOD↓", "label": "Giảm chỉ số ô nhiễm" },
+      { "val": "NH₃", "label": "Phân hủy khí độc" },
+      { "val": "100%", "label": "Thân thiện sinh thái" }
+    ],
+    "sections": [
+      {
+        "icon": "💧",
+        "title": "Xử lý nước thải BOD, COD",
+        "body": "Enzyme sinh học giúp phân hủy hợp chất hữu cơ, giảm chỉ số BOD và COD, tăng hiệu quả hệ thống xử lý sinh học. Nhờ cơ chế xúc tác tự nhiên, quá trình xử lý diễn ra nhanh hơn, tiết kiệm chi phí vận hành và giảm phụ thuộc hóa chất.",
+        "tags": ["Giảm BOD/COD", "Xúc tác tự nhiên", "Tiết kiệm chi phí"]
+      },
+      {
+        "icon": "💨",
+        "title": "Khử mùi hôi chuồng trại & bãi rác",
+        "body": "Mùi hôi từ khí độc như NH₃ và H₂S không chỉ ảnh hưởng đến môi trường mà còn gây tác động tiêu cực đến sức khỏe cộng đồng. Enzyme sinh học phân hủy khí độc, giảm mùi hiệu quả và cải thiện môi trường làm việc.",
+        "tags": ["Phân hủy NH₃", "Phân hủy H₂S", "Cải thiện môi trường"]
+      },
+      {
+        "icon": "🧴",
+        "title": "Chất tẩy rửa sinh học thân thiện",
+        "body": "Trong sản xuất công nghiệp, enzyme được ứng dụng trong các dòng chất tẩy rửa sinh học. Làm sạch hiệu quả, không gây ăn mòn, không ô nhiễm nguồn nước – xu hướng tất yếu trong chuyển đổi xanh.",
+        "tags": ["Không ăn mòn", "Không ô nhiễm", "Chuyển đổi xanh"]
+      }
+    ],
+    "callout": {
+      "title": "Xu hướng tất yếu",
+      "desc": "Đây là xu hướng tất yếu trong chuyển đổi xanh và phát triển bền vững của doanh nghiệp Việt Nam trong thời đại mới."
+    }
+  },
+  "blogAquaculture": {
+    "badge": "Thủy Sản Việt Nam",
+    "titleLine1": "Giải Pháp",
+    "titleLine2": "Sinh Học",
+    "titleLine3": "Cho Thủy Sản",
+    "intro": "Ngành thủy sản Việt Nam đóng vai trò quan trọng trong xuất khẩu, nhưng cũng đối mặt với nhiều thách thức như ô nhiễm ao nuôi, khí độc và dịch bệnh.",
+    "imageAlt": "Nuôi trồng thủy sản Việt Nam",
+    "imageCaption": "Nuôi trồng thủy sản bền vững",
+    "footerLine1": "Hướng tới",
+    "footerLine2": "Nuôi Trồng Bền Vững ✦ Tiêu Chuẩn Xuất Khẩu Quốc Tế",
+    "benefits": [
+      {
+        "num": "01",
+        "title": "Cải thiện môi trường ao nuôi",
+        "items": [
+          "Phân hủy chất thải hữu cơ",
+          "Ổn định hệ vi sinh",
+          "Cân bằng môi trường nước"
+        ],
+        "note": "Ao nuôi sạch giúp tôm cá phát triển ổn định và giảm tỷ lệ hao hụt."
+      },
+      {
+        "num": "02",
+        "title": "Giảm khí độc H₂S, NH₃",
+        "items": [
+          "Phân giải khí độc trong nước",
+          "Giảm mùi và bùn đáy ao",
+          "Tăng chất lượng nước"
+        ],
+        "note": "Khí độc là nguyên nhân chính gây stress và bệnh cho thủy sản."
+      },
+      {
+        "num": "03",
+        "title": "Tăng sức đề kháng cho tôm cá",
+        "items": [
+          "Phát triển khỏe mạnh",
+          "Tăng khả năng miễn dịch tự nhiên",
+          "Giảm phụ thuộc kháng sinh"
+        ],
+        "note": "Bước tiến quan trọng hướng tới nuôi trồng thủy sản bền vững."
+      }
+    ]
+  },
+  "talent": {
+    "hero": {
+      "badge": "Thế hệ đổi mới nông nghiệp bằng công nghệ enzyme",
+      "title": "BISO Young Agri Innovators 2026",
+      "subtitle": "Thực chiến nông nghiệp sạch – Hiểu enzyme từ gốc – Trở thành thế hệ nhà nông mới",
+      "ctaPrimary": "Đăng ký ngay",
+      "ctaSecondary": "Xem video chương trình"
+    },
+    "why": {
+      "title": "Vì sao BISO tạo ra chương trình này?",
+      "line1": "Nông nghiệp Việt Nam đang chuyển mình.",
+      "line2": "Nhưng sự thay đổi bền vững không bắt đầu từ sản phẩm. Nó bắt đầu từ tư duy.",
+      "quote": "\"BISO tin rằng: Nếu sinh viên ngành Nông nghiệp được tiếp cận công nghệ enzyme và mô hình vùng trồng sạch ngay từ khi còn trên ghế nhà trường, họ sẽ trở thành thế hệ kỹ sư và nhà nông đổi mới trong tương lai.\""
+    },
+    "experience": {
+      "title": "Bạn sẽ trải nghiệm điều gì?",
+      "footer": "Đây không phải thực tập \"ngồi văn phòng\". Đây là thực tập thực chiến.",
+      "items": [
+        {
+          "title": "Tham quan vùng trồng",
+          "desc": "Trực tiếp quan sát các vùng trồng đang ứng dụng công nghệ enzyme của BISO."
+        },
+        {
+          "title": "Quan sát thực tế",
+          "desc": "Đánh giá sự khác biệt rõ rệt của đất, hệ rễ và cây trồng."
+        },
+        {
+          "title": "Truy xuất mã vùng",
+          "desc": "Thực hành giúp sinh viên hiểu về quy trình truy xuất nguồn gốc chuẩn."
+        },
+        {
+          "title": "Phân tích hiệu quả",
+          "desc": "Đo lường dữ liệu thực tế trước và sau khi ứng dụng công nghệ."
+        },
+        {
+          "title": "Kết nối nhà nông",
+          "desc": "Giao tiếp trực tiếp, thấu hiểu bài toán thực tế của nông dân."
+        }
+      ]
+    },
+    "roadmap": {
+      "title": "Lộ trình chương trình",
+      "tracks": [
+        {
+          "duration": "3 Tháng",
+          "track": "Track 1 – Foundation",
+          "items": [
+            "Nắm vững kiến thức nền tảng về công nghệ Enzyme",
+            "Đi thực địa tại các vùng trồng",
+            "Thực hiện báo cáo & thuyết trình dự án đầu kỳ"
+          ]
+        },
+        {
+          "duration": "6 Tháng",
+          "track": "Track 2 – Talent",
+          "items": [
+            "Trực tiếp tham gia triển khai mô hình BISO",
+            "Thu thập và phân tích dữ liệu nông nghiệp",
+            "Hỗ trợ đội ngũ kỹ thuật & phát triển thị trường",
+            "Cơ hội trở thành nhân sự chính thức"
+          ]
+        }
+      ]
+    },
+    "recruit": {
+      "lookingTitle": "Chúng tôi tìm kiếm ai?",
+      "lookingItems": [
+        "Sinh viên năm 3, 4 hoặc mới tốt nghiệp",
+        "Yêu thích và đam mê nông nghiệp sạch",
+        "Sẵn sàng đi thực địa, không ngại khó",
+        "Có tư duy học hỏi, mở lòng với sự đổi mới"
+      ],
+      "opportunityTitle": "Cơ hội sau chương trình",
+      "opportunityItems": [
+        "Nhân sự chính thức tại BISO",
+        "Cộng tác viên kỹ thuật",
+        "Đại sứ sinh viên BISO",
+        "Hoa hồng theo dự án"
+      ]
+    },
+    "register": {
+      "title": "Đăng ký tham gia ngay",
+      "subtitle": "Trở thành một phần của thế hệ nhà nông mới",
+      "profileTitle": "Hồ sơ bao gồm:",
+      "profileItems": [
+        "CV cá nhân",
+        "Bài viết ngắn (khoảng 300 từ) với chủ đề:"
+      ],
+      "essayPrompt": "\"Bạn muốn thay đổi điều gì trong nông nghiệp Việt Nam?\"",
+      "emailLabel": "Gửi về Email:",
+      "email": "bisojica@gmail.com",
+      "subjectLabel": "Tiêu đề email:",
+      "subject": "BISO YAI 2026 – Họ tên"
+    }
+  },
+  "footer": {
+    "contact": {
+      "badge": "Thông Tin Liên Hệ",
+      "addressLabel": "Địa chỉ",
+      "address": "1145 Nguyễn Thị Định, P. Cát Lái, TP. Thủ Đức",
+      "phoneLabel": "Điện thoại",
+      "phone": "092 8899 939",
+      "email": "bisojica@gmail.com",
+      "qr": {
+        "contact": "Quét để liên hệ",
+        "info": "Quét để xem"
+      }
+    },
+    "sections": [
+      {
+        "title": "Sản Phẩm",
+        "links": [
+          { "label": "Sản phẩm", "href": "/products" },
+          { "label": "Bảng giá", "href": "/bang-gia" }
+        ]
+      },
+      {
+        "title": "Công Ty",
+        "links": [
+          { "label": "Về chúng tôi", "href": "/ve-chu-toi" },
+          { "label": "Thông tin về enzyme", "href": "/enzyme" }
+        ]
+      },
+      {
+        "title": "Hỗ Trợ",
+        "links": [
+          { "label": "Tài liệu", "href": "/tai-lieu" },
+          { "label": "Tin tức", "href": "/tin-tuc" },
+          { "label": "Phát triển nhân tài", "href": "/phat-trien-nhan-tai" }
+        ]
+      }
+    ],
+    "quote": {
+      "line1": "Chúng tôi không chỉ tạo ra sản phẩm",
+      "line2": "Chúng tôi xây dựng một thế hệ nông nghiệp mới"
+    },
+    "location": "Hồ Chí Minh, Việt Nam"
+  }
+}
