@@ -37,4 +37,10 @@ export type ArticleStatic = {
       image: "https://img.youtube.com/vi/oJuhF7213Pw/0.jpg",
       href: "https://www.youtube.com/watch?v=oJuhF7213Pw",
     },
+    {
+      id: 6,
+      index: "06",
+      image: "https://doanhnghiepkinhtexanh.vn/uploads/images/2024/11/23/giai-phap-moi-truong-dnktx2-1732315092.jpg",
+      href: "https://doanhnghiepkinhtexanh.vn/giai-phap-sach-va-than-thien-moi-truong-trong-nong-nghiep-va-xu-ly-chat-thai-a27900.html",
+    },
   ];
