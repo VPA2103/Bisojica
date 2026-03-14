@@ -37,28 +37,16 @@ export default function LanguageSwitcher() {
     document.body.appendChild(script);
   }, []);
 
-  const changeLanguage = (lang: string) => {
-    const tryChange = () => {
-      const select = document.querySelector(
-        ".goog-te-combo"
-      ) as HTMLSelectElement | null;
+  const changeLanguage = (lang: "vi" | "en") => {
+    const value = `/vi/${lang}`;
 
-      if (!select) {
-        // đợi google translate load
-        setTimeout(tryChange, 200);
-        return;
-      }
+    document.cookie = `googtrans=${value};path=/`;
+    document.cookie = `googtrans=${value};domain=${window.location.hostname};path=/`;
 
-      if (select.value === lang) return;
+    localStorage.setItem("site-language", lang);
+    setActive(lang);
 
-      select.value = lang;
-      select.dispatchEvent(new Event("change"));
-
-      setActive(lang);
-      localStorage.setItem("site-language", lang);
-    };
-
-    tryChange();
+    window.location.reload();
   };
 
   return (
@@ -66,7 +54,7 @@ export default function LanguageSwitcher() {
       <div className="flex gap-3 items-center relative z-50">
         <button
           onClick={() => changeLanguage("vi")}
-          className={` notranslate text-xl text-[#fdfff0] ${active === "vi" ? "scale-110 opacity-100" : "opacity-50"
+          className={` notranslate text-xl text-[#fdfff0]
             }`}
         >
           VN
@@ -74,7 +62,7 @@ export default function LanguageSwitcher() {
 
         <button
           onClick={() => changeLanguage("en")}
-          className={` notranslate text-xl text-[#fdfff0] ${active === "en" ? "scale-110 opacity-100" : "opacity-50"
+          className={` notranslate text-xl text-[#fdfff0]
             }`}
         >
           EN

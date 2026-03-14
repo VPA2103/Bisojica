@@ -5,27 +5,11 @@ export default function useGoogleTranslateLanguage() {
   const [lang, setLang] = useState<"vi" | "en">("vi");
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const select = document.querySelector(
-        ".goog-te-combo"
-      ) as HTMLSelectElement | null;
+    const match = document.cookie.match(/googtrans=\/vi\/(en|vi)/);
 
-      if (!select) return;
-
-      let value = select.value;
-
-      if (!value) return;
-
-      // Google Translate có thể trả về vi|en
-      if (value.includes("|")) {
-        value = value.split("|")[1];
-      }
-
-      if (value === "en") setLang("en");
-      else setLang("vi");
-    }, 300);
-
-    return () => clearInterval(interval);
+    if (match) {
+      setLang(match[1] as "vi" | "en");
+    }
   }, []);
 
   return lang;
