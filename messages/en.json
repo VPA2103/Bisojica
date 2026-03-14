@@ -56,6 +56,47 @@
     }
   },
   "home": { "featuredProducts": "Featured Products" },
+  "visionMission": {
+    "vision": {
+      "title": "Vision",
+      "content": "To become a leading innovator in enzyme-based solutions that transform agriculture into a cleaner, more sustainable, and more productive ecosystem across Vietnam and the region."
+    },
+    "mission": {
+      "title": "Mission",
+      "content": "BISO’s mission is to empower farmers with enzyme-based biotechnology that improves soil health, enhances crop productivity, and supports a sustainable agricultural ecosystem.",
+      "commitTitle": "Our commitments:",
+      "commitments": [
+        "Apply advanced biotechnology in agriculture",
+        "Work closely with farmers and farming communities",
+        "Build a clean agricultural ecosystem with transparent traceability"
+      ]
+    },
+    "values": {
+      "title": "Core Values",
+      "items": [
+        {
+          "title": "Science-driven innovation",
+          "desc": "We believe science and biotechnology are the foundation for agricultural innovation."
+        },
+        {
+          "title": "Harmony with nature",
+          "desc": "We develop solutions that work in balance with the soil, water, and crop ecosystem."
+        },
+        {
+          "title": "Farmer-first mindset",
+          "desc": "BISO’s success is closely tied to the sustainable growth of farmers."
+        },
+        {
+          "title": "Integrity & transparency",
+          "desc": "We prioritize transparency, traceability, and responsibility to the community."
+        },
+        {
+          "title": "Innovation for the future",
+          "desc": "We continuously seek new solutions to elevate Vietnamese agriculture."
+        }
+      ]
+    }
+  },
   "products": {
     "daichi-no-tomo": {
       "mainApplication": "Soil-improving enzyme, treats fungal diseases and...",

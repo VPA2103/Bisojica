@@ -6,6 +6,7 @@ import ab5 from "@/public/images/achievement/giay-phep-an-toan-sp.png";
 import StrategicPartners from "./StrategicPartners";
 import LeadershipTeam from "../leadership/Leadership";
 import ProductDocuments from "../tai-lieu/ProductDocuments";
+import VisionMission from "./VisionMission";
 
 export default function Achievement() {
   const images = [ab3, ab4, ab5];
@@ -13,6 +14,7 @@ export default function Achievement() {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-10">
       <div className="grid grid-cols-1 gap-6">
+      <VisionMission />
         <LeadershipTeam />
         <StrategicPartners />
         {images.map((img, index) => (

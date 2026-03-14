@@ -57,6 +57,47 @@
     }
   },
   "home": { "featuredProducts": "Sản phẩm tiêu biểu" },
+  "visionMission": {
+    "vision": {
+      "title": "Tầm nhìn",
+      "content": "Trở thành doanh nghiệp tiên phong ứng dụng công nghệ enzyme để kiến tạo nền nông nghiệp sạch, bền vững và hiệu quả cho Việt Nam và khu vực."
+    },
+    "mission": {
+      "title": "Sứ mệnh",
+      "content": "BISO mang công nghệ enzyme đến gần hơn với người nông dân, giúp cải thiện sức khỏe đất, tăng năng suất cây trồng và tạo ra nguồn nông sản an toàn cho cộng đồng.",
+      "commitTitle": "Chúng tôi cam kết:",
+      "commitments": [
+        "Ứng dụng công nghệ sinh học tiên tiến vào nông nghiệp",
+        "Đồng hành cùng người nông dân và vùng trồng",
+        "Xây dựng hệ sinh thái nông nghiệp sạch và truy xuất nguồn gốc minh bạch"
+      ]
+    },
+    "values": {
+      "title": "Giá trị cốt lõi",
+      "items": [
+        {
+          "title": "Khoa học dẫn đường",
+          "desc": "Chúng tôi tin rằng khoa học và công nghệ sinh học là nền tảng để đổi mới nông nghiệp."
+        },
+        {
+          "title": "Tôn trọng tự nhiên",
+          "desc": "Chúng tôi phát triển giải pháp hài hòa với hệ sinh thái đất – nước – cây trồng."
+        },
+        {
+          "title": "Đồng hành cùng nhà nông",
+          "desc": "Thành công của BISO gắn liền với sự phát triển bền vững của người nông dân."
+        },
+        {
+          "title": "Minh bạch và trách nhiệm",
+          "desc": "Chúng tôi đề cao tính minh bạch, truy xuất nguồn gốc và trách nhiệm với cộng đồng."
+        },
+        {
+          "title": "Đổi mới cho tương lai",
+          "desc": "Chúng tôi luôn tìm kiếm giải pháp mới để nâng tầm nông nghiệp Việt Nam."
+        }
+      ]
+    }
+  },
   "products": {
     "daichi-no-tomo": {
       "mainApplication": "Enzyme cải tạo đất, trị nấm bệnh, tuyến trùng,...",
