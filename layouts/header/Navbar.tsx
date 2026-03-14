@@ -178,7 +178,45 @@ const Navbar = () => {
                 {t("news")}
               </Link>
             </li>
+            <li>
 
+              <button
+                onClick={() => setIsTalentOpen(!isTalentOpen)}
+                className="w-full flex justify-between py-3 text-base"
+              >
+                {t("talent")}
+                <span className={`${isTalentOpen ? "rotate-180" : ""} transition`}>
+                  ▼
+                </span>
+              </button>
+
+              {isTalentOpen && (
+                <ul className="pl-4">
+
+                  <li>
+                    <Link
+                      href="/phat-trien-nhan-tai"
+                      onClick={() => setIsOpen(false)}
+                      className="block py-2 text-sm"
+                    >
+                     {t("talent")}
+                    </Link>
+                  </li>
+
+                  {/* <li>
+      <Link
+        href="/tai-lieu"
+        onClick={() => setIsOpen(false)}
+        className="block py-2 text-sm"
+      >
+        Tài liệu
+      </Link>
+    </li> */}
+
+                </ul>
+              )}
+
+            </li>
           </ul>
 
         </div>
