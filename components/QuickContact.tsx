@@ -48,7 +48,7 @@ export default function QuickContact() {
           Chat Zalo
         </span>
       </div>
-      <div className="relative group flex justify-center">
+      {/* <div className="relative group flex justify-center">
         <a
           href="https://zalo.me/2469997295755147479?src=qr"
           target="_blank"
@@ -60,7 +60,7 @@ export default function QuickContact() {
         <span className="hidden md:block absolute right-14 bg-black text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
           Xem Zalo
         </span>
-      </div>
+      </div> */}
 
       {/* Email */}
       <div className="relative group flex justify-center">
