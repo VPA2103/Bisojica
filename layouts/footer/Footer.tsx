@@ -142,8 +142,8 @@ export default function Footer() {
           <div 
             className={`text-xl md:text-2xl text-center leading-relaxed text-white/90 order-1 md:order-2 ${dancing.className}`}
           >
-            <p>{t("quote.line1")}</p>
-            <p>{t("quote.line2")}</p>
+            <p>"{t("quote.line1")}"</p>
+            <p>"{t("quote.line2")}"</p>
           </div>
 
           <div className="flex items-center gap-2 border border-yellow-400/20 px-4 py-2 bg-yellow-400/5 order-2 md:order-3">
