@@ -27,9 +27,9 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => changeLanguage("vi")}
         disabled={isPending}
-        className={`text-xl transition-opacity ${locale === "vi"
-            ? "text-white font-bold"
-            : "text-white/60 hover:text-white"
+        className={`text-sm md:text-xl transition-opacity ${locale === "vi"
+          ? "text-white font-bold"
+          : "text-white/60 hover:text-white"
           }`}
       >
         Tiếng Việt
@@ -40,7 +40,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => changeLanguage("en")}
         disabled={isPending}
-        className={`text-xl transition-opacity ${locale === "en"
+        className={`text-sm md:text-xl transition-opacity ${locale === "en"
             ? "text-white font-bold"
             : "text-white/60 hover:text-white"
           }`}
