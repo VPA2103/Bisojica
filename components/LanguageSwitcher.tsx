@@ -32,7 +32,7 @@ export default function LanguageSwitcher() {
             : "text-white/60 hover:text-white"
           }`}
       >
-        VN
+        Tiếng Việt
       </button>
 
       <span className="text-white/40">|</span>
@@ -45,7 +45,7 @@ export default function LanguageSwitcher() {
             : "text-white/60 hover:text-white"
           }`}
       >
-        EN
+        English
       </button>
     </div>
   );
