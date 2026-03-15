@@ -736,5 +736,116 @@
       "line2": "Chúng tôi xây dựng một thế hệ nông nghiệp mới"
     },
     "location": "Hồ Chí Minh, Việt Nam"
+  },
+  "enzyme": {
+    "page1": {
+      "title": "Enzyme Nền Tảng Vô Hình Cho Một Nền Nông Nghiệp Bền Vững"
+    },
+    "page2": {
+      "title": "Enzyme – Chất Xúc Tác Của Sự Sống",
+      "intro": "Enzyme giống như \"cái kéo – cái chìa khóa\" trong tự nhiên. Nó giúp:",
+      "points": [
+        "Cắt – tách – chuyển hóa chất dinh dưỡng thành dạng cây dễ hấp thụ.",
+        "Mở khóa – kích hoạt quá trình sống của cây và vi sinh vật."
+      ],
+      "example1": "Ví dụ: Nếu dinh dưỡng trong đất là \"thức ăn\", thì enzyme chính là \"nồi nấu\" – giúp \"nấu chín\" để cây ăn được.",
+      "example2": "Không có enzyme → đất dù giàu dinh dưỡng, cây vẫn không hấp thụ nổi.",
+      "footer": "Không có enzyme, sự sống không thể duy trì – kể cả với chính con người chúng ta."
+    },
+    "page3": {
+      "title": "Enzyme Giúp Gì Cho Nông Dân?",
+      "sections": [
+        {
+          "heading": "Làm đất tơi xốp – tăng vi sinh vật có lợi",
+          "points": [
+            "Phân hủy gốc rạ, hữu cơ nhanh hơn.",
+            "Cải tạo đất, giảm bệnh thối rễ, vàng lá."
+          ]
+        },
+        {
+          "heading": "Tăng đề kháng cho cây",
+          "points": [
+            "Cây có đủ enzyme = miễn dịch khỏe.",
+            "Chống chịu sâu bệnh & thời tiết tốt hơn.",
+            "Kéo dài thời gian bảo quản nông sản, như ngăn chặn quá trình chín, thối rữa hay oxy hóa sau thu hoạch."
+          ]
+        },
+        {
+          "heading": "Giúp cây hấp thu tốt hơn",
+          "points": [
+            "Giải phóng dinh dưỡng bị \"khóa\" trong đất.",
+            "Cây ăn khỏe, lớn đều, tiết kiệm phân."
+          ]
+        },
+        {
+          "heading": "Giảm hóa chất",
+          "points": [
+            "Cây khỏe tự nhiên, ít bệnh.",
+            "Giảm xịt thuốc & phân hóa học.",
+            "Khóa kim loại nặng trong đất, giúp cây không bị ảnh hưởng bởi các độc tố do phân bón hóa học, TBVTV, ô nhiễm môi trường."
+          ]
+        }
+      ]
+    },
+    "page4": {
+      "title": "Vậy Enzyme Diệu Kỳ Là Gì?",
+      "body1": "\"Enzyme Diệu Kỳ\" là cách gọi loại enzyme nguyên mẫu, nền tảng cho hơn 5.000 enzyme khác trong cơ thể sống. Nó chính là \"gốc rễ\" cho mọi phản ứng sinh học duy trì sự sống.",
+      "body2": "Enzyme diệu kỳ không chỉ có tác dụng với sức khỏe con người mà còn có những ứng dụng tuyệt vời trong nông nghiệp bền vững, giúp bảo vệ môi trường, cải thiện đất và năng suất cây trồng một cách hiệu quả và tự nhiên. Chúng giúp nông dân giảm thiểu việc sử dụng phân bón hóa học, thuốc trừ sâu, và mang lại nền nông nghiệp khỏe mạnh hơn cho cả con người và thiên nhiên."
+    },
+    "page5": {
+      "title": "Enzyme & Enzyme Diệu Kỳ – Khác Nhau Chỗ Nào?",
+      "colNormal": "Enzyme thông thường",
+      "colMiracle": "Enzyme Diệu Kỳ",
+      "rows": [
+        {
+          "label": "Bản chất",
+          "normal": "Một loại enzyme đơn lẻ.",
+          "miracle": "Enzyme nguyên mẫu – nguồn gốc của hàng ngàn enzyme khác."
+        },
+        {
+          "label": "Vai trò",
+          "normal": "Làm 1 nhiệm vụ cụ thể (ví dụ tiêu hóa tinh bột).",
+          "miracle": "Kích hoạt & điều hòa hàng loạt phản ứng sinh học."
+        },
+        {
+          "label": "Tác động",
+          "normal": "Cục bộ, theo chức năng riêng biệt.",
+          "miracle": "Toàn diện – từ hấp thu, thải độc đến đề kháng."
+        },
+        {
+          "label": "Trong nông nghiệp",
+          "normal": "Hỗ trợ phân giải, làm đất, tăng hấp thu.",
+          "miracle": "Cải tạo đất, kích vi sinh, tăng miễn dịch, hạn chế TBVTV."
+        },
+        {
+          "label": "Ví dụ",
+          "normal": "Người thợ làm từng phần việc.",
+          "miracle": "Người kỹ sư trưởng, vận hành cả hệ thống."
+        }
+      ]
+    },
+    "page6": {
+      "title": "Vì Sao Nên Dùng Enzyme (Đặc Biệt Là Enzyme Diệu Kỳ)?",
+      "points": [
+        "Là \"trợ lý vô hình\" giúp đất tơi xốp, màu mỡ, cây hấp thu dưỡng chất tốt hơn.",
+        "Như \"men tiêu hóa\" của cây – hỗ trợ cây chuyển hóa dinh dưỡng, khỏe mạnh tự nhiên.",
+        "Giúp cây ra hoa, đậu trái khỏe, tăng sức đề kháng, hạn chế sâu bệnh.",
+        "Tăng cường sự phát triển bộ rễ và hệ thống cây trồng toàn diện.",
+        "Giảm ô nhiễm đất – nước và duy trì sự hài hòa sinh học trong nền nông nghiệp tự nhiên.",
+        "Biến rơm rạ, bã mía thành bioethanol – tạo năng lượng sạch từ phụ phẩm nông nghiệp.",
+        "Hướng tới nền nông nghiệp xanh – bền vững – giảm chi phí – tăng lợi nhuận cho nhà nông."
+      ],
+      "quote": "\"Đất có enzyme giống như ruộng có trùn – đất sống, cây khỏe, ít phải lo xịt thuốc nhiều!\""
+    },
+    "nav": {
+      "pages": [
+        "Trang bìa",
+        "Enzyme là gì?",
+        "Lợi ích",
+        "Enzyme Diệu Kỳ",
+        "So sánh",
+        "Vì sao dùng?"
+      ]
+    }
   }
 }

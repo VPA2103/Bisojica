@@ -708,5 +708,116 @@
       "line2": "We are building a new generation of agriculture"
     },
     "location": "Ho Chi Minh City, Vietnam"
+  },
+  "enzyme": {
+    "page1": {
+      "title": "Enzyme – The Invisible Foundation of Sustainable Agriculture"
+    },
+    "page2": {
+      "title": "Enzymes – The Catalysts of Life",
+      "intro": "Enzymes are like \"scissors and keys\" in nature. They help to:",
+      "points": [
+        "Cut, break down, and transform nutrients into forms that plants can easily absorb.",
+        "Unlock and activate the life processes of plants and microorganisms."
+      ],
+      "example1": "Example: If nutrients in the soil are the \"food\", then enzymes are the \"cooking pot\" – helping to \"cook\" them so plants can consume them.",
+      "example2": "Without enzymes → even nutrient-rich soil cannot be effectively absorbed by plants.",
+      "footer": "Without enzymes, life could not be sustained – even for us humans."
+    },
+    "page3": {
+      "title": "How Do Enzymes Help Farmers?",
+      "sections": [
+        {
+          "heading": "Loosen soil – increase beneficial microorganisms",
+          "points": [
+            "Break down crop residues and organic matter faster.",
+            "Improve soil quality and reduce root rot and yellowing diseases."
+          ]
+        },
+        {
+          "heading": "Strengthen plant resistance",
+          "points": [
+            "Plants with sufficient enzymes = stronger immunity.",
+            "Better resistance to pests, diseases, and harsh weather.",
+            "Extend the shelf life of agricultural products by slowing down ripening, decay, and oxidation after harvest."
+          ]
+        },
+        {
+          "heading": "Improve nutrient absorption",
+          "points": [
+            "Release nutrients that are \"locked\" in the soil.",
+            "Plants feed better, grow evenly, and require less fertilizer."
+          ]
+        },
+        {
+          "heading": "Reduce chemical usage",
+          "points": [
+            "Naturally stronger plants with fewer diseases.",
+            "Reduce spraying of pesticides and chemical fertilizers.",
+            "Bind heavy metals in the soil, preventing crops from being affected by toxins from chemical fertilizers, pesticides, and environmental pollution."
+          ]
+        }
+      ]
+    },
+    "page4": {
+      "title": "So What Is the Miracle Enzyme?",
+      "body1": "\"Miracle Enzyme\" refers to the prototype enzyme that serves as the foundation for more than 5,000 other enzymes in living organisms. It is the \"root\" behind the biological reactions that sustain life.",
+      "body2": "Miracle enzymes are not only beneficial for human health but also have remarkable applications in sustainable agriculture. They help protect the environment, improve soil quality, and enhance crop productivity in a natural and efficient way. By using them, farmers can reduce the use of chemical fertilizers and pesticides, creating a healthier agricultural ecosystem for both people and nature."
+    },
+    "page5": {
+      "title": "Enzymes vs. Miracle Enzymes – What’s the Difference?",
+      "colNormal": "Regular Enzyme",
+      "colMiracle": "Miracle Enzyme",
+      "rows": [
+        {
+          "label": "Nature",
+          "normal": "A single specific enzyme.",
+          "miracle": "A prototype enzyme – the origin of thousands of other enzymes."
+        },
+        {
+          "label": "Role",
+          "normal": "Performs one specific task (e.g., digesting starch).",
+          "miracle": "Activates and regulates a wide range of biological reactions."
+        },
+        {
+          "label": "Impact",
+          "normal": "Localized, based on a specific function.",
+          "miracle": "Comprehensive – from absorption and detoxification to immunity."
+        },
+        {
+          "label": "In agriculture",
+          "normal": "Supports decomposition, soil improvement, and nutrient absorption.",
+          "miracle": "Improves soil, stimulates microorganisms, boosts immunity, and reduces pesticide usage."
+        },
+        {
+          "label": "Example",
+          "normal": "A worker performing individual tasks.",
+          "miracle": "A chief engineer operating the entire system."
+        }
+      ]
+    },
+    "page6": {
+      "title": "Why Use Enzymes (Especially Miracle Enzymes)?",
+      "points": [
+        "An \"invisible assistant\" that helps soil become loose and fertile while improving nutrient absorption in plants.",
+        "Like the plant’s \"digestive enzyme\" – helping crops convert nutrients and grow naturally stronger.",
+        "Supports flowering and fruiting while enhancing resistance to pests and diseases.",
+        "Promotes strong root development and overall plant growth.",
+        "Reduces soil and water pollution while maintaining biological balance in natural agriculture.",
+        "Transforms agricultural residues such as straw and bagasse into bioethanol – producing clean energy from farm by-products.",
+        "Moves toward green and sustainable agriculture – lowering costs while increasing farmers’ profits."
+      ],
+      "quote": "\"Soil with enzymes is like a field with earthworms – living soil, healthy crops, and less need for chemical spraying!\""
+    },
+    "nav": {
+      "pages": [
+        "Cover Page",
+        "What Are Enzymes?",
+        "Benefits",
+        "Miracle Enzyme",
+        "Comparison",
+        "Why Use Them?"
+      ]
+    }
   }
 }

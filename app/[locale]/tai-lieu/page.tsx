@@ -1,4 +1,5 @@
 "use client";
+import { Link } from "@/i18n/navigation";
 import ProductDocuments from "./ProductDocuments";
 import { useLocale, useTranslations } from "next-intl";
 
@@ -215,10 +216,10 @@ export default function PdfDownloadSection() {
 
         <div className="grid grid-cols-1 gap-6">
           {currentDocs.map((doc, index) => (
-            <a
+            <Link
               key={index}
               href={doc.href}
-              target="_blank"
+              // target="_blank"
               rel="noopener noreferrer"
               className="group bg-white border rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
             >
@@ -226,7 +227,7 @@ export default function PdfDownloadSection() {
                 <span>{doc.title}</span>
                 <span>→</span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
 

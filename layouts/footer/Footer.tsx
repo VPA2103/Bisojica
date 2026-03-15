@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Dancing_Script } from "next/font/google";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 
 export default function Footer() {
@@ -18,7 +19,7 @@ export default function Footer() {
     {
       title: t("sections.1.title"),
       links: [
-        { label: t("sections.1.links.0.label"), href: "/ve-chu-toi" },
+        { label: t("sections.1.links.0.label"), href: "/ve-chung-toi" },
         { label: t("sections.1.links.1.label"), href: "/enzyme" },
       ]
     },
@@ -113,7 +114,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {section.links.map((link) => (
                     <li key={link.href}>
-                      <a
+                      <Link
                         href={link.href}
                         className="text-sm text-white/60 hover:text-white transition-colors duration-300 flex items-center gap-1 group"
                       >
@@ -121,7 +122,7 @@ export default function Footer() {
                           ›
                         </span>
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
