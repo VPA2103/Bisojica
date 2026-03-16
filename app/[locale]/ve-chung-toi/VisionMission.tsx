@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function VisionMission() {
     const t = useTranslations("visionMission");
@@ -14,6 +15,10 @@ export default function VisionMission() {
                 <h1 className="text-4xl font-bold  flex items-center gap-2">
                     <span>{t("vision.title")}</span>
                 </h1>
+                <Image src={"/images/ve-chung-toi/tam-nhin.jpg"}
+                    alt="vision"
+                    width={1000}
+                    height={1000} />
                 <p className=" leading-relaxed text-xl sm:text-lg">
                     {t("vision.content")}
                 </p>
@@ -24,6 +29,10 @@ export default function VisionMission() {
                 <h2 className="text-4xl font-bold  flex items-center gap-2">
                     <span>{t("mission.title")}</span>
                 </h2>
+                <Image src={"/images/ve-chung-toi/su-menh.jpg"}
+                    alt="vision"
+                    width={1000}
+                    height={1000} />
                 <p className=" leading-relaxed text-xl sm:text-lg">
                     {t("mission.content")}
                 </p>
@@ -42,7 +51,10 @@ export default function VisionMission() {
                 <h2 className="text-4xl font-bold  flex items-center gap-2">
                     <span>{t("values.title")}</span>
                 </h2>
-
+                <Image src={"/images/ve-chung-toi/gia-tri-cot-loi.png"}
+                    alt="vision"
+                    width={1000}
+                    height={1000} />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
                     {values.map((value: any, index: number) => (
                         <div
