@@ -2,6 +2,7 @@
 import { Link } from "@/i18n/navigation";
 import ProductDocuments from "./ProductDocuments";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 
 
@@ -254,9 +255,19 @@ export default function PdfDownloadSection() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          {t("title")}
-        </h2>
+        <div className="flex justify-center mb-6">
+          <Image
+            src="/images/anh-tai-lieu.png"
+            alt="Documents"
+            width={60}
+            height={60}
+            className="object-contain"
+          />
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 mt-4">
+            {t("title")}
+          </h2>
+        </div>
+
 
         <div className="grid grid-cols-1 gap-6">
           {currentDocs.map((doc, index) =>
@@ -267,7 +278,7 @@ export default function PdfDownloadSection() {
                 className="group bg-white border rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
               >
                 <div className="flex justify-between">
-                  <span>{doc.title}</span>
+                  <span className="text-base md:text-lg lg:text-2xl">{doc.title}</span>
                   <span>→</span>
                 </div>
               </Link>
@@ -280,15 +291,16 @@ export default function PdfDownloadSection() {
                 className="group bg-white border rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
               >
                 <div className="flex justify-between">
-                  <span>{doc.title}</span>
+                  <span className="text-base md:text-lg lg:text-2xl">{doc.title}</span>
                   <span>→</span>
                 </div>
               </a>
             )
           )}
         </div>
-
-        <ProductDocuments />
+        <div>
+          <ProductDocuments />
+        </div>
       </div>
     </section>
   );

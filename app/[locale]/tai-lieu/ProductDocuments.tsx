@@ -119,7 +119,7 @@ export default function ProductDocuments() {
   const currentDocs = documents[lang] || documents.vi;
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-10">
+    <section className="max-w-7xl mx-auto py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
       {t("productDeclTitle")}
       </h2>
@@ -134,7 +134,7 @@ export default function ProductDocuments() {
             className="group bg-white border rounded-2xl p-6 shadow-sm hover:shadow-lg transition"
           >
             <div className="flex justify-between">
-              <span>{doc.title}</span>
+              <span className="text-base md:text-lg lg:text-2xl">{doc.title}</span>
               <span>→</span>
             </div>
           </a>
