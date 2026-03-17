@@ -37,6 +37,11 @@ export default function PdfDownloadSection() {
         type: "file"
       },
       {
+        title: "Bảng giá sản phẩm thủy hải sản",
+        href: "/files/pdf/vi/san-pham-ths.pdf",
+        type: "file"
+      },
+      {
         title: "Brochure công nghiệp",
         href: "/files/pdf/vi/brochure-cong-nghiep.pdf",
         type: "file"

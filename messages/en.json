@@ -407,6 +407,7 @@
     "title": "BISO JICA Price List",
     "section1Title": "1. Enzyme Pricing – Wastewater, Oil & Odor Treatment",
     "section2Title": "2. Enzyme Pricing – Agriculture (Soil Restoration, Pest Control)",
+    "section3Title": "2. Seafood Enzyme Price List",
     "table": {
       "goods": "PRODUCT",
       "volume": "VOLUME",
@@ -417,17 +418,21 @@
       "currency": "₫"
     },
     "industrial": {
-      "bk-partner":   "enzyme for wastewater treatment (organic decomposition)",
+      "bk-partner": "enzyme for wastewater treatment (organic decomposition)",
       "bk-oilbuster": "enzyme for fat and oil treatment",
-      "nioi-zero":    "enzyme for odor elimination in farms and composting"
+      "nioi-zero": "enzyme for odor elimination in farms and composting"
     },
     "agriculture": {
-      "daichi-no-tomo":     "soil restoration enzyme for crops",
+      "daichi-no-tomo": "soil restoration enzyme for crops",
       "daichi-no-tomo-500": "organic biological enzyme",
-      "mitaka-1000":        "enzyme for pest, fungal, and insect control on crops",
-      "mitaka-1200":        "enzyme for post-harvest fruit preservation and fungal removal",
-      "mitaka-3000":        "flower bud differentiation enzyme",
-      "sp-10-15-20":        "organic biological enzyme fertilizer"
+      "mitaka-1000": "enzyme for pest, fungal, and insect control on crops",
+      "mitaka-1200": "enzyme for post-harvest fruit preservation and fungal removal",
+      "mitaka-3000": "flower bud differentiation enzyme",
+      "sp-10-15-20": "organic biological enzyme fertilizer"
+    },
+    "aquaculture": {
+      "lake-power": "enzymes for ponds/lakes",
+      "bf-natural": "aquaculture farming enzymes"
     }
   },
   "news": {
@@ -497,7 +502,10 @@
       "features": [
         { "icon": "🌱", "text": "Rehabilitate and restore agricultural land" },
         { "icon": "🧪", "text": "Break down organic residues and chemicals" },
-        { "icon": "🛡️", "text": "Support control of fungal diseases and pests" },
+        {
+          "icon": "🛡️",
+          "text": "Support control of fungal diseases and pests"
+        },
         { "icon": "📈", "text": "Increase crop yield and quality" }
       ]
     },
@@ -527,7 +535,7 @@
     "imageCaption": "Sustainable industrial environmental treatment",
     "stats": [
       { "val": "BOD↓", "label": "Reduced pollution index" },
-      { "val": "NH₃",  "label": "Toxic gas decomposition" },
+      { "val": "NH₃", "label": "Toxic gas decomposition" },
       { "val": "100%", "label": "Eco-friendly" }
     ],
     "sections": [
@@ -569,19 +577,31 @@
       {
         "num": "01",
         "title": "Improve Pond Environment",
-        "items": ["Decompose organic waste", "Stabilize microbial systems", "Balance water environment"],
+        "items": [
+          "Decompose organic waste",
+          "Stabilize microbial systems",
+          "Balance water environment"
+        ],
         "note": "Clean ponds help shrimp and fish develop steadily and reduce loss rates."
       },
       {
         "num": "02",
         "title": "Reduce Toxic Gases H₂S, NH₃",
-        "items": ["Decompose toxic gases in water", "Reduce odor and pond sediment", "Improve water quality"],
+        "items": [
+          "Decompose toxic gases in water",
+          "Reduce odor and pond sediment",
+          "Improve water quality"
+        ],
         "note": "Toxic gases are the main cause of stress and disease in aquatic species."
       },
       {
         "num": "03",
         "title": "Boost Immunity in Shrimp & Fish",
-        "items": ["Healthy development", "Increase natural immunity", "Reduce antibiotic dependency"],
+        "items": [
+          "Healthy development",
+          "Increase natural immunity",
+          "Reduce antibiotic dependency"
+        ],
         "note": "An important step towards sustainable aquaculture."
       }
     ]
@@ -604,11 +624,26 @@
       "title": "What will you experience?",
       "footer": "This is not an \"office-sitting\" internship. This is real hands-on practice.",
       "items": [
-        { "title": "Visit farming zones", "desc": "Directly observe farming zones applying BISO enzyme technology." },
-        { "title": "Real-world observation", "desc": "Evaluate clear differences in soil, root systems, and crops." },
-        { "title": "Zone code traceability", "desc": "Practice helps students understand standardized origin traceability processes." },
-        { "title": "Effectiveness analysis", "desc": "Measure real data before and after technology application." },
-        { "title": "Connect with farmers", "desc": "Communicate directly and understand the real challenges farmers face." }
+        {
+          "title": "Visit farming zones",
+          "desc": "Directly observe farming zones applying BISO enzyme technology."
+        },
+        {
+          "title": "Real-world observation",
+          "desc": "Evaluate clear differences in soil, root systems, and crops."
+        },
+        {
+          "title": "Zone code traceability",
+          "desc": "Practice helps students understand standardized origin traceability processes."
+        },
+        {
+          "title": "Effectiveness analysis",
+          "desc": "Measure real data before and after technology application."
+        },
+        {
+          "title": "Connect with farmers",
+          "desc": "Communicate directly and understand the real challenges farmers face."
+        }
       ]
     },
     "roadmap": {

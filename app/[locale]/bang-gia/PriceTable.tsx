@@ -5,7 +5,7 @@ import { PriceProduct } from "@/data/priceData";
 
 interface Props {
   products: PriceProduct[];
-  descriptionNs: "industrial" | "agriculture"; // namespace trong pricePage
+  descriptionNs: "industrial" | "agriculture"| "aquaculture";  // namespace trong pricePage
 }
 
 const format = (n: number, currency: string) =>

@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import PriceTable from "./PriceTable";
-import { industrialPrices, agriculturePrices } from "@/data/priceData";
+import { industrialPrices, agriculturePrices,aquaculturePrices } from "@/data/priceData";
 
 export default function Page() {
   const t = useTranslations("pricePage");
@@ -26,6 +26,14 @@ export default function Page() {
         </h2>
         <div className="max-w-7xl mx-auto py-10">
           <PriceTable products={agriculturePrices} descriptionNs="agriculture" />
+        </div>
+      </section>
+      <section className="mb-16">
+        <h2 className="text-xl font-semibold mb-4 text-[--text-color] border-b-2 border-green-200 pb-2">
+          {t("section3Title")}
+        </h2>
+        <div className="max-w-7xl mx-auto py-10">
+          <PriceTable products={aquaculturePrices} descriptionNs="aquaculture" />
         </div>
       </section>
     </div>

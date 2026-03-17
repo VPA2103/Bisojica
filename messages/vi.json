@@ -408,6 +408,7 @@
     "title": "Bảng báo giá Biso Jica",
     "section1Title": "1. Báo giá Enzyme xử lý nước thải, dầu mỡ, mùi hôi",
     "section2Title": "2. Báo giá Enzyme Nông nghiệp (Cải tạo đất, Sâu bệnh)",
+    "section3Title": "2. Báo giá Enzyme thủy hải sản",
     "table": {
       "goods": "HÀNG HÓA",
       "volume": "DUNG TÍCH",
@@ -429,6 +430,10 @@
       "mitaka-1200": "enzyme bảo quản trái cây sau thu hoạch, rửa trôi nấm bệnh gây hại",
       "mitaka-3000": "phân hóa mầm hoa",
       "sp-10-15-20": "phân bón sinh học hữu cơ enzyme"
+    },
+    "aquaculture":{
+      "lake-power": "enzyme cho ao/hồ nuôi",
+      "bf-natural": "enzyme chăn nuôi thủy sản"
     }
   },
   "news": {
