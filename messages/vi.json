@@ -852,5 +852,13 @@
         "Vì sao dùng?"
       ]
     }
+  },
+  "discountBanner": {
+    "title1": "Đầu tư thông minh",
+    "title2": "Tiết kiệm 15%",
+    "subtitle": "Giảm giá toàn bộ sản phẩm enzyme",
+    "brand": "BISO",
+    "tagline": "Tối ưu chi phí – tăng hiệu quả sản xuất",
+    "cta": "Xem sản phẩm"
   }
 }
