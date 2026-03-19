@@ -206,7 +206,18 @@
         "Giảm tổn thất sau thu hoạch",
         "An toàn cho người sử dụng"
       ],
-      "usage": null
+      "usage": {
+        "general": "Pha loãng với nước sạch theo tỉ lệ",
+        "methods": [
+          {
+            "method": "Phun trên lá",
+            "ratio": "Pha loãng 1000-2000 lần",
+            "example": "100ml / 100L ~ 200L"
+          }
+        ],
+        "frequency": "1 lần/ tháng",
+        "note": "Có thể kết hợp với DAICHI NO TOMO phun trên lá"
+      }
     },
     "mitaka-3000": {
       "mainApplication": "Enzyme phân hóa mầm hoa, tăng năng suất...",
@@ -432,7 +443,7 @@
       "mitaka-3000": "phân hóa mầm hoa",
       "sp-10-15-20": "phân bón sinh học hữu cơ enzyme"
     },
-    "aquaculture":{
+    "aquaculture": {
       "lake-power": "enzyme cho ao/hồ nuôi",
       "bf-natural": "enzyme chăn nuôi thủy sản"
     }
