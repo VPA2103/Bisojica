@@ -59,7 +59,7 @@ export default function ProductDocuments() {
       //   href: "/files/pdf/vi/tccs-11-s-power.pdf",
       // },
       {
-        title: "TCCS 12 - MITAKA 1200",
+        title: "TCCS 11 - MITAKA 1200",
         href: "/files/pdf/vi/tccs-12-mitaka1200.pdf",
       },
     ],
@@ -110,7 +110,7 @@ export default function ProductDocuments() {
       //   href: "/files/pdf/en/tccs-11-s-power.pdf",
       // },
       {
-        title: "PRODUCT DECLARATION 12 - MITAKA 1200",
+        title: "PRODUCT DECLARATION 11 - MITAKA 1200",
         href: "/files/pdf/en/tccs-12-mitaka1200.pdf",
       },
     ],
