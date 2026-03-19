@@ -67,7 +67,7 @@ export default function PdfDownloadSection() {
         type: "file"
       },
       {
-        title: "Combo đậu trái",
+        title: "Công dụng các loại sản phẩm enzyme của Bisojica",
         href: "https://drive.google.com/file/d/17sXN0LyY4UpwiZSk_8kfYBm0TK1tWdfz/view?usp=drive_link",
         type: "file"
       },
@@ -133,7 +133,7 @@ export default function PdfDownloadSection() {
         type: "file"
       },
       {
-        title: "Tăng sản lượng bằng cách trồng khoải tây",
+        title: "Tăng sản lượng bằng cách trồng khoai tây",
         href: "/files/pdf/vi/tang-san-luong-bang-cach-trong-khoai-tay.pdf",
         type: "file"
       },
@@ -182,7 +182,7 @@ export default function PdfDownloadSection() {
         type: "file"
       },
       // {
-      //   title: "Fruiting Combo",
+      //   title: "Uses of Bisojica Enzyme Products",
       //   href: "https://drive.google.com/file/d/17sXN0LyY4UpwiZSk_8kfYBm0TK1tWdfz/view?usp=drive_link",
       // },
       {
