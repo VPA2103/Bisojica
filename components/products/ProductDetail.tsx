@@ -10,6 +10,7 @@ import ProductList from "./ProductList";
 import { useTranslations } from "next-intl";
 import { ProductTranslation } from "@/types";
 import { Link } from "@/i18n/navigation";
+import { FaHandPointRight } from "react-icons/fa";
 
 interface Props {
   product: Product;
@@ -31,6 +32,7 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
 
   return (
     <section className="w-full bg-amber-50 py-10 px-4 sm:px-6 lg:px-8">
+      
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
@@ -160,9 +162,15 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                     {usage.note}
                   </p>
                 )}
-                <Link href={'/bang-gia'} >
-                  <div className=" w-full text-center bg-(--text-color) hover:bg-green-700 text-white text-sm font-medium py-2 rounded-md transition mt-2">
-                    {tDetail("viewPrice")}
+                <Link href={"/bang-gia"}>
+                  <div className="w-full flex items-center justify-center gap-2 bg-(--text-color) hover:bg-green-700 text-white text-sm font-medium py-2 rounded-md transition mt-2">
+
+                    <FaHandPointRight className="text-base" />
+
+                    <span className="blink">
+                      {tDetail("viewPrice")}
+                    </span>
+
                   </div>
                 </Link>
               </div>
@@ -173,7 +181,17 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
 
         <ProductList />
       </div>
+      <style>{`
+      @keyframes softBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.6; }
+      }
+      .blink {
+        animation: softBlink 0.5s infinite;
+      }
+`}</style>
     </section>
+    
   );
 };
 
