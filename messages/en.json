@@ -205,7 +205,18 @@
         "Reduces post-harvest losses",
         "Safe for human use"
       ],
-      "usage": null
+      "usage": {
+        "general": "Dilute with clean water according to the ratio",
+        "methods": [
+          {
+            "method": "Foliar spray",
+            "ratio": "Dilute 1:1000-2000",
+            "example": "100ml / 100L ~ 200L"
+          }
+        ],
+        "frequency": "Once a month",
+        "note": "Can be combined with DAICHI NO TOMO for foliar spray"
+      }
     },
     "mitaka-3000": {
       "mainApplication": "Enzyme for flower bud differentiation, increases...",
