@@ -401,7 +401,8 @@
     "usage": "Usage Instructions",
     "generalGuide": "General Guide",
     "dilutionRatio": "Dilution Ratio",
-    "example": "Example"
+    "example": "Example",
+    "viewPrice": "View price table"
   },
   "pricePage": {
     "title": "BISO JICA Price List",

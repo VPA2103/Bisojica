@@ -9,6 +9,7 @@ import type { Swiper as SwiperType } from "swiper";
 import ProductList from "./ProductList";
 import { useTranslations } from "next-intl";
 import { ProductTranslation } from "@/types";
+import { Link } from "@/i18n/navigation";
 
 interface Props {
   product: Product;
@@ -128,6 +129,11 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                 ))}
               </ul>
             </div>
+            <Link href={'/bang-gia'} >
+              <div className="mt-auto w-full text-center bg-(--text-color) hover:bg-green-700 text-white text-sm font-medium py-2 rounded-md transition mb-2">
+                {tDetail("viewPrice")}
+              </div>
+            </Link>
 
             {/* Usage */}
             {usage && (
@@ -160,6 +166,7 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                 )}
               </div>
             )}
+
           </div>
         </div>
 
