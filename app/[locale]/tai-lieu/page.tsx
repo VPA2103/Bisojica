@@ -72,7 +72,7 @@ export default function PdfDownloadSection() {
         type: "file"
       },
       {
-        title: "Phân tích",
+        title: "Vườn Mai suy yếu - phục hồi toàn diện bằng enzyme vi sinh",
         href: "/files/pdf/vi/phan-tich.pdf",
         type: "file"
       },
@@ -186,7 +186,7 @@ export default function PdfDownloadSection() {
       //   href: "https://drive.google.com/file/d/17sXN0LyY4UpwiZSk_8kfYBm0TK1tWdfz/view?usp=drive_link",
       // },
       {
-        title: "Analysis",
+        title: "Weakened Apricot Garden - Comprehensive Recovery with Microbial Enzymes",
         href: "/files/pdf/en/phan-tich.pdf",
         type: "file"
       },
