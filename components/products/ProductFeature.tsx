@@ -35,12 +35,29 @@ const ProductFeature: React.FC<Props> = ({ product }) => {
         )}
       </div>
 
-      <div className="bg-[#20412e] w-full px-4 py-3 text-center flex-1 flex flex-col justify-center">
-        <h2 className="text-white text-sm font-semibold tracking-widest uppercase">
+      <div className="bg-[#20412e] w-full px-4 py-3 text-center flex-1 flex flex-col justify-center h-[80px] overflow-hidden">
+        <h2
+          className="text-white text-sm font-semibold tracking-widest uppercase"
+          style={{
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+          }}
+        >
           {product.name}
         </h2>
+
         {mainApplication && (
-          <p className="text-emerald-300 text-xs mt-1 opacity-80">
+          <p
+            className="text-emerald-300 text-xs mt-1 opacity-80"
+            style={{
+              display: "-webkit-box",
+              WebkitLineClamp: 1,
+              WebkitBoxOrient: "vertical",
+              overflow: "hidden",
+            }}
+          >
             {mainApplication}
           </p>
         )}
