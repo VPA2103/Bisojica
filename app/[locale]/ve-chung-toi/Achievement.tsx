@@ -14,7 +14,7 @@ export default function Achievement() {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-10">
       <div className="grid grid-cols-1 gap-6">
-      <VisionMission />
+        <VisionMission />
         <LeadershipTeam />
         <StrategicPartners />
         {images.map((img, index) => (

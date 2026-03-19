@@ -76,7 +76,7 @@ export default function DiscountBanner() {
                         {t("title1")}
                         <br />
                         <span
-                            className={`animate-blink ${imperial.className} text-6xl`}
+                            className={`animate-blink ${imperial.className} lg:text-8xl mb: text-6xl `}
                         >
                             {t("title2")}
                         </span>
