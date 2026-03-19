@@ -15,11 +15,11 @@ export default function ProductDocuments() {
   const documents: Record<string, DocumentItem[]> = {
     vi: [
       {
-        title: "TCCS 01 - MITAKA1000",
+        title: "TCCS 01 - MITAKA 1000",
         href: "/files/pdf/vi/tccs-01-mitaka1000.pdf",
       },
       {
-        title: "TCCS 02 - Daichi no Tomo",
+        title: "TCCS 02 - DAICHI NO TOMO",
         href: "/files/pdf/vi/tccs-02-daichi-no-tomo.pdf",
       },
       {
@@ -27,7 +27,7 @@ export default function ProductDocuments() {
         href: "/files/pdf/vi/tccs-03-bf-natural.pdf",
       },
       {
-        title: "TCCS 04 - Lake Power",
+        title: "TCCS 04 - LAKE POWER",
         href: "/files/pdf/vi/tccs-04-lake-power.pdf",
       },
       {
@@ -35,15 +35,15 @@ export default function ProductDocuments() {
         href: "/files/pdf/vi/tccs-05-bk-oilbuster.pdf",
       },
       {
-        title: "TCCS 06 - BK Partner",
+        title: "TCCS 06 - BK PARTNER",
         href: "/files/pdf/vi/tccs-06-bk-partner.pdf",
       },
       {
-        title: "TCCS 07 - Daichi no Tomo 500",
+        title: "TCCS 07 - DAICHI NO TOMO 500",
         href: "/files/pdf/vi/tccs-07-daichi-no-tomo-500.pdf",
       },
       {
-        title: "TCCS 08 - MITAKA3000",
+        title: "TCCS 08 - MITAKA 3000",
         href: "/files/pdf/vi/tccs-08-mitaka3000.pdf",
       },
       {
@@ -55,62 +55,62 @@ export default function ProductDocuments() {
         href: "/files/pdf/vi/tccs-10-sp-10-15-20.pdf",
       },
       {
-        title: "TCCS 11 - S-Power",
+        title: "TCCS 11 - S-POWER",
         href: "/files/pdf/vi/tccs-11-s-power.pdf",
       },
       {
-        title: "TCCS 12 - MITAKA1200",
+        title: "TCCS 12 - MITAKA 1200",
         href: "/files/pdf/vi/tccs-12-mitaka1200.pdf",
       },
     ],
 
     en: [
       {
-        title: "Product Declaration 01 - MITAKA1000",
+        title: "PRODUCT DECLARATION 01 - MITAKA 1000",
         href: "/files/pdf/en/tccs-01-mitaka1000.pdf",
       },
       {
-        title: "Product Declaration 02 - Daichi no Tomo",
+        title: "PRODUCT DECLARATION 02 - DAICHI NO TOMO",
         href: "/files/pdf/en/tccs-02-daichi-no-tomo.pdf",
       },
       {
-        title: "Product Declaration 03 - BF-NATURAL",
+        title: "PRODUCT DECLARATION 03 - BF-NATURAL",
         href: "/files/pdf/en/tccs-03-bf-natural.pdf",
       },
       {
-        title: "Product Declaration 04 - Lake Power",
+        title: "PRODUCT DECLARATION 04 - LAKE POWER",
         href: "/files/pdf/en/tccs-04-lake-power.pdf",
       },
       {
-        title: "Product Declaration 05 - BK-OILBUSTER",
+        title: "PRODUCT DECLARATION 05 - BK-OILBUSTER",
         href: "/files/pdf/en/tccs-05-bk-oilbuster.pdf",
       },
       {
-        title: "Product Declaration 06 - BK Partner",
+        title: "PRODUCT DECLARATION 06 - BK PARTNER",
         href: "/files/pdf/en/tccs-06-bk-partner.pdf",
       },
       {
-        title: "Product Declaration 07 - Daichi no Tomo 500",
+        title: "PRODUCT DECLARATION 07 - DAICHI NO TOMO 500",
         href: "/files/pdf/en/tccs-07-daichi-no-tomo-500.pdf",
       },
       {
-        title: "Product Declaration 08 - MITAKA3000",
+        title: "PRODUCT DECLARATION 08 - MITAKA 3000",
         href: "/files/pdf/en/tccs-08-mitaka3000.pdf",
       },
       {
-        title: "Product Declaration 09 - NIOI ZERO",
+        title: "PRODUCT DECLARATION 09 - NIOI ZERO",
         href: "/files/pdf/en/tccs-09-nioi-zero.pdf",
       },
       {
-        title: "Product Declaration 10 - SP 10-15-20",
+        title: "PRODUCT DECLARATION 10 - SP 10-15-20",
         href: "/files/pdf/en/tccs-10-sp-10-15-20.pdf",
       },
       {
-        title: "Product Declaration 11 - S-Power",
+        title: "PRODUCT DECLARATION 11 - S-POWER",
         href: "/files/pdf/en/tccs-11-s-power.pdf",
       },
       {
-        title: "Product Declaration 12 - MITAKA1200",
+        title: "PRODUCT DECLARATION 12 - MITAKA 1200",
         href: "/files/pdf/en/tccs-12-mitaka1200.pdf",
       },
     ],
@@ -121,7 +121,7 @@ export default function ProductDocuments() {
   return (
     <section className="max-w-7xl mx-auto py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">
-      {t("productDeclTitle")}
+        {t("productDeclTitle")}
       </h2>
 
       <div className="grid grid-cols-1 gap-6">
