@@ -55,7 +55,7 @@ export default function ProductDocuments() {
         href: "/files/pdf/vi/tccs-10-sp-10-15-20.pdf",
       },
       {
-        title: "TCCS 11 - S-POWER",
+        title: "TCCS 11 - BK-PARTNER",
         href: "/files/pdf/vi/tccs-11-s-power.pdf",
       },
       {
@@ -106,7 +106,7 @@ export default function ProductDocuments() {
         href: "/files/pdf/en/tccs-10-sp-10-15-20.pdf",
       },
       {
-        title: "PRODUCT DECLARATION 11 - S-POWER",
+        title: "PRODUCT DECLARATION 11 - BK-PARTNER",
         href: "/files/pdf/en/tccs-11-s-power.pdf",
       },
       {
