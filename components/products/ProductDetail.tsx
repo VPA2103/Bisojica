@@ -129,11 +129,7 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                 ))}
               </ul>
             </div>
-            <Link href={'/bang-gia'} >
-              <div className="mt-auto w-full text-center bg-(--text-color) hover:bg-green-700 text-white text-sm font-medium py-2 rounded-md transition mb-2">
-                {tDetail("viewPrice")}
-              </div>
-            </Link>
+
 
             {/* Usage */}
             {usage && (
@@ -164,6 +160,11 @@ const ProductDetail: React.FC<Props> = ({ product }) => {
                     {usage.note}
                   </p>
                 )}
+                <Link href={'/bang-gia'} >
+                  <div className=" w-full text-center bg-(--text-color) hover:bg-green-700 text-white text-sm font-medium py-2 rounded-md transition mt-2">
+                    {tDetail("viewPrice")}
+                  </div>
+                </Link>
               </div>
             )}
 
