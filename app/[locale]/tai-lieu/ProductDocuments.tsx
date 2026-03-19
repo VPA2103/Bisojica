@@ -54,10 +54,10 @@ export default function ProductDocuments() {
         title: "TCCS 10 - SP 10-15-20",
         href: "/files/pdf/vi/tccs-10-sp-10-15-20.pdf",
       },
-      {
-        title: "TCCS 11 - BK-PARTNER",
-        href: "/files/pdf/vi/tccs-11-s-power.pdf",
-      },
+      // {
+      //   title: "TCCS 11 - BK-PARTNER",
+      //   href: "/files/pdf/vi/tccs-11-s-power.pdf",
+      // },
       {
         title: "TCCS 12 - MITAKA 1200",
         href: "/files/pdf/vi/tccs-12-mitaka1200.pdf",
@@ -105,10 +105,10 @@ export default function ProductDocuments() {
         title: "PRODUCT DECLARATION 10 - SP 10-15-20",
         href: "/files/pdf/en/tccs-10-sp-10-15-20.pdf",
       },
-      {
-        title: "PRODUCT DECLARATION 11 - BK-PARTNER",
-        href: "/files/pdf/en/tccs-11-s-power.pdf",
-      },
+      // {
+      //   title: "PRODUCT DECLARATION 11 - BK-PARTNER",
+      //   href: "/files/pdf/en/tccs-11-s-power.pdf",
+      // },
       {
         title: "PRODUCT DECLARATION 12 - MITAKA 1200",
         href: "/files/pdf/en/tccs-12-mitaka1200.pdf",
