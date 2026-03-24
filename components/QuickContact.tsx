@@ -65,7 +65,7 @@ export default function QuickContact() {
       {/* Email */}
       <div className="relative group flex justify-center">
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=bisojica@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=bisojicajapan@gmail.com"
           target="_blank"
           className="flex items-center justify-center w-12 h-12 rounded-full bg-red-500 text-white shadow-lg hover:scale-110 transition"
         >
@@ -73,7 +73,7 @@ export default function QuickContact() {
         </a>
 
         <span className="hidden md:block absolute right-14 bg-black text-white text-sm px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
-          bisojica@gmail.com
+          bisojicajapan@gmail.com
         </span>
       </div>
 
