@@ -29,6 +29,13 @@ export default function DiscountBanner() {
 
         .animate-leaf { animation: leafSway 3s ease-in-out infinite; }
 
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.6; }
+        }
+
+        .animate-blink { animation: blink 1s step-start infinite; }
+
         .arrow-icon {
           transition: transform 0.22s cubic-bezier(0.22,1,0.36,1);
         }
@@ -78,7 +85,7 @@ export default function DiscountBanner() {
 
                 <div className="relative z-10 mx-auto max-w-xl">
                     {/* Title */}
-                    <h2 className="mb-1 text-4xl font-extrabold leading-tight tracking-tight text-white">
+                    <h2 className="animate-blink mb-1 text-4xl font-extrabold leading-tight tracking-tight text-white">
                         {t("title1")}
                     </h2>
 
