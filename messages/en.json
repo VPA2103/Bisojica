@@ -437,9 +437,9 @@
   },
   "pricePage": {
     "title": "BISO JICA Price List",
-    "section1Title": "1. Enzyme Pricing – Wastewater, Oil & Odor Treatment",
-    "section2Title": "2. Enzyme Pricing – Agriculture (Soil Restoration, Pest Control)",
-    "section3Title": "2. Seafood Enzyme Price List",
+    "section1Title": "2. Enzyme Quotation - Industrial",
+    "section2Title": "1. Enzyme Quotation - Agricultural",
+    "section3Title": "3. Enzyme Quotation - Aquaculture",
     "table": {
       "goods": "PRODUCT",
       "volume": "VOLUME",
