@@ -22,8 +22,8 @@ export default function PriceTable({ products, descriptionNs }: Props) {
             <th className="border border-black p-3">{t("table.goods")}</th>
             <th className="border border-black p-3">{t("table.volume")}</th>
             <th className="border border-black p-3">{t("table.listedPrice")}</th>
-            <th className="border border-black p-3">{t("table.discount")}</th>
-            <th className="border border-black p-3">{t("table.finalPrice")}</th>
+            {/* <th className="border border-black p-3">{t("table.discount")}</th>
+            <th className="border border-black p-3">{t("table.finalPrice")}</th> */}
           </tr>
         </thead>
 
@@ -51,12 +51,12 @@ export default function PriceTable({ products, descriptionNs }: Props) {
                 <td className="border border-black p-2 font-semibold">
                   {format(v.price, t("table.currency"))}
                 </td>
-                <td className="border border-black p-2">
+                {/* <td className="border border-black p-2">
                   {format(v.discount, t("table.currency"))}
                 </td>
                 <td className="border border-black p-2 font-semibold">
                   {format(v.final, t("table.currency"))}
-                </td>
+                </td> */}
               </tr>
             ))
           )}
