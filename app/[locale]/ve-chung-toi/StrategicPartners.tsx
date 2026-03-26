@@ -82,14 +82,14 @@ export default function StrategicPartners() {
             {t("partner4.heading")}
           </h3>
           <div className="flex flex-col items-center">
-            <div className="relative w-full max-w-md h-56 rounded-xl overflow-hidden">
+            {/* <div className="relative w-full max-w-md h-56 rounded-xl overflow-hidden">
               <Image
                 src="/images/doi-tac-chien-luoc/cac-chuyen-gia-nhat-cua-cong-ty-biso-lam-viec-cung-trung-uong-hoi-nong-dan-phia-nam1.png"
                 alt={t("partner2.imageAlt")}
                 fill
                 className="object-cover"
               />
-            </div>
+            </div> */}
             <div className="relative w-full max-w-md h-56 rounded-xl overflow-hidden mt-2">
               <Image
                 src="/images/doi-tac-chien-luoc/cac-chuyen-gia-nhat-cua-cong-ty-biso-lam-viec-cung-trung-uong-hoi-nong-dan-phia-nam2.png"
