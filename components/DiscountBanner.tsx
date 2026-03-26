@@ -12,28 +12,22 @@ const imperial = Imperial_Script({
 export default function DiscountBanner() {
     const t = useTranslations("discountBanner");
 
+    const benefits = [
+        { emoji: "🌱", key: "benefit1" },
+        { emoji: "💧", key: "benefit2" },
+        { emoji: "📈", key: "benefit3" },
+    ] as const;
+
     return (
         <>
             <style>{`
-        @keyframes blink {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.6; }
-        }
-
         @keyframes leafSway {
           0%, 100% { transform: rotate(-8deg) translateY(0px); }
           33% { transform: rotate(5deg) translateY(-4px); }
           66% { transform: rotate(-3deg) translateY(-2px); }
         }
 
-        @keyframes dotPulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.5; transform: scale(0.7); }
-        }
-
-        .animate-blink { animation: blink 1s step-start infinite; }
         .animate-leaf { animation: leafSway 3s ease-in-out infinite; }
-        .animate-dot { animation: dotPulse 2s ease-in-out infinite; }
 
         .arrow-icon {
           transition: transform 0.22s cubic-bezier(0.22,1,0.36,1);
@@ -51,6 +45,18 @@ export default function DiscountBanner() {
 
         .btn-hover:active {
           transform: scale(0.97);
+        }
+
+        .benefit-item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          text-align: left;
+        }
+
+        .benefit-emoji {
+          font-size: 1.25rem;
+          flex-shrink: 0;
         }
       `}</style>
 
@@ -72,25 +78,40 @@ export default function DiscountBanner() {
 
                 <div className="relative z-10 mx-auto max-w-xl">
                     {/* Title */}
-                    <h2 className="mb-2.5 text-4xl font-extrabold leading-tight tracking-tight text-white">
+                    <h2 className="mb-1 text-4xl font-extrabold leading-tight tracking-tight text-white">
                         {t("title1")}
-                        <br />
-                        <span
-                            className={`animate-blink ${imperial.className} lg:text-8xl mb: text-6xl `}
-                        >
-                            {t("title2")}
-                        </span>
                     </h2>
 
-                    {/* Subtitle */}
-                    <p className="mt-3 text-base font-medium text-white mb:text-sm lg:text-3xl">
-                        {t("subtitle")}{" "}
-                        <strong className="text-white/90">{t("brand")}</strong>
+                    {/* Subtitle title */}
+                    <p
+                        className={`${imperial.className} mb-6 text-5xl lg:text-7xl`}
+                        style={{ color: "#00e5a0" }}
+                    >
+                        {t("title2")}
                     </p>
 
+                    {/* Intro line */}
+                    <p className="mb-4 text-base font-semibold text-white/90 lg:text-xl">
+                        {t("intro")}{" "}
+                        <strong className="text-white">{t("brand")}</strong>{" "}
+                        {t("introSuffix")}
+                    </p>
+
+                    {/* Benefits list */}
+                    <div className="mb-6 mx-auto inline-flex flex-col gap-3 text-left">
+                        {benefits.map(({ emoji, key }) => (
+                            <div key={key} className="benefit-item">
+                                <span className="benefit-emoji">{emoji}</span>
+                                <span className="text-sm font-medium text-white/90 lg:text-base">
+                                    {t(key)}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+
                     {/* Tagline */}
-                    <p className="mb-8 mt-1.5 flex items-center justify-center gap-1.5 text-base font-semibold text-white mb:text-sm lg:text-2xl">
-                        <span className="animate-bounce inline-block text-xl">🌱</span>
+                    <p className="mb-8 flex items-center justify-center gap-2 text-sm font-bold text-white/80 lg:text-base">
+                        <span>👉</span>
                         {t("tagline")}
                     </p>
 

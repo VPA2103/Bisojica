@@ -888,11 +888,15 @@
     }
   },
   "discountBanner": {
-    "title1": "Smart Investment",
-    "title2": "Save 15%",
-    "subtitle": "Discount on all enzyme products",
+    "title1": "Smart investment",
+    "title2": "Optimize seasonal costs",
+    "intro": "BISO enzyme solutions",
     "brand": "BISO",
-    "tagline": "Optimize costs – Enhance production efficiency",
+    "introSuffix": "help you:",
+    "benefit1": "Reduce input costs",
+    "benefit2": "Save water & labor",
+    "benefit3": "Increase efficiency and sustainable yield",
+    "tagline": "Higher results at a lower cost per harvest",
     "cta": "View products"
   }
 }

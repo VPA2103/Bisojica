@@ -490,7 +490,7 @@
         "excerpt": "Nhiều giải pháp xử lý nguồn nước, xử lý nước thải, xử lý mùi và cải tạo đất nông nghiệp đang được nhiều doanh nghiệp, nông dân quan tâm trong hoạt động sản xuất.",
         "readTime": "13 phút xem"
       },
-      
+
       {
         "category": "Công Nghiệp",
         "tag": "Xử lý môi trường",
@@ -505,7 +505,7 @@
         "excerpt": "Enzyme sinh học giúp cân bằng môi trường ao nuôi, phân giải khí độc H₂S và NH₃, tăng sức đề kháng tự nhiên cho tôm cá — hướng tới tiêu chuẩn xuất khẩu quốc tế mà không phụ thuộc kháng sinh.",
         "readTime": "4 phút đọc"
       },
-      
+
       {
         "category": "Nông nghiệp",
         "tag": "Canh tác bền vững",
@@ -889,10 +889,14 @@
   },
   "discountBanner": {
     "title1": "Đầu tư thông minh",
-    "title2": "Tiết kiệm 15%",
-    "subtitle": "Giảm giá toàn bộ sản phẩm enzyme",
+    "title2": "Tối ưu chi phí vụ mùa",
+    "intro": "Giải pháp enzyme",
     "brand": "BISO",
-    "tagline": "Tối ưu chi phí – tăng hiệu quả sản xuất",
+    "introSuffix": "giúp:",
+    "benefit1": "Giảm chi phí đầu vào",
+    "benefit2": "Tiết kiệm nước & công chăm sóc",
+    "benefit3": "Tăng hiệu quả và năng suất bền vững",
+    "tagline": "Hiệu quả cao hơn với chi phí thấp hơn cho mỗi vụ mùa",
     "cta": "Xem sản phẩm"
   }
 }
