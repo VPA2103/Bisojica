@@ -83,9 +83,9 @@ export default function DiscountBanner() {
                     }}
                 />
 
-                <div className="relative z-10 mx-auto max-w-xl">
+                <div className="relative z-10 mx-auto max-w-2xl">
                     {/* Title */}
-                    <h2 className="animate-blink mb-1 text-4xl font-extrabold leading-tight tracking-tight text-white">
+                    <h2 className="text-xl md:text-6xl lg:text-6xl animate-blink mb-1 font-extrabold leading-tight tracking-tight text-white">
                         {t("title1")}
                     </h2>
 
@@ -117,7 +117,7 @@ export default function DiscountBanner() {
                     </div>
 
                     {/* Tagline */}
-                    <p className="mb-8 flex items-center justify-center gap-2 text-sm font-bold text-white/80 lg:text-base">
+                    <p className="animate-blink mb-8 flex items-center justify-center gap-2 text-xl font-bold text-white/80 lg:text-2xl ">
                         <span>👉</span>
                         {t("tagline")}
                     </p>
