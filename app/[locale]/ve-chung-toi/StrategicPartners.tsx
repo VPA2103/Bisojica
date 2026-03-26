@@ -26,7 +26,7 @@ export default function StrategicPartners() {
                 src="/images/doi-tac-chien-luoc/anh-minh-chu-tich-hiep-hoi-nong-nghiep-huu-co-vn.png"
                 alt={t("partner1.imageAlt")}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <p className="text-sm text-center text-[#20412e] mt-3 font-medium">
@@ -68,7 +68,7 @@ export default function StrategicPartners() {
         </div>
 
         {/* Partner 3 */}
-        <div>
+        <div className="mb-10">
           <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
             {t("partner3.heading")}
           </h3>
@@ -77,7 +77,7 @@ export default function StrategicPartners() {
           </p>
         </div>
         {/* Partner 4 */}
-        <div>
+        <div className="mb-10">
           <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
             {t("partner4.heading")}
           </h3>
@@ -104,7 +104,7 @@ export default function StrategicPartners() {
           </div>
         </div>
         {/* Partner 5 */}
-        <div>
+        <div className="mb-10">
           <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
             {t("partner5.heading")}
           </h3>
@@ -125,7 +125,7 @@ export default function StrategicPartners() {
           </div>
         </div>
         {/* Partner 6 */}
-        <div>
+        <div className="mb-10">
           <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
             {t("partner6.heading")}
           </h3>
@@ -145,7 +145,7 @@ export default function StrategicPartners() {
           </div>
         </div>
         {/* Partner 6 */}
-        <div>
+        <div className="mb-10">
           <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
             {t("partner7.heading")}
           </h3>
@@ -153,7 +153,7 @@ export default function StrategicPartners() {
             <div className="relative w-full max-w-md rounded-xl overflow-hidden mt-2">
               <Image
                 src="/images/doi-tac-chien-luoc/dong-hanh-cung-toan-the-lanh-dao-hoi-huu-nghi-viet-nam-campuchia-phat-trien-nong-nghiep.png"
-                alt={t("partner6.imageAlt")}
+                alt={t("partner7.imageAlt")}
                 width={500} // Nhập chiều rộng gốc của ảnh
                 height={300} // Nhập chiều cao gốc của ảnh
                 className="w-full h-auto object-cover"
