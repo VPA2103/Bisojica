@@ -394,6 +394,26 @@
     "partner3": {
       "heading": "3. Hợp tác cùng Hội Nông dân các tỉnh",
       "desc": "Chúng tôi thường xuyên đồng hành và hỗ trợ Hội Nông dân tại nhiều địa phương trong công tác tư vấn, tập huấn kỹ thuật và triển khai các mô hình nông nghiệp hữu cơ, nhằm nâng cao giá trị nông sản và thu nhập cho bà con nông dân."
+    },
+    "partner4": {
+      "heading": "4. Các chuyên gia Nhật của công ty Biso làm việc cùng Trung Ương Hội Nông Dân phía Nam",
+      "desc": "Chúng tôi thường xuyên đồng hành và hỗ trợ Hội Nông dân tại nhiều địa phương trong công tác tư vấn, tập huấn kỹ thuật và triển khai các mô hình nông nghiệp hữu cơ, nhằm nâng cao giá trị nông sản và thu nhập cho bà con nông dân.",
+      "caption": "Các chuyên gia Nhật của công ty Biso làm việc cùng Trung Ương Hội Nông Dân phía Nam"
+    },
+    "partner5": {
+      "heading": "5. Đồng hành cùng TS. Phùng Hà hiện là Chủ tịch Hiệp hội Phân bón Việt Nam (FAV) nhiệm kỳ VI (2024-2029)",
+      "desc": "Chúng tôi thường xuyên đồng hành và hỗ trợ Hội Nông dân tại nhiều địa phương trong công tác tư vấn, tập huấn kỹ thuật và triển khai các mô hình nông nghiệp hữu cơ, nhằm nâng cao giá trị nông sản và thu nhập cho bà con nông dân.",
+      "caption": "Đồng hành cùng TS. Phùng Hà hiện là Chủ tịch Hiệp hội Phân bón Việt Nam (FAV) nhiệm kỳ VI (2024-2029)"
+    },
+    "partner6": {
+      "heading": "6. Đồng hành cùng Hội Nông dân tỉnh Hải Dương",
+      "desc": "Chúng tôi thường xuyên đồng hành và hỗ trợ Hội Nông dân tại nhiều địa phương trong công tác tư vấn, tập huấn kỹ thuật và triển khai các mô hình nông nghiệp hữu cơ, nhằm nâng cao giá trị nông sản và thu nhập cho bà con nông dân.",
+      "caption": "Đồng hành cùng Hội Nông dân tỉnh Hải Dương"
+    },
+    "partner7": {
+      "heading": "7. Đồng hành cùng toàn thể lãnh đạo Hội Hữu Nghị Việt Nam - Campuchia phát triển Nông nghiệp",
+      "desc": "Chúng tôi thường xuyên đồng hành và hỗ trợ Hội Nông dân tại nhiều địa phương trong công tác tư vấn, tập huấn kỹ thuật và triển khai các mô hình nông nghiệp hữu cơ, nhằm nâng cao giá trị nông sản và thu nhập cho bà con nông dân.",
+      "caption": "Đồng hành cùng toàn thể lãnh đạo Hội Hữu Nghị Việt Nam - Campuchia phát triển Nông nghiệp"
     }
   },
   "documents": {
@@ -457,12 +477,20 @@
     "footer": "Enzyme Sinh Học · Công Nghệ Nhật Bản · USDA · GlobalG.A.P.",
     "articles": [
       {
-        "category": "Nông Nghiệp",
+        "category": "Đây là bài viết của Báo Đại Đoàn Kết",
         "tag": "Canh tác bền vững",
-        "title": "Công Nghệ Enzyme Sinh Học – Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam",
-        "excerpt": "Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất và sâu bệnh gia tăng, enzyme sinh học nổi lên như một giải pháp toàn diện, cải tạo đất và đạt chuẩn quốc tế USDA, GlobalG.A.P.",
-        "readTime": "5 phút đọc"
+        "title": "Enzyme \"Liều thuốc\" sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
+        "excerpt": "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn \"bó tay\" nhìn vườn cây tàn lụi.",
+        "readTime": "10 phút đọc"
       },
+      {
+        "category": "Bài viết của Tạp chí Doanh Nghiệp Kinh Tế Xanh",
+        "tag": "Canh tác bền vững",
+        "title": "Giải pháp sạch và thân thiện môi trường trong nông nghiệp và xử lý chất thải",
+        "excerpt": "Nhiều giải pháp xử lý nguồn nước, xử lý nước thải, xử lý mùi và cải tạo đất nông nghiệp đang được nhiều doanh nghiệp, nông dân quan tâm trong hoạt động sản xuất.",
+        "readTime": "13 phút xem"
+      },
+      
       {
         "category": "Công Nghiệp",
         "tag": "Xử lý môi trường",
@@ -477,13 +505,7 @@
         "excerpt": "Enzyme sinh học giúp cân bằng môi trường ao nuôi, phân giải khí độc H₂S và NH₃, tăng sức đề kháng tự nhiên cho tôm cá — hướng tới tiêu chuẩn xuất khẩu quốc tế mà không phụ thuộc kháng sinh.",
         "readTime": "4 phút đọc"
       },
-      {
-        "category": "Nông nghiệp",
-        "tag": "Canh tác bền vững",
-        "title": "Enzyme \"Liều thuốc\" sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
-        "excerpt": "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn \"bó tay\" nhìn vườn cây tàn lụi.",
-        "readTime": "10 phút đọc"
-      },
+      
       {
         "category": "Nông nghiệp",
         "tag": "Canh tác bền vững",
@@ -492,11 +514,11 @@
         "readTime": "13 phút 51 giây xem"
       },
       {
-        "category": "Nông nghiệp",
+        "category": "Nông Nghiệp",
         "tag": "Canh tác bền vững",
-        "title": "Giải pháp sạch và thân thiện môi trường trong nông nghiệp và xử lý chất thải",
-        "excerpt": "Nhiều giải pháp xử lý nguồn nước, xử lý nước thải, xử lý mùi và cải tạo đất nông nghiệp đang được nhiều doanh nghiệp, nông dân quan tâm trong hoạt động sản xuất.",
-        "readTime": "13 phút xem"
+        "title": "Công Nghệ Enzyme Sinh Học – Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam",
+        "excerpt": "Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất và sâu bệnh gia tăng, enzyme sinh học nổi lên như một giải pháp toàn diện, cải tạo đất và đạt chuẩn quốc tế USDA, GlobalG.A.P.",
+        "readTime": "5 phút đọc"
       }
     ]
   },

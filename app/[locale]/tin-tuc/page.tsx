@@ -4,68 +4,69 @@ import { articlesStatic } from "@/data/newsArticles";
 import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 
-const articles = [
-  {
-    id: 1,
-    category: "Nông Nghiệp",
-    tag: "Canh tác bền vững",
-    title: "Công Nghệ Enzyme Sinh Học – Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam",
-    excerpt:
-      "Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất và sâu bệnh gia tăng, enzyme sinh học nổi lên như một giải pháp toàn diện, cải tạo đất và đạt chuẩn quốc tế USDA, GlobalG.A.P.",
-    image: "/images/nong-nghiep.png",
-    href: "/tin-tuc/nong-nghiep",
-    readTime: "5 phút đọc",
-    index: "01",
-  },
-  {
-    id: 2,
-    category: "Công Nghiệp",
-    tag: "Xử lý môi trường",
-    title: "Ứng Dụng Enzyme Sinh Học Trong Công Nghiệp – Giải Pháp Xử Lý Môi Trường Hiệu Quả",
-    excerpt:
-      "Từ xử lý nước thải BOD/COD, khử mùi hôi NH₃ và H₂S chuồng trại, đến chất tẩy rửa sinh học — enzyme mang đến giải pháp xanh toàn diện cho doanh nghiệp trong hành trình chuyển đổi bền vững.",
-    image: "/images/cong-nghiep.png",
-    href: "/tin-tuc/cong-nghiep",
-    readTime: "4 phút đọc",
-    index: "02",
-  },
-  {
-    id: 3,
-    category: "Thủy Hải Sản",
-    tag: "Nuôi trồng bền vững",
-    title: "Giải Pháp Sinh Học Cho Thủy Sản – Nâng Cao Hiệu Quả Nuôi Trồng",
-    excerpt:
-      "Enzyme sinh học giúp cân bằng môi trường ao nuôi, phân giải khí độc H₂S và NH₃, tăng sức đề kháng tự nhiên cho tôm cá — hướng tới tiêu chuẩn xuất khẩu quốc tế mà không phụ thuộc kháng sinh.",
-    image: "/images/thuy-san.png",
-    href: "/tin-tuc/thuy-san",
-    readTime: "4 phút đọc",
-    index: "03",
-  },
-  {
-    id: 4,
-    category: "Nông nghiệp",
-    tag: "Canh tác bền vững",
-    title: "Enzyme “Liều thuốc” sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
-    excerpt:
-      "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn “bó tay” nhìn vườn cây tàn lụi.",
-    image: "https://media.daidoanket.vn/w3840/uploaded/images/2025/09/08/a95db1d3-29cf-4849-aac2-56ecb03da9ee.jpg.avif",
-    href: "https://daidoanket.vn/enzyme-lieu-thuoc-sinh-hoc-cuu-dat-hoi-sinh-vuon-cay-tuong-nhu-da-chet-10310034.html",
-    readTime: "10 phút đọc",
-    index: "04",
-  },
-  {
-    id: 5,
-    category: "Nông nghiệp",
-    tag: "Canh tác bền vững",
-    title: "Thăm vườn cây hiếm ngay đảo Kim Cương - Cùng Biso Jica thăm nhà anh Vinh Chà Là",
-    excerpt:
-      "Chào mừng bạn đến với kênh Biso Jica – nơi chia sẻ kiến thức và giải pháp về enzyme hữu cơ ứng dụng trong các ngành nông nghiệp, công nghiệp và thủy sản.",
-    image: "https://img.youtube.com/vi/oJuhF7213Pw/0.jpg",
-    href: "https://www.youtube.com/watch?v=oJuhF7213Pw",
-    readTime: "13 phút 51 giây xem",
-    index: "05",
-  },
-];
+// const articles = [
+//   {
+//     id: 1,
+//     category: "Nông nghiệp",
+//     tag: "Canh tác bền vững",
+//     title: "Enzyme “Liều thuốc” sinh học cứu đất, hồi sinh vườn cây tưởng như đã chết",
+//     excerpt:
+//       "Đất bạc màu, chai cứng, rễ cây không phát triển được, sâu bệnh lan rộng, đó là thực trạng chung tại nhiều vùng canh tác lâu năm. Nông dân dù bỏ nhiều công chăm bón, tăng liều phân, thuốc hóa học nhưng vẫn “bó tay” nhìn vườn cây tàn lụi.",
+//     image: "https://media.daidoanket.vn/w3840/uploaded/images/2025/09/08/a95db1d3-29cf-4849-aac2-56ecb03da9ee.jpg.avif",
+//     href: "https://daidoanket.vn/enzyme-lieu-thuoc-sinh-hoc-cuu-dat-hoi-sinh-vuon-cay-tuong-nhu-da-chet-10310034.html",
+//     readTime: "10 phút đọc",
+//     index: "01",
+//   },
+//   {
+//     id: 4,
+//     category: "Nông Nghiệp",
+//     tag: "Canh tác bền vững",
+//     title: "Công Nghệ Enzyme Sinh Học – Giải Pháp Bền Vững Cho Nông Nghiệp Việt Nam",
+//     excerpt:
+//       "Trong bối cảnh nông nghiệp Việt Nam đang đối mặt với tình trạng thoái hóa đất và sâu bệnh gia tăng, enzyme sinh học nổi lên như một giải pháp toàn diện, cải tạo đất và đạt chuẩn quốc tế USDA, GlobalG.A.P.",
+//     image: "/images/nong-nghiep.png",
+//     href: "/tin-tuc/nong-nghiep",
+//     readTime: "5 phút đọc",
+//     index: "04",
+//   },
+//   {
+//     id: 2,
+//     category: "Công Nghiệp",
+//     tag: "Xử lý môi trường",
+//     title: "Ứng Dụng Enzyme Sinh Học Trong Công Nghiệp – Giải Pháp Xử Lý Môi Trường Hiệu Quả",
+//     excerpt:
+//       "Từ xử lý nước thải BOD/COD, khử mùi hôi NH₃ và H₂S chuồng trại, đến chất tẩy rửa sinh học — enzyme mang đến giải pháp xanh toàn diện cho doanh nghiệp trong hành trình chuyển đổi bền vững.",
+//     image: "/images/cong-nghiep.png",
+//     href: "/tin-tuc/cong-nghiep",
+//     readTime: "4 phút đọc",
+//     index: "02",
+//   },
+//   {
+//     id: 3,
+//     category: "Thủy Hải Sản",
+//     tag: "Nuôi trồng bền vững",
+//     title: "Giải Pháp Sinh Học Cho Thủy Sản – Nâng Cao Hiệu Quả Nuôi Trồng",
+//     excerpt:
+//       "Enzyme sinh học giúp cân bằng môi trường ao nuôi, phân giải khí độc H₂S và NH₃, tăng sức đề kháng tự nhiên cho tôm cá — hướng tới tiêu chuẩn xuất khẩu quốc tế mà không phụ thuộc kháng sinh.",
+//     image: "/images/thuy-san.png",
+//     href: "/tin-tuc/thuy-san",
+//     readTime: "4 phút đọc",
+//     index: "03",
+//   },
+  
+//   {
+//     id: 5,
+//     category: "Nông nghiệp",
+//     tag: "Canh tác bền vững",
+//     title: "Thăm vườn cây hiếm ngay đảo Kim Cương - Cùng Biso Jica thăm nhà anh Vinh Chà Là",
+//     excerpt:
+//       "Chào mừng bạn đến với kênh Biso Jica – nơi chia sẻ kiến thức và giải pháp về enzyme hữu cơ ứng dụng trong các ngành nông nghiệp, công nghiệp và thủy sản.",
+//     image: "https://img.youtube.com/vi/oJuhF7213Pw/0.jpg",
+//     href: "https://www.youtube.com/watch?v=oJuhF7213Pw",
+//     readTime: "13 phút 51 giây xem",
+//     index: "05",
+//   },
+// ];
 
 type ArticleTranslated = {
   category: string;

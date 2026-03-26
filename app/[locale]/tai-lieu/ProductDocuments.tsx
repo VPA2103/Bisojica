@@ -15,6 +15,10 @@ export default function ProductDocuments() {
   const documents: Record<string, DocumentItem[]> = {
     vi: [
       {
+        title: "Quyết định công bố TCCS",
+        href: "/files/pdf/vi/quyet-dinh-cong-bo-tccs.pdf",
+      },
+      {
         title: "TCCS 01 - MITAKA 1000",
         href: "/files/pdf/vi/tccs-01-mitaka1000.pdf",
       },

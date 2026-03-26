@@ -52,6 +52,15 @@ export default function StrategicPartners() {
                 className="object-cover"
               />
             </div>
+            <div className="relative w-full max-w-md rounded-xl overflow-hidden mt-2">
+              <Image
+                src="/images/doi-tac-chien-luoc/lam-viec-dinh-khac-dinh-ho-gam2.png"
+                alt={t("partner2.imageAlt")}
+                width={500} // Nhập chiều rộng gốc của ảnh
+                height={300} // Nhập chiều cao gốc của ảnh
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-sm text-center text-[#20412e] mt-3 font-medium">
               {t("partner2.caption")}
             </p>
@@ -67,7 +76,94 @@ export default function StrategicPartners() {
             {t("partner3.desc")}
           </p>
         </div>
+        {/* Partner 4 */}
+        <div>
+          <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
+            {t("partner4.heading")}
+          </h3>
+          <div className="flex flex-col items-center">
+            <div className="relative w-full max-w-md h-56 rounded-xl overflow-hidden">
+              <Image
+                src="/images/doi-tac-chien-luoc/cac-chuyen-gia-nhat-cua-cong-ty-biso-lam-viec-cung-trung-uong-hoi-nong-dan-phia-nam1.png"
+                alt={t("partner2.imageAlt")}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative w-full max-w-md h-56 rounded-xl overflow-hidden mt-2">
+              <Image
+                src="/images/doi-tac-chien-luoc/cac-chuyen-gia-nhat-cua-cong-ty-biso-lam-viec-cung-trung-uong-hoi-nong-dan-phia-nam2.png"
+                alt={t("partner2.imageAlt")}
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-sm text-center text-[#20412e] mt-3 font-medium">
+              {t("partner4.caption")}
+            </p>
+          </div>
+        </div>
+        {/* Partner 5 */}
+        <div>
+          <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
+            {t("partner5.heading")}
+          </h3>
+          <div className="flex flex-col items-center">
+            <div className="relative w-full max-w-md rounded-xl overflow-hidden mt-2">
+              <Image
+                src="/images/doi-tac-chien-luoc/dong-hanh-cung-ts-phung-ha-hien-la-chu-tich-hiep-hoi-phan-bon-viet-nam-fav-nhiem-ky-vi-2024-2029.png"
+                alt={t("partner2.imageAlt")}
+                width={500} // Nhập chiều rộng gốc của ảnh
+                height={300} // Nhập chiều cao gốc của ảnh
+                className="w-full h-auto object-cover"
+              />
+            </div>
 
+            <p className="text-sm text-center text-[#20412e] mt-3 font-medium">
+              {t("partner5.caption")}
+            </p>
+          </div>
+        </div>
+        {/* Partner 6 */}
+        <div>
+          <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
+            {t("partner6.heading")}
+          </h3>
+          <div className="flex flex-col items-center">
+            <div className="relative w-full max-w-md rounded-xl overflow-hidden mt-2">
+              <Image
+                src="/images/doi-tac-chien-luoc/dong-hanh-cung-hoi-nong-dan-tinh-hai-duong.png"
+                alt={t("partner6.imageAlt")}
+                width={500} // Nhập chiều rộng gốc của ảnh
+                height={300} // Nhập chiều cao gốc của ảnh
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-sm text-center text-[#20412e] mt-3 font-medium">
+              {t("partner6.caption")}
+            </p>
+          </div>
+        </div>
+        {/* Partner 6 */}
+        <div>
+          <h3 className="font-semibold text-2xl text-[#20412e] mb-2">
+            {t("partner7.heading")}
+          </h3>
+          <div className="flex flex-col items-center">
+            <div className="relative w-full max-w-md rounded-xl overflow-hidden mt-2">
+              <Image
+                src="/images/doi-tac-chien-luoc/dong-hanh-cung-toan-the-lanh-dao-hoi-huu-nghi-viet-nam-campuchia-phat-trien-nong-nghiep.png"
+                alt={t("partner6.imageAlt")}
+                width={500} // Nhập chiều rộng gốc của ảnh
+                height={300} // Nhập chiều cao gốc của ảnh
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <p className="text-sm text-center text-[#20412e] mt-3 font-medium">
+              {t("partner7.caption")}
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
