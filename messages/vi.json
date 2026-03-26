@@ -438,9 +438,9 @@
   },
   "pricePage": {
     "title": "Bảng báo giá Biso Jica",
-    "section1Title": "1. Báo giá Enzyme xử lý nước thải, dầu mỡ, mùi hôi",
-    "section2Title": "2. Báo giá Enzyme Nông nghiệp (Cải tạo đất, Sâu bệnh)",
-    "section3Title": "2. Báo giá Enzyme thủy hải sản",
+    "section1Title": "2. Báo giá Enzyme-cho Công nghiệp",
+    "section2Title": "1. Báo giá Enzyme-cho Nông nghiệp",
+    "section3Title": "3. Báo giá Enzyme-cho Thủy Hải Sản",
     "table": {
       "goods": "HÀNG HÓA",
       "volume": "DUNG TÍCH",
