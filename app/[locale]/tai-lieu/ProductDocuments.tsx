@@ -15,7 +15,7 @@ export default function ProductDocuments() {
   const documents: Record<string, DocumentItem[]> = {
     vi: [
       {
-        title: "Quyết định công bố Tiêu Chuẩn Cơ Sở",
+        title: "QUYẾT ĐỊNH CÔNG BỐ TIÊU CHUẨN CƠ SỞ",
         href: "/files/pdf/vi/quyet-dinh-cong-bo-tccs.pdf",
       },
       {
