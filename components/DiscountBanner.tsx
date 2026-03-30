@@ -100,7 +100,7 @@ export default function DiscountBanner() {
                     {/* Intro line */}
                     <p className="mb-4 text-base font-semibold text-white/90 lg:text-xl">
                         {t("intro")}{" "}
-                        <strong className="text-white">{t("brand")}</strong>{" "}
+                        {/* <strong className="text-white">{t("brand")}</strong>{" "} */}
                         {t("introSuffix")}
                     </p>
 
