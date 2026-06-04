@@ -18,7 +18,7 @@ const dancing = Dancing_Script({
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isTalentOpen, setIsTalentOpen] = useState(false);
-
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const t = useTranslations("navbar");
 
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
 
             <div className="items-center gap-2 py-1">
 
-              <div className="w-20 h-20 rounded-xl overflow-hidden bg-amber-50 flex items-center justify-center ml-2">
+              <div className="w-20 h-20 rounded-xl overflow-hidden bg-amber-50 flex items-center justify-center ml-5">
                 <Image
                   src={logo}
                   alt="BISO JICA"
@@ -46,15 +46,20 @@ const Navbar = () => {
                 style={{ fontFamily: "Montserrat" }}
               >
                 <div
-                  className={`font-bold text-xs text-[#ffd05c] tracking-wide ${dancing.className}`}
+                  className={`font-bold text-xs text-[#ffd05c] tracking-wide ml-2 ${dancing.className}`}
                 >
                   {t("slogan1")}
                 </div>
 
                 <div
-                  className={`text-sm text-[#ffd05c] mt-1 ${dancing.className}`}
+                  className={`text-sm text-[#ffd05c] mt-1 mr-2 ${dancing.className}`}
                 >
                   {t("slogan2")}
+                </div>
+                <div
+                  className={`text-sm text-[#ffd05c] mt-1 ml-2 ${dancing.className}`}
+                >
+                  {t("slogan3")}
                 </div>
               </div>
             </div>
@@ -77,10 +82,33 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li>
-            <Link href="/tai-lieu" className="font-medium hover:text-[#ffd05c]">
-              {t("documents")}
-            </Link>
+          <li className="relative group">
+
+            <span className="font-medium cursor-pointer hover:text-[#ffd05c]">
+              {t("documents&news")} ▼
+            </span>
+
+            <ul className="absolute left-0 mt-3 w-52 bg-[#20412E] rounded-lg shadow-xl border border-[#fdfff0]/20 py-2 opacity-0 invisible translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
+
+              <li>
+                <Link
+                  href="/tai-lieu"
+                  className="block px-4 py-2 hover:bg-[#2c5a43]"
+                >
+                  {t("documents")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/tin-tuc"
+                  className="block px-4 py-2 hover:bg-[#2c5a43]"
+                >
+                  {t("news")}
+                </Link>
+              </li>
+
+            </ul>
+
           </li>
 
           <li>
@@ -97,7 +125,7 @@ const Navbar = () => {
 
           <li>
             <Link href="/tin-tuc" className="font-medium hover:text-[#ffd05c]">
-              {t("news")}
+              {t("suppliers")}
             </Link>
           </li>
 
@@ -157,9 +185,32 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link href="/tai-lieu" onClick={() => setIsOpen(false)} className="block py-3">
-                {t("documents")}
-              </Link>
+              <button
+                onClick={() =>
+                  setOpenDropdown(openDropdown === "docs" ? null : "docs")
+                }
+                className="w-full flex justify-between py-3"
+              >
+                {t("documents&news")}
+                <span className={`${openDropdown === "docs" ? "rotate-180" : ""} transition`}>
+                  ▼
+                </span>
+              </button>
+
+              {openDropdown === "docs" && (
+                <ul className="pl-4">
+                  <li>
+                    <Link href="/tai-lieu" onClick={() => setIsOpen(false)} className="block py-2 text-sm">
+                      {t("documents")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/tin-tuc" onClick={() => setIsOpen(false)} className="block py-2 text-sm">
+                      {t("news")}
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
 
             <li>
@@ -200,20 +251,9 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       className="block py-2 text-sm"
                     >
-                     {t("talent")}
+                      {t("talent")}
                     </Link>
                   </li>
-
-                  {/* <li>
-      <Link
-        href="/tai-lieu"
-        onClick={() => setIsOpen(false)}
-        className="block py-2 text-sm"
-      >
-        Tài liệu
-      </Link>
-    </li> */}
-
                 </ul>
               )}
 

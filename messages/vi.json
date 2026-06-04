@@ -2,13 +2,17 @@
   "navbar": {
     "home": "Trang chủ",
     "about": "Về chúng tôi",
+    "documents&news": "Tài liệu & Tin tức",
     "documents": "Tài liệu",
     "products": "Sản phẩm",
     "priceList": "Bảng giá",
     "news": "Tin tức",
     "talent": "Phát triển nhân tài",
-    "slogan1": "Công nghệ enzyme cho",
-    "slogan2": "nông nghiệp bền vững."
+    "suppliers": "Nhà cung cấp",
+    "slogan1": "Công nghệ enzyme Japan ",
+    "slogan2": "cho nông nghiệp - công nghiệp -",
+    "slogan3": "thủy hải sản bền vững"
+
   },
 
   "sections": {
