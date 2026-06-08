@@ -18,7 +18,8 @@ export const industrialPrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 135000, discount: 20250, final: 114750 },
       { size: "1 lít", price: 1290000, discount: 193500, final: 1096500 },
-      { size: "10 lít", price: 12290000, discount: 1843500, final: 10446500 },
+      { size: "5 lít", price: 6250000, discount: 937500, final: 5312500 },
+      { size: "10 lít", price: 12300000, discount: 1845000, final: 10455000 },
     ],
   },
   {
@@ -27,7 +28,8 @@ export const industrialPrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 135000, discount: 20250, final: 114750 },
       { size: "1 lít", price: 1290000, discount: 193500, final: 1096500 },
-      { size: "10 lít", price: 12290000, discount: 1843500, final: 10446500 },
+      { size: "5 lít", price: 6250000, discount: 937500, final: 5312500 },
+      { size: "10 lít", price: 12300000, discount: 1845000, final: 10455000 },
     ],
   },
   {
@@ -36,7 +38,8 @@ export const industrialPrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 135000, discount: 20250, final: 114750 },
       { size: "1 lít", price: 1290000, discount: 193500, final: 1096500 },
-      { size: "10 lít", price: 12290000, discount: 1843500, final: 10446500 },
+      { size: "5 lít", price: 6250000, discount: 937500, final: 5312500 },
+      { size: "10 lít", price: 12300000, discount: 1845000, final: 10455000 },
     ],
   },
 ];
@@ -48,6 +51,7 @@ export const agriculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 126000, discount: 18900, final: 107100 },
       { size: "1 lít", price: 1200000, discount: 180000, final: 1020000 },
+      { size: "5 lít", price: 5850000, discount: 877500, final: 4972500 },
       { size: "10 lít", price: 11500000, discount: 1725000, final: 9775000 },
     ],
   },
@@ -57,6 +61,7 @@ export const agriculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 45000, discount: 6750, final: 38250 },
       { size: "1 lít", price: 390000, discount: 58500, final: 331500 },
+      { size: "5 lít", price: 1900000, discount: 285000, final: 1615000 },
       { size: "10 lít", price: 3700000, discount: 555000, final: 3145000 },
     ],
   },
@@ -66,6 +71,7 @@ export const agriculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 126000, discount: 18900, final: 107100 },
       { size: "1 lít", price: 1200000, discount: 180000, final: 1020000 },
+      { size: "5 lít", price: 5850000, discount: 877500, final: 4972500 },
       { size: "10 lít", price: 11500000, discount: 1725000, final: 9775000 },
     ],
   },
@@ -75,6 +81,7 @@ export const agriculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 126000, discount: 18900, final: 107100 },
       { size: "1 lít", price: 1200000, discount: 180000, final: 1020000 },
+      { size: "5 lít", price: 5850000, discount: 877500, final: 4972500 },
       { size: "10 lít", price: 11400000, discount: 1710000, final: 9690000 },
     ],
   },
@@ -84,6 +91,7 @@ export const agriculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 59000, discount: 8850, final: 50150 },
       { size: "1 lít", price: 490000, discount: 73500, final: 416500 },
+      { size: "5 lít", price: 2400000, discount: 360000, final: 2040000 },
       { size: "10 lít", price: 4700000, discount: 705000, final: 3995000 },
     ],
   },
@@ -93,6 +101,7 @@ export const agriculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 55000, discount: 8250, final: 46750 },
       { size: "1 lít", price: 450000, discount: 67500, final: 382500 },
+      { size: "5 lít", price: 2200000, discount: 330000, final: 1870000 },
       { size: "10 lít", price: 4300000, discount: 645000, final: 3655000 },
     ],
   },
@@ -105,7 +114,8 @@ export const aquaculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 135000, discount: 20250, final: 114750 },
       { size: "1 lít", price: 1290000, discount: 193500, final: 1096500 },
-      { size: "10 lít", price: 12290000, discount: 1843500, final: 10446500 },
+      { size: "5 lít", price: 6250000, discount: 937500, final: 5312500 },
+      { size: "10 lít", price: 12300000, discount: 1845000, final: 10455000 },
     ],
   },
   {
@@ -114,7 +124,8 @@ export const aquaculturePrices: PriceProduct[] = [
     volumes: [
       { size: "100ml", price: 135000, discount: 20250, final: 114750 },
       { size: "1 lít", price: 1290000, discount: 193500, final: 1096500 },
-      { size: "10 lít", price: 12290000, discount: 1843500, final: 10446500 },
+      { size: "5 lít", price: 6250000, discount: 937500, final: 5312500 },
+      { size: "10 lít", price: 12300000, discount: 1845000, final: 10455000 },
     ],
   },
 ];
