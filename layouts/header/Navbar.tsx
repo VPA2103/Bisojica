@@ -81,8 +81,20 @@ const Navbar = () => {
               {t("about")}
             </Link>
           </li>
-
-          <li className="relative group">
+          {/* <li>
+            <Link
+              href="/tai-lieu"
+              className="block px-4 py-2 hover:bg-[#2c5a43]"
+            >
+              {t("documents")}
+            </Link>
+          </li> */}
+          <li>
+            <Link href="/tai-lieu" className="font-medium hover:text-[#ffd05c]">
+              {t("documents")}
+            </Link>
+          </li>
+          {/* <li className="relative group">
 
             <span className="font-medium cursor-pointer hover:text-[#ffd05c]">
               {t("documents&news")} ▼
@@ -90,26 +102,12 @@ const Navbar = () => {
 
             <ul className="absolute left-0 mt-3 w-52 bg-[#20412E] rounded-lg shadow-xl border border-[#fdfff0]/20 py-2 opacity-0 invisible translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0">
 
-              <li>
-                <Link
-                  href="/tai-lieu"
-                  className="block px-4 py-2 hover:bg-[#2c5a43]"
-                >
-                  {t("documents")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/tin-tuc"
-                  className="block px-4 py-2 hover:bg-[#2c5a43]"
-                >
-                  {t("news")}
-                </Link>
-              </li>
+
+
 
             </ul>
 
-          </li>
+          </li> */}
 
           <li>
             <Link href="/products" className="font-medium hover:text-[#ffd05c]">
@@ -123,9 +121,22 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link href="/tin-tuc" className="font-medium hover:text-[#ffd05c]">
               {t("suppliers")}
+            </Link>
+          </li> */}
+          {/* <li>
+            <Link
+              href="/tin-tuc"
+              className="block px-4 py-2 hover:bg-[#2c5a43]"
+            >
+              {t("news")}
+            </Link>
+          </li> */}
+          <li>
+            <Link href="/tin-tuc" className="font-medium hover:text-[#ffd05c]">
+              {t("news")}
             </Link>
           </li>
 
@@ -184,7 +195,7 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <button
                 onClick={() =>
                   setOpenDropdown(openDropdown === "docs" ? null : "docs")
@@ -211,7 +222,13 @@ const Navbar = () => {
                   </li>
                 </ul>
               )}
+            </li> */}
+            <li>
+              <Link href="/tai-lieu" onClick={() => setIsOpen(false)} className="block py-3">
+              {t("documents")}
+              </Link>
             </li>
+            
 
             <li>
               <Link href="/products" onClick={() => setIsOpen(false)} className="block py-3">
@@ -249,7 +266,7 @@ const Navbar = () => {
                     <Link
                       href="/phat-trien-nhan-tai"
                       onClick={() => setIsOpen(false)}
-                      className="block py-2 text-sm"
+                      className="block py-2 text-base"
                     >
                       {t("talent")}
                     </Link>
